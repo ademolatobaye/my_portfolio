@@ -553,7 +553,7 @@ ini_set('display_errors', '1');
 //Set gmail username
 	$mail->Username = "info@ademolathedev.name.ng";
 //Set gmail password
-	$mail->Password = "Omomejih08#";
+	$mail->Password = "";
 //Email subject
 	$mail->Subject = "New Message Notification";
 //Set sender email
