@@ -51,54 +51,90 @@ Copyright : 2026
   font-weight: 100;
   font-style: normal;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 @font-face {
   font-family: "Poppins";
   src: url("../fonts/poppins/Poppins-ExtraLight.ttf") format("truetype");
   font-weight: 200;
   font-style: normal;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 @font-face {
   font-family: "Poppins";
   src: url("../fonts/poppins/Poppins-Light.ttf");
   font-weight: 300;
   font-style: normal;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 @font-face {
   font-family: "Poppins";
   src: url("../fonts/poppins/Poppins-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 @font-face {
   font-family: "Poppins";
   src: url("../fonts/poppins/Poppins-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 @font-face {
   font-family: "Poppins";
   src: url("../fonts/poppins/Poppins-SemiBold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 @font-face {
   font-family: "Poppins";
   src: url("../fonts/poppins/Poppins-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 @font-face {
   font-family: "Poppins";
   src: url("../fonts/poppins/Poppins-ExtraBold.ttf") format("truetype");
   font-weight: 800;
   font-style: normal;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 @font-face {
   font-family: "Poppins";
   src: url("../fonts/poppins/Poppins-Black.ttf") format("truetype");
   font-weight: 900;
   font-style: normal;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 /*--  Quicksand font  --*/
 @font-face {
   font-family: "Quicksand";
@@ -106,30 +142,50 @@ Copyright : 2026
   font-weight: 300;
   font-style: normal;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 @font-face {
   font-family: "Quicksand";
   src: url("../fonts/quicksand/Quicksand-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 @font-face {
   font-family: "Quicksand";
   src: url("../fonts/quicksand/Quicksand-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 @font-face {
   font-family: "Quicksand";
   src: url("../fonts/quicksand/Quicksand-SemiBold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 @font-face {
   font-family: "Quicksand";
   src: url("../fonts/quicksand/Quicksand-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 /* components ( Import components ) */
 /* Breadcrumb */
 /*=====================
@@ -138,6 +194,7 @@ Animation css start
 @-webkit-keyframes bounce {
   0% {
     -webkit-transform: scale(1);
+<<<<<<< HEAD
             transform: scale(1);
     opacity: 0.7;
   }
@@ -259,6 +316,153 @@ Animation css start
             transform: rotate(360deg);
   }
 }
+=======
+    transform: scale(1);
+    opacity: 0.7;
+  }
+
+  100% {
+    -webkit-transform: scale(2);
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 0.7;
+  }
+
+  100% {
+    -webkit-transform: scale(2);
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes rotation {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotation {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes slideDown {
+  0% {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes marquee {
+  0% {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+  }
+
+  100% {
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes marquee {
+  0% {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+  }
+
+  100% {
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: translateY(-50%) rotate(0deg);
+    transform: translateY(-50%) rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: translateY(-50%) rotate(360deg);
+    transform: translateY(-50%) rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: translateY(-50%) rotate(0deg);
+    transform: translateY(-50%) rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: translateY(-50%) rotate(360deg);
+    transform: translateY(-50%) rotate(360deg);
+  }
+}
+
+@-webkit-keyframes rotateCircle {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotateCircle {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+>>>>>>> 781a704 (New commit)
 /**=====================
 Mixin css start
 ==========================**/
@@ -290,26 +494,46 @@ Variables css start
 :root {
   --container-size: 200px;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 @media (max-width: 1399px) {
   :root {
     --container-size: 172px;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 @media (max-width: 1199px) {
   :root {
     --container-size: 145px;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 @media (max-width: 991px) {
   :root {
     --container-size: 108px;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 @media (max-width: 767px) {
   :root {
     --container-size: 80px;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 @media (max-width: 576px) {
   :root {
     --container-size: calc(42px + (83 - 42) * (100vw - 320px) / (576 - 320));
@@ -323,29 +547,53 @@ Variables css start
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
+<<<<<<< HEAD
       -ms-flex-align: center;
           align-items: center;
   position: relative;
 }
+=======
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+}
+
+>>>>>>> 781a704 (New commit)
 .bl-breadcrumb ul {
   margin: -5px 0 100px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .bl-breadcrumb ul li {
   margin-right: 50px;
   color: #adb5bd;
   position: relative;
   font-weight: 500;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .bl-breadcrumb ul li a {
   color: #fff;
   font-weight: 500;
 }
+<<<<<<< HEAD
 .bl-breadcrumb ul li a:hover {
   color: rgba(var(--primary), 1);
 }
+=======
+
+.bl-breadcrumb ul li a:hover {
+  color: rgba(var(--primary), 1);
+}
+
+>>>>>>> 781a704 (New commit)
 .bl-breadcrumb ul li:not(:last-child):after {
   content: "/";
   position: absolute;
@@ -353,6 +601,10 @@ Variables css start
   right: -30px;
   border-radius: 15px;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .bl-breadcrumb h1 {
   margin-bottom: 100px;
   font-size: 87px;
@@ -360,10 +612,18 @@ Variables css start
   color: #fff;
   font-weight: 800;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .bl-breadcrumb h1 span {
   font-weight: 300;
   color: rgba(var(--primary), 1);
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .bl-breadcrumb p.info {
   max-width: 800px;
   margin: 0;
@@ -371,6 +631,10 @@ Variables css start
   padding-left: 200px;
   position: relative;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .bl-breadcrumb p.info:after {
   content: "";
   width: 170px;
@@ -390,78 +654,150 @@ Variables css start
     line-height: 110px;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 @media only screen and (max-width: 1199px) {
   .bl-breadcrumb h1 {
     font-size: 62px;
     line-height: 95px;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 @media only screen and (max-width: 991px) {
   .bl-breadcrumb {
     padding: 100px 0;
   }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
   .bl-breadcrumb h1 {
     font-size: 44px;
     line-height: 70px;
     overflow: hidden;
   }
+<<<<<<< HEAD
   .bl-breadcrumb ul {
     margin: -5px 0 50px 0;
   }
+=======
+
+  .bl-breadcrumb ul {
+    margin: -5px 0 50px 0;
+  }
+
+>>>>>>> 781a704 (New commit)
   .bl-breadcrumb h1 {
     margin-bottom: 50px;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 @media only screen and (max-width: 767px) {
   .bl-breadcrumb {
     padding: 80px 0;
   }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
   .bl-breadcrumb h1 {
     font-size: 34px;
     line-height: 55px;
   }
+<<<<<<< HEAD
   .bl-breadcrumb p.info {
     padding-left: 100px;
   }
+=======
+
+  .bl-breadcrumb p.info {
+    padding-left: 100px;
+  }
+
+>>>>>>> 781a704 (New commit)
   .bl-breadcrumb p.info:after {
     width: 70px;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 @media only screen and (max-width: 575px) {
   .bl-breadcrumb h1 {
     margin-bottom: 40px;
     font-size: 27px;
     line-height: 40px;
   }
+<<<<<<< HEAD
   .bl-breadcrumb ul {
     margin: -5px 0 40px 0;
   }
+=======
+
+  .bl-breadcrumb ul {
+    margin: -5px 0 40px 0;
+  }
+
+>>>>>>> 781a704 (New commit)
   .bl-breadcrumb p.info {
     font-size: 14px;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 @media only screen and (max-width: 460px) {
   .bl-breadcrumb h1 {
     font-size: 25px;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 @media only screen and (max-width: 420px) {
   .bl-breadcrumb h1 {
     font-size: 21px;
     line-height: 35px;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 @media only screen and (max-width: 360px) {
   .bl-breadcrumb h1 {
     font-size: 18px;
   }
+<<<<<<< HEAD
   .bl-breadcrumb p.info {
     padding: 0;
   }
+=======
+
+  .bl-breadcrumb p.info {
+    padding: 0;
+  }
+
+>>>>>>> 781a704 (New commit)
   .bl-breadcrumb p.info:after {
     display: none;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 /* Breadcrumb */
 /**  Common css  **/
 body {
@@ -511,6 +847,7 @@ input {
   border: 1px solid #eee;
   font-weight: 300;
 }
+<<<<<<< HEAD
 input::-webkit-input-placeholder {
   color: #777;
 }
@@ -526,6 +863,29 @@ input::-ms-input-placeholder {
 input::placeholder {
   color: #777;
 }
+=======
+
+input::-webkit-input-placeholder {
+  color: #777;
+}
+
+input::-moz-placeholder {
+  color: #777;
+}
+
+input:-ms-input-placeholder {
+  color: #777;
+}
+
+input::-ms-input-placeholder {
+  color: #777;
+}
+
+input::placeholder {
+  color: #777;
+}
+
+>>>>>>> 781a704 (New commit)
 input:focus-visible {
   outline: none;
 }
@@ -548,6 +908,7 @@ input:focus-visible {
   color: #afb2bf;
   border: 0;
 }
+<<<<<<< HEAD
 .theme-form .form-control::-webkit-input-placeholder {
   color: #777;
 }
@@ -566,12 +927,43 @@ input:focus-visible {
 .theme-form .form-control:active, .theme-form .form-control:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
+=======
+
+.theme-form .form-control::-webkit-input-placeholder {
+  color: #777;
+}
+
+.theme-form .form-control::-moz-placeholder {
+  color: #777;
+}
+
+.theme-form .form-control:-ms-input-placeholder {
+  color: #777;
+}
+
+.theme-form .form-control::-ms-input-placeholder {
+  color: #777;
+}
+
+.theme-form .form-control::placeholder {
+  color: #777;
+}
+
+.theme-form .form-control:active,
+.theme-form .form-control:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+>>>>>>> 781a704 (New commit)
 }
 
 ul {
   margin: 0;
   padding: 0;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 ul li {
   list-style: none;
 }
@@ -581,10 +973,18 @@ ul li {
   font-weight: 700;
   color: #fff;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .title h2 span {
   color: rgba(var(--primary), 1);
   font-weight: 700;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .title p {
   margin: 0;
   font-size: 14px;
@@ -597,6 +997,7 @@ ul li {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+<<<<<<< HEAD
       -ms-flex-direction: column;
           flex-direction: column;
   -webkit-box-pack: center;
@@ -606,10 +1007,26 @@ ul li {
       -ms-flex-align: center;
           align-items: center;
 }
+=======
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+>>>>>>> 781a704 (New commit)
 .title.centerd h2,
 .title.centerd p {
   text-align: center;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .title.centerd p {
   max-width: 400px;
 }
@@ -625,6 +1042,7 @@ ul li {
   display: flex;
   overflow: hidden;
   -webkit-box-align: center;
+<<<<<<< HEAD
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
@@ -633,6 +1051,17 @@ ul li {
   background: #000;
   backdrop-filter: blur(5px);
 }
+=======
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: #000;
+  backdrop-filter: blur(5px);
+}
+
+>>>>>>> 781a704 (New commit)
 .bl-loader span {
   padding: 15px 30px;
   color: #fff;
@@ -640,6 +1069,10 @@ ul li {
   position: relative;
   font-weight: 700;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .bl-loader span:after {
   content: "";
   width: calc(100% - 60px);
@@ -651,6 +1084,10 @@ ul li {
   right: 30px;
   border-radius: 15px;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .bl-loader span:before {
   content: "";
   width: 30px;
@@ -663,13 +1100,18 @@ ul li {
   right: 0;
   z-index: 2;
   -webkit-animation: run 2s linear infinite;
+<<<<<<< HEAD
           animation: run 2s linear infinite;
+=======
+  animation: run 2s linear infinite;
+>>>>>>> 781a704 (New commit)
 }
 
 @-webkit-keyframes run {
   0% {
     left: 0;
     -webkit-transform: translateX(0) skewX(-50deg) rotateX(10deg);
+<<<<<<< HEAD
             transform: translateX(0) skewX(-50deg) rotateX(10deg);
   }
   100% {
@@ -678,6 +1120,32 @@ ul li {
             transform: translateX(-100%) skewX(-50deg) rotateX(10deg);
   }
 }
+=======
+    transform: translateX(0) skewX(-50deg) rotateX(10deg);
+  }
+
+  100% {
+    left: 100%;
+    -webkit-transform: translateX(-100%) skewX(-50deg) rotateX(10deg);
+    transform: translateX(-100%) skewX(-50deg) rotateX(10deg);
+  }
+}
+
+@keyframes run {
+  0% {
+    left: 0;
+    -webkit-transform: translateX(0) skewX(-50deg) rotateX(10deg);
+    transform: translateX(0) skewX(-50deg) rotateX(10deg);
+  }
+
+  100% {
+    left: 100%;
+    -webkit-transform: translateX(-100%) skewX(-50deg) rotateX(10deg);
+    transform: translateX(-100%) skewX(-50deg) rotateX(10deg);
+  }
+}
+
+>>>>>>> 781a704 (New commit)
 /**  Button css  **/
 .bl-btn-1 {
   position: relative;
@@ -685,11 +1153,19 @@ ul li {
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-align: center;
+<<<<<<< HEAD
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+=======
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+>>>>>>> 781a704 (New commit)
   padding: 1px;
   border-radius: 30px;
   overflow: hidden;
@@ -697,9 +1173,17 @@ ul li {
   background: -webkit-gradient(linear, left top, right top, from(rgba(var(--primary), 1)), to(rgba(var(--primary-4), 1)));
   background: linear-gradient(to right, rgba(var(--primary), 1), rgba(var(--primary-4), 1));
 }
+<<<<<<< HEAD
 .bl-btn-1:hover .bl-btn-text {
   color: #000;
 }
+=======
+
+.bl-btn-1:hover .bl-btn-text {
+  color: #000;
+}
+
+>>>>>>> 781a704 (New commit)
 .bl-btn-1 .bl-btn-wrapper {
   width: 100%;
   padding: 8px 20px;
@@ -708,6 +1192,7 @@ ul li {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
+<<<<<<< HEAD
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
@@ -716,6 +1201,17 @@ ul li {
   border-radius: 30px;
   background: #000;
 }
+=======
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-radius: 30px;
+  background: #000;
+}
+
+>>>>>>> 781a704 (New commit)
 .bl-btn-1 .bl-btn-text {
   position: relative;
   z-index: 2;
@@ -726,6 +1222,10 @@ ul li {
   -webkit-transition: 300ms ease;
   transition: 300ms ease;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .bl-btn-1 .bl-btn-spotlight {
   position: absolute;
   z-index: 1;
@@ -738,7 +1238,11 @@ ul li {
   inset: 0;
   top: 50%;
   -webkit-transform: scale(0);
+<<<<<<< HEAD
           transform: scale(0);
+=======
+  transform: scale(0);
+>>>>>>> 781a704 (New commit)
 }
 
 a.bl-btn-2 {
@@ -748,30 +1252,54 @@ a.bl-btn-2 {
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-align: center;
+<<<<<<< HEAD
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+=======
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+>>>>>>> 781a704 (New commit)
   text-decoration: none;
   background: transparent;
   font-weight: 500;
   font-size: 18px;
   color: #fff;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 a.bl-btn-2:hover {
   background: transparent;
   color: rgba(var(--primary), 1);
 }
+<<<<<<< HEAD
 a.bl-btn-2:hover .bl-text {
   border-bottom: 1px dashed rgba(var(--primary), 1);
 }
+=======
+
+a.bl-btn-2:hover .bl-text {
+  border-bottom: 1px dashed rgba(var(--primary), 1);
+}
+
+>>>>>>> 781a704 (New commit)
 a.bl-btn-2 .bl-text {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   padding: 8px 0;
   border-bottom: 1px dashed #fff;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 a.bl-btn-2 .bl-text i {
   margin-left: 5px;
 }
@@ -785,6 +1313,10 @@ a.bl-btn-2 .bl-text i {
   color: #000;
   border-radius: 30px;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .bl-btn-3:hover {
   opacity: 0.8;
 }
@@ -796,11 +1328,19 @@ a.bl-btn-4 {
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-align: center;
+<<<<<<< HEAD
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+=======
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+>>>>>>> 781a704 (New commit)
   text-decoration: none;
   background: transparent;
   font-weight: 500;
@@ -810,19 +1350,35 @@ a.bl-btn-4 {
   color: rgba(var(--primary), 1);
   border-radius: 30px;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 a.bl-btn-4:hover {
   background: rgba(var(--primary), 1);
   color: #fff;
 }
+<<<<<<< HEAD
 a.bl-btn-4:hover .bl-text {
   border-bottom: 1px dashed rgba(var(--primary), 1);
 }
+=======
+
+a.bl-btn-4:hover .bl-text {
+  border-bottom: 1px dashed rgba(var(--primary), 1);
+}
+
+>>>>>>> 781a704 (New commit)
 a.bl-btn-4 .bl-text {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   padding: 8px 0;
   border-bottom: 1px dashed #fff;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 a.bl-btn-4 .bl-text i {
   margin-left: 5px;
 }
@@ -830,17 +1386,27 @@ a.bl-btn-4 .bl-text i {
 @-webkit-keyframes animRotate {
   0% {
     -webkit-transform: rotate(0deg);
+<<<<<<< HEAD
             transform: rotate(0deg);
   }
   100% {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
+=======
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+>>>>>>> 781a704 (New commit)
   }
 }
 
 @keyframes animRotate {
   0% {
     -webkit-transform: rotate(0deg);
+<<<<<<< HEAD
             transform: rotate(0deg);
   }
   100% {
@@ -848,6 +1414,17 @@ a.bl-btn-4 .bl-text i {
             transform: rotate(360deg);
   }
 }
+=======
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+>>>>>>> 781a704 (New commit)
 /*  Section shapes  */
 .shape {
   width: 100px;
@@ -859,6 +1436,10 @@ a.bl-btn-4 .bl-text i {
   opacity: 0.5;
   z-index: -1;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .shape img {
   width: 100%;
 }
@@ -949,6 +1530,7 @@ a.bl-btn-4 .bl-text i {
   line-height: 1.6;
   border: 1px solid rgba(43, 43, 43, 0.5);
 }
+<<<<<<< HEAD
 .toggle-mode:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
@@ -959,6 +1541,22 @@ a.bl-btn-4 .bl-text i {
 .toggle-mode i.ri-sun-line {
   color: #f7f580;
 }
+=======
+
+.toggle-mode:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.toggle-mode i {
+  font-size: 20px;
+}
+
+.toggle-mode i.ri-sun-line {
+  color: #f7f580;
+}
+
+>>>>>>> 781a704 (New commit)
 .toggle-mode i.ri-moon-line {
   color: #fff;
 }
@@ -982,6 +1580,7 @@ a.back-to-top {
   line-height: 1.6;
   border: 1px solid rgba(43, 43, 43, 0.5);
 }
+<<<<<<< HEAD
 a.back-to-top:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
@@ -989,10 +1588,26 @@ a.back-to-top:hover {
 a.back-to-top i {
   font-size: 20px;
 }
+=======
+
+a.back-to-top:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+a.back-to-top i {
+  font-size: 20px;
+}
+
+>>>>>>> 781a704 (New commit)
 a.back-to-top:hover {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 a.back-to-top svg {
   width: 34px;
   height: 34px;
@@ -1000,6 +1615,10 @@ a.back-to-top svg {
   right: 2px;
   bottom: 2px;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 a.back-to-top svg path {
   fill: transparent;
   stroke: rgba(var(--primary), 1);
@@ -1012,6 +1631,7 @@ a.back-to-top svg path {
     width: 80px;
     height: 80px;
   }
+<<<<<<< HEAD
   .shape-6 {
     right: 30px;
   }
@@ -1021,58 +1641,128 @@ a.back-to-top svg path {
   a.bl-btn-2 {
     font-size: 16px;
   }
+=======
+
+  .shape-6 {
+    right: 30px;
+  }
+
+  .bl-btn-1 .bl-btn-text {
+    font-size: 16px;
+  }
+
+  a.bl-btn-2 {
+    font-size: 16px;
+  }
+
+>>>>>>> 781a704 (New commit)
   .title h2 {
     font-size: 35px;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 @media only screen and (max-width: 1199px) {
   .shape {
     width: 70px;
     height: 70px;
   }
 }
+<<<<<<< HEAD
 @media only screen and (max-width: 991px) {
   .title, .title.centerd {
     overflow: hidden;
   }
+=======
+
+@media only screen and (max-width: 991px) {
+
+  .title,
+  .title.centerd {
+    overflow: hidden;
+  }
+
+>>>>>>> 781a704 (New commit)
   .shape {
     width: 50px;
     height: 50px;
   }
+<<<<<<< HEAD
   .shape-9 {
     bottom: -55px;
   }
+=======
+
+  .shape-9 {
+    bottom: -55px;
+  }
+
+>>>>>>> 781a704 (New commit)
   .title h2 {
     font-size: 34px;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 @media only screen and (max-width: 767px) {
   .bl-loader span {
     font-size: 30px;
   }
+<<<<<<< HEAD
   .shape-1 {
     top: 550px;
   }
   .shape-7 {
     left: 30px;
   }
+=======
+
+  .shape-1 {
+    top: 550px;
+  }
+
+  .shape-7 {
+    left: 30px;
+  }
+
+>>>>>>> 781a704 (New commit)
   .title h2 {
     font-size: 30px;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 @media only screen and (max-width: 575px) {
   .shape {
     display: none;
   }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
   .title h2 {
     font-size: 28px;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 @media only screen and (max-width: 480px) {
   .title h2 {
     font-size: 26px;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 /* Breadcrumb */
 /*  Spacing css (p-*)(pt-*)(pb-*)(ptb-*) && (m-*)(mt-*)(mb-*)(mtb-*) is most be use  */
 /*  Padding  */
@@ -2275,287 +2965,507 @@ a.back-to-top svg path {
 /*  Margin Bottom Minus  */
 .m-b--5,
 .margin-b--5,
+<<<<<<< HEAD
 .mb--5, .mb-minus-5 {
+=======
+.mb--5,
+.mb-minus-5 {
+>>>>>>> 781a704 (New commit)
   margin-bottom: -5px;
 }
 
 .m-b--10,
 .margin-b--10,
+<<<<<<< HEAD
 .mb--10, .mb-minus-10 {
+=======
+.mb--10,
+.mb-minus-10 {
+>>>>>>> 781a704 (New commit)
   margin-bottom: -10px;
 }
 
 .m-b--12,
 .margin-b--12,
+<<<<<<< HEAD
 .mb--12, .mb-minus-12 {
+=======
+.mb--12,
+.mb-minus-12 {
+>>>>>>> 781a704 (New commit)
   margin-bottom: -12px;
 }
 
 .m-b--15,
 .margin-b--15,
+<<<<<<< HEAD
 .mb--15, .mb-minus-15 {
+=======
+.mb--15,
+.mb-minus-15 {
+>>>>>>> 781a704 (New commit)
   margin-bottom: -15px;
 }
 
 .m-b--20,
 .margin-b--20,
+<<<<<<< HEAD
 .mb--20, .mb-minus-20 {
+=======
+.mb--20,
+.mb-minus-20 {
+>>>>>>> 781a704 (New commit)
   margin-bottom: -20px;
 }
 
 .m-b--24,
 .margin-b--24,
+<<<<<<< HEAD
 .mb--24, .mb-minus-24 {
+=======
+.mb--24,
+.mb-minus-24 {
+>>>>>>> 781a704 (New commit)
   margin-bottom: -24px;
 }
 
 .m-b--25,
 .margin-b--25,
+<<<<<<< HEAD
 .mb--25, .mb-minus-25 {
+=======
+.mb--25,
+.mb-minus-25 {
+>>>>>>> 781a704 (New commit)
   margin-bottom: -25px;
 }
 
 .m-b--30,
 .margin-b--30,
+<<<<<<< HEAD
 .mb--30, .mb-minus-30 {
+=======
+.mb--30,
+.mb-minus-30 {
+>>>>>>> 781a704 (New commit)
   margin-bottom: -30px;
 }
 
 .m-b--35,
 .margin-b--35,
+<<<<<<< HEAD
 .mb--35, .mb-minus-35 {
+=======
+.mb--35,
+.mb-minus-35 {
+>>>>>>> 781a704 (New commit)
   margin-bottom: -35px;
 }
 
 .m-b--40,
 .margin-b--40,
+<<<<<<< HEAD
 .mb--40, .mb-minus-40 {
+=======
+.mb--40,
+.mb-minus-40 {
+>>>>>>> 781a704 (New commit)
   margin-bottom: -40px;
 }
 
 .m-b--45,
 .margin-b--45,
+<<<<<<< HEAD
 .mb--45, .mb-minus-45 {
+=======
+.mb--45,
+.mb-minus-45 {
+>>>>>>> 781a704 (New commit)
   margin-bottom: -45px;
 }
 
 .m-b--50,
 .margin-b--50,
+<<<<<<< HEAD
 .mb--50, .mb-minus-50 {
+=======
+.mb--50,
+.mb-minus-50 {
+>>>>>>> 781a704 (New commit)
   margin-bottom: -50px;
 }
 
 .m-b--55,
 .margin-b--55,
+<<<<<<< HEAD
 .mb--55, .mb-minus-55 {
+=======
+.mb--55,
+.mb-minus-55 {
+>>>>>>> 781a704 (New commit)
   margin-bottom: -55px;
 }
 
 .m-b--60,
 .margin-b--60,
+<<<<<<< HEAD
 .mb--60, .mb-minus-60 {
+=======
+.mb--60,
+.mb-minus-60 {
+>>>>>>> 781a704 (New commit)
   margin-bottom: -60px;
 }
 
 .m-b--65,
 .margin-b--65,
+<<<<<<< HEAD
 .mb--65, .mb-minus-65 {
+=======
+.mb--65,
+.mb-minus-65 {
+>>>>>>> 781a704 (New commit)
   margin-bottom: -65px;
 }
 
 .m-b--70,
 .margin-b--70,
+<<<<<<< HEAD
 .mb--70, .mb-minus-60 {
+=======
+.mb--70,
+.mb-minus-60 {
+>>>>>>> 781a704 (New commit)
   margin-bottom: -70px;
 }
 
 .m-b--75,
 .margin-b--75,
+<<<<<<< HEAD
 .mb--75, .mb-minus-75 {
+=======
+.mb--75,
+.mb-minus-75 {
+>>>>>>> 781a704 (New commit)
   margin-bottom: -75px;
 }
 
 .m-b--80,
 .margin-b--80,
+<<<<<<< HEAD
 .mb--80, .mb-minus-80 {
+=======
+.mb--80,
+.mb-minus-80 {
+>>>>>>> 781a704 (New commit)
   margin-bottom: -80px;
 }
 
 .m-b--85,
 .margin-b--85,
+<<<<<<< HEAD
 .mb--85, .mb-minus-85 {
+=======
+.mb--85,
+.mb-minus-85 {
+>>>>>>> 781a704 (New commit)
   margin-bottom: -85px;
 }
 
 .m-b--90,
 .margin-b--90,
+<<<<<<< HEAD
 .mb--90, .mb-minus-90 {
+=======
+.mb--90,
+.mb-minus-90 {
+>>>>>>> 781a704 (New commit)
   margin-bottom: -90px;
 }
 
 .m-b--95,
 .margin-b--95,
+<<<<<<< HEAD
 .mb--95, .mb-minus-95 {
+=======
+.mb--95,
+.mb-minus-95 {
+>>>>>>> 781a704 (New commit)
   margin-bottom: -95px;
 }
 
 .m-b--100,
 .margin-b--100,
+<<<<<<< HEAD
 .mb--100, .mb-minus-100 {
+=======
+.mb--100,
+.mb-minus-100 {
+>>>>>>> 781a704 (New commit)
   margin-bottom: -100px;
 }
 
 /*  Margin Top-Bottom Minus  */
 .m-tb--5,
 .margin-tb--5,
+<<<<<<< HEAD
 .mtb--5, .mtb-minus-5 {
+=======
+.mtb--5,
+.mtb-minus-5 {
+>>>>>>> 781a704 (New commit)
   margin-top: -5px;
   margin-bottom: -5px;
 }
 
 .m-tb--10,
 .margin-tb--10,
+<<<<<<< HEAD
 .mtb--10, .mtb-minus-10 {
+=======
+.mtb--10,
+.mtb-minus-10 {
+>>>>>>> 781a704 (New commit)
   margin-top: -10px;
   margin-bottom: -10px;
 }
 
 .m-tb--12,
 .margin-tb--12,
+<<<<<<< HEAD
 .mtb--12, .mtb-minus-12 {
+=======
+.mtb--12,
+.mtb-minus-12 {
+>>>>>>> 781a704 (New commit)
   margin-top: -12px;
   margin-bottom: -12px;
 }
 
 .m-tb--15,
 .margin-tb--15,
+<<<<<<< HEAD
 .mtb--15, .mtb-minus-15 {
+=======
+.mtb--15,
+.mtb-minus-15 {
+>>>>>>> 781a704 (New commit)
   margin-top: -15px;
   margin-bottom: -15px;
 }
 
 .m-tb--20,
 .margin-tb--20,
+<<<<<<< HEAD
 .mtb--20, .mtb-minus-20 {
+=======
+.mtb--20,
+.mtb-minus-20 {
+>>>>>>> 781a704 (New commit)
   margin-top: -20px;
   margin-bottom: -20px;
 }
 
 .m-tb--24,
 .margin-tb--24,
+<<<<<<< HEAD
 .mtb--24, .mtb-minus-24 {
+=======
+.mtb--24,
+.mtb-minus-24 {
+>>>>>>> 781a704 (New commit)
   margin-top: -24px;
   margin-bottom: -24px;
 }
 
 .m-tb--25,
 .margin-tb--25,
+<<<<<<< HEAD
 .mtb--25, .mtb-minus-25 {
+=======
+.mtb--25,
+.mtb-minus-25 {
+>>>>>>> 781a704 (New commit)
   margin-top: -25px;
   margin-bottom: -25px;
 }
 
 .m-tb--30,
 .margin-tb--30,
+<<<<<<< HEAD
 .mtb--30, .mtb-minus-30 {
+=======
+.mtb--30,
+.mtb-minus-30 {
+>>>>>>> 781a704 (New commit)
   margin-top: -30px;
   margin-bottom: -30px;
 }
 
 .m-tb--35,
 .margin-tb--35,
+<<<<<<< HEAD
 .mtb--35, .mtb-minus-35 {
+=======
+.mtb--35,
+.mtb-minus-35 {
+>>>>>>> 781a704 (New commit)
   margin-top: -35px;
   margin-bottom: -35px;
 }
 
 .m-tb--40,
 .margin-tb--40,
+<<<<<<< HEAD
 .mtb--40, .mtb-minus-40 {
+=======
+.mtb--40,
+.mtb-minus-40 {
+>>>>>>> 781a704 (New commit)
   margin-top: -40px;
   margin-bottom: -40px;
 }
 
 .m-tb--45,
 .margin-tb--45,
+<<<<<<< HEAD
 .mtb--45, .mtb-minus-45 {
+=======
+.mtb--45,
+.mtb-minus-45 {
+>>>>>>> 781a704 (New commit)
   margin-top: -45px;
   margin-bottom: -45px;
 }
 
 .m-tb--50,
 .margin-tb--50,
+<<<<<<< HEAD
 .mtb--50, .mtb-minus-50 {
+=======
+.mtb--50,
+.mtb-minus-50 {
+>>>>>>> 781a704 (New commit)
   margin-top: -50px;
   margin-bottom: -50px;
 }
 
 .m-tb--55,
 .margin-tb--55,
+<<<<<<< HEAD
 .mtb--55, .mtb-minus-55 {
+=======
+.mtb--55,
+.mtb-minus-55 {
+>>>>>>> 781a704 (New commit)
   margin-top: -55px;
   margin-bottom: -55px;
 }
 
 .m-tb--60,
 .margin-tb--60,
+<<<<<<< HEAD
 .mtb--60, .mtb-minus-60 {
+=======
+.mtb--60,
+.mtb-minus-60 {
+>>>>>>> 781a704 (New commit)
   margin-top: -60px;
   margin-bottom: -60px;
 }
 
 .m-tb--65,
 .margin-tb--65,
+<<<<<<< HEAD
 .mtb--65, .mtb-minus-65 {
+=======
+.mtb--65,
+.mtb-minus-65 {
+>>>>>>> 781a704 (New commit)
   margin-top: -65px;
   margin-bottom: -65px;
 }
 
 .m-tb--70,
 .margin-tb--70,
+<<<<<<< HEAD
 .mtb--70, .mtb-minus-70 {
+=======
+.mtb--70,
+.mtb-minus-70 {
+>>>>>>> 781a704 (New commit)
   margin-top: -70px;
   margin-bottom: -70px;
 }
 
 .m-tb--75,
 .margin-tb--75,
+<<<<<<< HEAD
 .mtb--75, .mtb-minus-75 {
+=======
+.mtb--75,
+.mtb-minus-75 {
+>>>>>>> 781a704 (New commit)
   margin-top: -75px;
   margin-bottom: -75px;
 }
 
 .m-tb--80,
 .margin-tb--80,
+<<<<<<< HEAD
 .mtb--80, .mtb-minus-80 {
+=======
+.mtb--80,
+.mtb-minus-80 {
+>>>>>>> 781a704 (New commit)
   margin-top: -80px;
   margin-bottom: -80px;
 }
 
 .m-tb--85,
 .margin-tb--85,
+<<<<<<< HEAD
 .mtb--85, .mtb-minus-85 {
+=======
+.mtb--85,
+.mtb-minus-85 {
+>>>>>>> 781a704 (New commit)
   margin-top: -85px;
   margin-bottom: -85px;
 }
 
 .m-tb--90,
 .margin-tb--90,
+<<<<<<< HEAD
 .mtb--90, .mtb-minus-90 {
+=======
+.mtb--90,
+.mtb-minus-90 {
+>>>>>>> 781a704 (New commit)
   margin-top: -90px;
   margin-bottom: -90px;
 }
 
 .m-tb--95,
 .margin-tb--95,
+<<<<<<< HEAD
 .mtb--95, .mtb-minus-95 {
+=======
+.mtb--95,
+.mtb-minus-95 {
+>>>>>>> 781a704 (New commit)
   margin-top: -95px;
   margin-bottom: -95px;
 }
 
 .m-tb--100,
 .margin-tb--100,
+<<<<<<< HEAD
 .mtb--100, .mtb-minus-100 {
+=======
+.mtb--100,
+.mtb-minus-100 {
+>>>>>>> 781a704 (New commit)
   margin-top: -100px;
   margin-bottom: -100px;
 }
@@ -2570,113 +3480,201 @@ a.back-to-top svg path {
 
 /* Responsive Spacing css */
 @media screen and (max-width: 991px) {
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
   .p-tb-80,
   .padding-tb-80,
   .ptb-80 {
     padding-top: 50px;
     padding-bottom: 50px;
   }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
   .m-tb-80,
   .margin-tb-80,
   .mtb-80 {
     margin-top: 50px;
     margin-bottom: 50px;
   }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
   .m-b-80,
   .margin-b-80,
   .mb-80 {
     margin-bottom: 50px;
   }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
   .m-t-80,
   .margin-t-80,
   .mt-80 {
     margin-top: 50px;
   }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
   .p-t-80,
   .padding-t-80,
   .pt-80 {
     padding-top: 50px;
   }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
   .p-b-80,
   .padding-b-80,
   .pb-80 {
     padding-bottom: 50px;
   }
+<<<<<<< HEAD
   .static-mt-80 {
     margin-top: 70px;
   }
+=======
+
+  .static-mt-80 {
+    margin-top: 70px;
+  }
+
+>>>>>>> 781a704 (New commit)
   .static-mb-80 {
     margin-bottom: 70px;
   }
 }
+<<<<<<< HEAD
 @media screen and (max-width: 767px) {
+=======
+
+@media screen and (max-width: 767px) {
+
+>>>>>>> 781a704 (New commit)
   .p-tb-80,
   .padding-tb-80,
   .ptb-80 {
     padding-top: 40px;
     padding-bottom: 40px;
   }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
   .m-tb-80,
   .margin-tb-80,
   .mtb-80 {
     margin-top: 40px;
     margin-bottom: 40px;
   }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
   .m-b-80,
   .margin-b-80,
   .mb-80 {
     margin-bottom: 40px;
   }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
   .m-t-80,
   .margin-t-80,
   .mt-80 {
     margin-top: 40px;
   }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
   .p-t-80,
   .padding-t-80,
   .pt-80 {
     padding-top: 40px;
   }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
   .p-b-80,
   .padding-b-80,
   .pb-80 {
     padding-bottom: 40px;
   }
 }
+<<<<<<< HEAD
 @media screen and (max-width: 575px) {
+=======
+
+@media screen and (max-width: 575px) {
+
+>>>>>>> 781a704 (New commit)
   .p-tb-80,
   .padding-tb-80,
   .ptb-80 {
     padding-top: 30px;
     padding-bottom: 30px;
   }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
   .m-tb-80,
   .margin-tb-80,
   .mtb-80 {
     margin-top: 30px;
     margin-bottom: 30px;
   }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
   .m-b-80,
   .margin-b-80,
   .mb-80 {
     margin-bottom: 30px;
   }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
   .m-t-80,
   .margin-t-80,
   .mt-80 {
     margin-top: 30px;
   }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
   .p-t-80,
   .padding-t-80,
   .pt-80 {
     padding-top: 30px;
   }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
   .p-b-80,
   .padding-b-80,
   .pb-80 {
     padding-bottom: 30px;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 /* Breadcrumb */
 .bl-cursor {
   position: fixed;
@@ -2687,6 +3685,10 @@ a.back-to-top svg path {
   -webkit-transition: opacity 0.3s, color 0.4s;
   transition: opacity 0.3s, color 0.4s;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .bl-cursor:before {
   content: "";
   width: 30px;
@@ -2696,7 +3698,11 @@ a.back-to-top svg path {
   left: -15px;
   background: rgba(var(--primary), 1);
   -webkit-transform: scale(0);
+<<<<<<< HEAD
           transform: scale(0);
+=======
+  transform: scale(0);
+>>>>>>> 781a704 (New commit)
   display: block;
   border-radius: 50%;
   -webkit-transition: opacity 0.1s, -webkit-transform 0.3s ease-in-out;
@@ -2705,6 +3711,10 @@ a.back-to-top svg path {
   transition: transform 0.3s ease-in-out, opacity 0.1s, -webkit-transform 0.3s ease-in-out;
   opacity: 0.7;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .bl-cursor:after {
   content: "";
   width: 34px;
@@ -2714,7 +3724,11 @@ a.back-to-top svg path {
   top: -17px;
   left: -17px;
   -webkit-transform: scale(0);
+<<<<<<< HEAD
           transform: scale(0);
+=======
+  transform: scale(0);
+>>>>>>> 781a704 (New commit)
   display: block;
   border-radius: 50%;
   -webkit-transition: opacity 0.1s, -webkit-transform 0.3s ease-in-out;
@@ -2732,6 +3746,7 @@ a.back-to-top svg path {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
+<<<<<<< HEAD
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
@@ -2739,6 +3754,15 @@ a.back-to-top svg path {
           justify-content: center;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+=======
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+>>>>>>> 781a704 (New commit)
   opacity: 0;
   color: #fff;
   background-color: rgba(0, 0, 0, 0.5);
@@ -2762,6 +3786,7 @@ a.back-to-top svg path {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
+<<<<<<< HEAD
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
@@ -2769,6 +3794,15 @@ a.back-to-top svg path {
           justify-content: center;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+=======
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+>>>>>>> 781a704 (New commit)
   opacity: 0;
   color: #fff;
   background-color: rgba(0, 0, 0, 0.6);
@@ -2779,6 +3813,10 @@ a.back-to-top svg path {
   text-align: center;
   letter-spacing: 0.03rem;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .bl-cursor-img img {
   width: 100%;
   border-radius: 15px;
@@ -2788,9 +3826,17 @@ a.back-to-top svg path {
   background: transparent;
   backdrop-filter: blur(10);
 }
+<<<<<<< HEAD
 .bl-cursor.hover-img:after {
   opacity: 0;
 }
+=======
+
+.bl-cursor.hover-img:after {
+  opacity: 0;
+}
+
+>>>>>>> 781a704 (New commit)
 .bl-cursor.hover-img .bl-cursor-img {
   width: 150px;
   opacity: 1;
@@ -2799,24 +3845,45 @@ a.back-to-top svg path {
 /* Show cursor */
 .bl-cursor.cursor-show:before {
   -webkit-transform: scale(0.4);
+<<<<<<< HEAD
           transform: scale(0.4);
 }
 .bl-cursor.cursor-show:after {
   -webkit-transform: scale(0.5);
           transform: scale(0.5);
+=======
+  transform: scale(0.4);
+}
+
+.bl-cursor.cursor-show:after {
+  -webkit-transform: scale(0.5);
+  transform: scale(0.5);
+>>>>>>> 781a704 (New commit)
 }
 
 /* Hover on text */
 .bl-cursor.text {
   width: 100%;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .bl-cursor.text:before {
   background: transparent;
   backdrop-filter: blur(10);
 }
+<<<<<<< HEAD
 .bl-cursor.text:after {
   opacity: 0;
 }
+=======
+
+.bl-cursor.text:after {
+  opacity: 0;
+}
+
+>>>>>>> 781a704 (New commit)
 .bl-cursor.text .bl-cursor-text {
   color: #fff;
   opacity: 1;
@@ -2826,6 +3893,7 @@ a.back-to-top svg path {
 .bl-cursor.big {
   mix-blend-mode: exclusion;
 }
+<<<<<<< HEAD
 .bl-cursor.big:before {
   -webkit-transform: scale(1.32);
           transform: scale(1.32);
@@ -2835,17 +3903,39 @@ a.back-to-top svg path {
 .bl-cursor.big:after {
   -webkit-transform: scale(1.35);
           transform: scale(1.35);
+=======
+
+.bl-cursor.big:before {
+  -webkit-transform: scale(1.32);
+  transform: scale(1.32);
+  opacity: 1;
+  background: #fff;
+}
+
+.bl-cursor.big:after {
+  -webkit-transform: scale(1.35);
+  transform: scale(1.35);
+>>>>>>> 781a704 (New commit)
   border: 2px solid #fff;
 }
 
 /* Hover on hide */
 .bl-cursor.hide:before {
   -webkit-transform: scale(0);
+<<<<<<< HEAD
           transform: scale(0);
 }
 .bl-cursor.hide:after {
   -webkit-transform: scale(0);
           transform: scale(0);
+=======
+  transform: scale(0);
+}
+
+.bl-cursor.hide:after {
+  -webkit-transform: scale(0);
+  transform: scale(0);
+>>>>>>> 781a704 (New commit)
 }
 
 /*  Responsive css cursor  */
@@ -2854,6 +3944,10 @@ a.back-to-top svg path {
     display: none;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 /* Breadcrumb */
 /* Footer */
 .bl-footer-1 {
@@ -2861,6 +3955,10 @@ a.back-to-top svg path {
   background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(var(--primary), 0.3)), to(transparent));
   background-image: linear-gradient(0deg, rgba(var(--primary), 0.3), transparent);
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .bl-footer-1:after {
   content: "";
   width: 100%;
@@ -2871,24 +3969,41 @@ a.back-to-top svg path {
   background-image: url(../img/bg/hero-3.png);
   background-size: cover;
   -webkit-transform: rotate(180deg);
+<<<<<<< HEAD
           transform: rotate(180deg);
   opacity: 0.05;
   z-index: -5;
 }
+=======
+  transform: rotate(180deg);
+  opacity: 0.05;
+  z-index: -5;
+}
+
+>>>>>>> 781a704 (New commit)
 .bl-footer-1 .logo-sec img {
   width: 32px;
   height: auto;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .bl-footer-1 .footer-brand-text {
   display: inline-flex;
   align-items: center;
   gap: 14px;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .bl-footer-1 .footer-brand-text .brand-badge {
   width: 42px;
   height: 42px;
   border-radius: 12px;
 }
+<<<<<<< HEAD
 .bl-footer-1 .footer-brand-text .brand-copy strong {
   font-size: 14px;
 }
@@ -2904,10 +4019,34 @@ a.back-to-top svg path {
 .bl-footer-1 .logo-light {
   display: block;
 }
+=======
+
+.bl-footer-1 .footer-brand-text .brand-copy strong {
+  font-size: 14px;
+}
+
+.bl-footer-1 .footer-brand-text .brand-copy small {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.bl-footer-1 .detail {
+  margin-top: 20px;
+}
+
+.bl-footer-1 .logo-dark {
+  display: none;
+}
+
+.bl-footer-1 .logo-light {
+  display: block;
+}
+
+>>>>>>> 781a704 (New commit)
 .bl-footer-1 .footer-title {
   margin-bottom: 20px;
   position: relative;
   -webkit-user-select: none;
+<<<<<<< HEAD
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
@@ -2917,64 +4056,126 @@ a.back-to-top svg path {
 .bl-footer-1 .footer-title.active::after {
   content: "-";
 }
+=======
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.bl-footer-1 .footer-title.active::after {
+  content: "-";
+}
+
+>>>>>>> 781a704 (New commit)
 .bl-footer-1 .footer-links ul li {
   display: block;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
 }
+<<<<<<< HEAD
 .bl-footer-1 .footer-links ul li + li {
   margin-top: 15px;
 }
+=======
+
+.bl-footer-1 .footer-links ul li+li {
+  margin-top: 15px;
+}
+
+>>>>>>> 781a704 (New commit)
 .bl-footer-1 .footer-links ul li a {
   color: rgba(var(--content-color), 1);
   font-size: 15px;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .bl-footer-1 .footer-links ul li a:hover {
   letter-spacing: 0.05em;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   color: rgba(var(--primary), 1);
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .bl-footer-1 .footer-contact .footer-content li {
   display: block;
   color: rgba(var(--content-color), 1);
   font-size: 15px;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .bl-footer-1 .footer-contact .footer-content li p {
   width: 85%;
   line-height: 1.7;
   font-size: 15px;
 }
+<<<<<<< HEAD
 .bl-footer-1 .footer-contact .footer-content li + li {
   margin-top: 15px;
 }
+=======
+
+.bl-footer-1 .footer-contact .footer-content li+li {
+  margin-top: 15px;
+}
+
+>>>>>>> 781a704 (New commit)
 .bl-footer-1 .logo-mark {
   position: relative;
   margin: 50px 0 0 0;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .bl-footer-1 .logo-mark .bl-btn {
   position: absolute;
   left: 10px;
   bottom: 40px;
 }
+<<<<<<< HEAD
 .bl-footer-1 .logo-mark .bl-btn .btn {
   -webkit-transform: rotate(7deg);
           transform: rotate(7deg);
 }
+=======
+
+.bl-footer-1 .logo-mark .bl-btn .btn {
+  -webkit-transform: rotate(7deg);
+  transform: rotate(7deg);
+}
+
+>>>>>>> 781a704 (New commit)
 .bl-footer-1 .logo-mark .bl-btn .btn-theme {
   padding: 10px 20px;
   background-color: rgba(var(--primary), 1);
   border-radius: 30px;
   color: rgba(var(--white), 1);
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .bl-footer-1 .logo-mark .bl-btn .btn-theme:hover {
   background-color: transparent;
   border: 1px solid rgba(var(--primary), 1);
   color: rgba(var(--primary), 1);
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .bl-footer-1 .logo-mark h2 {
   margin: 0 0 -16px 0;
   font-size: 180px;
@@ -2987,6 +4188,10 @@ a.back-to-top svg path {
   position: relative;
   z-index: -1;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .bl-footer-1 .footer-bottom-content {
   padding: 15px 0;
   background-color: rgba(var(--black), 1);
@@ -2996,12 +4201,17 @@ a.back-to-top svg path {
   position: relative;
   z-index: 5;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .bl-footer-1 .footer-bottom-content .copy {
   width: 100%;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-align: center;
+<<<<<<< HEAD
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: justify;
@@ -3011,12 +4221,26 @@ a.back-to-top svg path {
 .bl-footer-1 .footer-bottom-content .copy p {
   margin: 0;
 }
+=======
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.bl-footer-1 .footer-bottom-content .copy p {
+  margin: 0;
+}
+
+>>>>>>> 781a704 (New commit)
 .bl-footer-1 .footer-bottom-content .social-footer {
   margin: 0 -15px;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-align: center;
+<<<<<<< HEAD
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: justify;
@@ -3026,13 +4250,34 @@ a.back-to-top svg path {
 .bl-footer-1 .footer-bottom-content .social-footer li {
   padding: 0 15px;
 }
+=======
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.bl-footer-1 .footer-bottom-content .social-footer li {
+  padding: 0 15px;
+}
+
+>>>>>>> 781a704 (New commit)
 .bl-footer-1 .footer-bottom-content .social-footer li a {
   color: rgba(var(--white), 1);
   font-size: 14px;
 }
+<<<<<<< HEAD
 .bl-footer-1 .footer-bottom-content .social-footer li a:hover {
   color: rgba(var(--primary-4), 1);
 }
+=======
+
+.bl-footer-1 .footer-bottom-content .social-footer li a:hover {
+  color: rgba(var(--primary-4), 1);
+}
+
+>>>>>>> 781a704 (New commit)
 .bl-footer-1 .footer-bottom-content .social-footer li a i {
   margin-right: 5px;
 }
@@ -3057,12 +4302,22 @@ footer {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
+<<<<<<< HEAD
       -ms-flex-pack: justify;
           justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
+=======
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+>>>>>>> 781a704 (New commit)
 .bl-footer-info p {
   margin: 0;
   font-size: 15px;
@@ -3070,18 +4325,33 @@ footer {
   color: #ddd;
   line-height: 30px;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .bl-footer-info p a {
   font-weight: 500;
   color: rgba(var(--primary), 1);
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .bl-footer-info .logo-links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
+<<<<<<< HEAD
       -ms-flex-pack: center;
           justify-content: center;
 }
+=======
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+>>>>>>> 781a704 (New commit)
 .bl-footer-info .logo-links a {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -3094,6 +4364,7 @@ footer {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
+<<<<<<< HEAD
       flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -3104,6 +4375,19 @@ footer {
   border: 1px solid #fff;
   border-radius: 20px;
 }
+=======
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border: 1px solid #fff;
+  border-radius: 20px;
+}
+
+>>>>>>> 781a704 (New commit)
 .bl-footer-info .logo-links a i {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -3111,10 +4395,18 @@ footer {
   color: #fff;
   line-height: 20px;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .bl-footer-info .logo-links a:hover {
   background-color: rgba(var(--primary), 1);
   border: 1px solid rgba(var(--primary), 1);
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .bl-footer-info .logo-links a:hover i {
   color: #080808;
 }
@@ -3124,56 +4416,111 @@ footer {
   .bl-footer-1 .footer-title {
     font-size: 19px;
   }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
   .bl-footer-1 .logo-mark h2 {
     font-size: 160px;
     line-height: 143px;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 @media only screen and (max-width: 1199px) {
   .bl-footer-1 .footer-title {
     font-size: 18px;
   }
+<<<<<<< HEAD
   .bl-footer-1 .logo-mark .bl-btn .btn-theme {
     font-size: 15px;
   }
+=======
+
+  .bl-footer-1 .logo-mark .bl-btn .btn-theme {
+    font-size: 15px;
+  }
+
+>>>>>>> 781a704 (New commit)
   .bl-footer-1 .logo-mark h2 {
     font-size: 120px;
     line-height: 115px;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 @media only screen and (max-width: 991px) {
   .bl-footer-1 .detail {
     margin-top: 12px;
   }
+<<<<<<< HEAD
   .bl-footer-1 .footer-title {
     font-size: 17px;
   }
   .bl-footer-1 .logo-mark .bl-btn .btn-theme {
     font-size: 14px;
   }
+=======
+
+  .bl-footer-1 .footer-title {
+    font-size: 17px;
+  }
+
+  .bl-footer-1 .logo-mark .bl-btn .btn-theme {
+    font-size: 14px;
+  }
+
+>>>>>>> 781a704 (New commit)
   .bl-footer-1 .logo-mark h2 {
     font-size: 90px;
     line-height: 95px;
   }
+<<<<<<< HEAD
   .bl-footer-1 .footer-bottom-content .copy {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
+=======
+
+  .bl-footer-1 .footer-bottom-content .copy {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+>>>>>>> 781a704 (New commit)
   .bl-footer-1 .footer-bottom-content .copy p {
     margin-bottom: 5px;
     text-align: center;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 @media only screen and (max-width: 767px) {
   .bl-copy {
     margin-top: 50px;
   }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
   .bl-footer-1 .footer-title {
     cursor: pointer;
     margin-bottom: 0;
   }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
   .bl-footer-1 .footer-title:after {
     content: "+";
     position: absolute;
@@ -3184,28 +4531,56 @@ footer {
     transition: transform 0.3s;
     transition: transform 0.3s, -webkit-transform 0.3s;
   }
+<<<<<<< HEAD
   .bl-footer-1 .logo-mark {
     display: none;
   }
   .bl-footer-1 .footer-bottom-content {
     margin-top: 50px;
   }
+=======
+
+  .bl-footer-1 .logo-mark {
+    display: none;
+  }
+
+  .bl-footer-1 .footer-bottom-content {
+    margin-top: 50px;
+  }
+
+>>>>>>> 781a704 (New commit)
   .bl-footer-1 .footer-content li:first-child {
     padding-top: 10px;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 @media only screen and (max-width: 575px) {
   .bl-footer-1 .logo-sec img {
     width: 32px;
     height: auto;
   }
+<<<<<<< HEAD
   .bl-footer-1 .footer-bottom-content .social-footer li a {
     font-size: 0;
   }
+=======
+
+  .bl-footer-1 .footer-bottom-content .social-footer li a {
+    font-size: 0;
+  }
+
+>>>>>>> 781a704 (New commit)
   .bl-footer-1 .footer-bottom-content .social-footer li a i {
     font-size: 20px;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 @media screen and (max-width: 480px) {
   .bl-footer-info {
     display: -webkit-box;
@@ -3213,6 +4588,7 @@ footer {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
+<<<<<<< HEAD
         -ms-flex-direction: column;
             flex-direction: column;
     -webkit-box-pack: center;
@@ -3220,32 +4596,66 @@ footer {
             justify-content: center;
     text-align: center;
   }
+=======
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+>>>>>>> 781a704 (New commit)
   .bl-footer-info p {
     margin-bottom: 8px;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 /* Breadcrumb */
 /**  Header css  **/
 .header .toggle-btn.active:hover .hamburger .line-1 {
   width: 40px;
 }
+<<<<<<< HEAD
 .header .toggle-btn.active .hamburger:hover .line-1 {
   width: 40px;
 }
+=======
+
+.header .toggle-btn.active .hamburger:hover .line-1 {
+  width: 40px;
+}
+
+>>>>>>> 781a704 (New commit)
 .header .toggle-btn.active .hamburger .line-1 {
   width: 40px;
   left: -6px;
   top: 13px;
   -webkit-transform: rotate(45deg);
+<<<<<<< HEAD
           transform: rotate(45deg);
 }
+=======
+  transform: rotate(45deg);
+}
+
+>>>>>>> 781a704 (New commit)
 .header .toggle-btn.active .hamburger .line-2 {
   width: 40px;
   right: 6px;
   top: 10px;
   -webkit-transform: rotate(-45deg);
+<<<<<<< HEAD
           transform: rotate(-45deg);
 }
+=======
+  transform: rotate(-45deg);
+}
+
+>>>>>>> 781a704 (New commit)
 .header .toggle-btn {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -3259,27 +4669,51 @@ footer {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
+<<<<<<< HEAD
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+=======
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+>>>>>>> 781a704 (New commit)
   cursor: pointer;
   background-color: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(5px);
   z-index: 100;
 }
+<<<<<<< HEAD
 .header .toggle-btn:hover .hamburger .line-1 {
   width: 30px;
 }
+=======
+
+.header .toggle-btn:hover .hamburger .line-1 {
+  width: 30px;
+}
+
+>>>>>>> 781a704 (New commit)
 .header .toggle-btn .hamburger {
   width: 30px;
   height: 30px;
   cursor: pointer;
 }
+<<<<<<< HEAD
 .header .toggle-btn .hamburger:hover .line-1 {
   width: 30px;
 }
+=======
+
+.header .toggle-btn .hamburger:hover .line-1 {
+  width: 30px;
+}
+
+>>>>>>> 781a704 (New commit)
 .header .toggle-btn .hamburger .line-1 {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -3292,8 +4726,14 @@ footer {
   display: flex;
   background-color: #fff;
   -webkit-transform: translate(0px, 5.5px);
+<<<<<<< HEAD
           transform: translate(0px, 5.5px);
 }
+=======
+  transform: translate(0px, 5.5px);
+}
+
+>>>>>>> 781a704 (New commit)
 .header .toggle-btn .hamburger .line-2 {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -3306,8 +4746,14 @@ footer {
   background-color: #fff;
   border-radius: 10px;
   -webkit-transform: translate(0px, 13.5px);
+<<<<<<< HEAD
           transform: translate(0px, 13.5px);
 }
+=======
+  transform: translate(0px, 13.5px);
+}
+
+>>>>>>> 781a704 (New commit)
 .header .menu {
   position: fixed;
   top: 0;
@@ -3324,6 +4770,7 @@ footer {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
+<<<<<<< HEAD
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
@@ -3331,6 +4778,16 @@ footer {
           align-items: center;
   z-index: 99;
 }
+=======
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  z-index: 99;
+}
+
+>>>>>>> 781a704 (New commit)
 .header .menu .menu-item {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -3339,26 +4796,43 @@ footer {
   top: 40px;
   opacity: 0;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .header .menu .menu-item a {
   font-size: 30px;
   color: #fff;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
 }
+<<<<<<< HEAD
 .header .menu .menu-item a:hover {
   letter-spacing: 5px;
 }
+=======
+
+.header .menu .menu-item a:hover {
+  letter-spacing: 5px;
+}
+
+>>>>>>> 781a704 (New commit)
 .header .menu .menu-item a span {
   margin-right: 15px;
   font-size: 14px;
   font-family: "Poppins", sans-serif;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .header .menu .bl-menu-detail {
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
+<<<<<<< HEAD
       -ms-flex-pack: end;
           justify-content: flex-end;
   -webkit-box-align: end;
@@ -3368,6 +4842,19 @@ footer {
 .header .menu .bl-menu-detail ul {
   max-width: 400px;
 }
+=======
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+
+.header .menu .bl-menu-detail ul {
+  max-width: 400px;
+}
+
+>>>>>>> 781a704 (New commit)
 .header .menu .bl-menu-detail ul li {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -3383,6 +4870,10 @@ footer {
   top: 40px;
   opacity: 0;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .header .menu .bl-menu-detail ul li b {
   min-width: 100px;
   margin-right: 5px;
@@ -3391,35 +4882,60 @@ footer {
   display: -ms-inline-flexbox;
   display: inline-flex;
 }
+<<<<<<< HEAD
 .header .menu .bl-menu-detail ul .social {
   margin: -5px -5px 20px -5px;
 }
+=======
+
+.header .menu .bl-menu-detail ul .social {
+  margin: -5px -5px 20px -5px;
+}
+
+>>>>>>> 781a704 (New commit)
 .header .menu .bl-menu-detail ul .social a {
   margin: 5px;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
 }
+<<<<<<< HEAD
 .header .menu .bl-menu-detail ul .social a:hover i {
   color: #fff;
 }
+=======
+
+.header .menu .bl-menu-detail ul .social a:hover i {
+  color: #fff;
+}
+
+>>>>>>> 781a704 (New commit)
 .header .menu .bl-menu-detail ul .social a i {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   font-size: 25px;
   color: rgba(var(--primary), 1);
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .header .menu.active {
   visibility: visible;
   opacity: 1;
   -webkit-transition: opacity 0.8s ease;
   transition: opacity 0.8s ease;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .header .menu.active .menu-item {
   position: relative;
   top: 0;
   opacity: 1;
 }
+<<<<<<< HEAD
 .header .menu.active .menu-item:nth-child(1) {
   -webkit-transition-delay: 0.1s;
           transition-delay: 0.1s;
@@ -3460,11 +4976,65 @@ footer {
   -webkit-transition-delay: 0.1s;
           transition-delay: 0.1s;
 }
+=======
+
+.header .menu.active .menu-item:nth-child(1) {
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+
+.header .menu.active .menu-item:nth-child(2) {
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+
+.header .menu.active .menu-item:nth-child(3) {
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+
+.header .menu.active .menu-item:nth-child(4) {
+  -webkit-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+}
+
+.header .menu.active .menu-item:nth-child(5) {
+  -webkit-transition-delay: 0.5s;
+  transition-delay: 0.5s;
+}
+
+.header .menu.active .menu-item:nth-child(6) {
+  -webkit-transition-delay: 0.6s;
+  transition-delay: 0.6s;
+}
+
+.header .menu.active .menu-item:nth-child(7) {
+  -webkit-transition-delay: 0.7s;
+  transition-delay: 0.7s;
+}
+
+.header .menu.active .menu-item:nth-child(8) {
+  -webkit-transition-delay: 0.8s;
+  transition-delay: 0.8s;
+}
+
+.header .menu.active .menu-item:nth-child(9) {
+  -webkit-transition-delay: 0.9s;
+  transition-delay: 0.9s;
+}
+
+.header .menu.active .menu-item:nth-child(10) {
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+
+>>>>>>> 781a704 (New commit)
 .header .menu.active .bl-menu-detail ul li {
   position: relative;
   top: 0;
   opacity: 1;
 }
+<<<<<<< HEAD
 .header .menu.active .bl-menu-detail ul li:nth-child(1) {
   -webkit-transition-delay: 0.1s;
           transition-delay: 0.1s;
@@ -3504,6 +5074,57 @@ footer {
 .header .menu.active .bl-menu-detail ul li:nth-child(10) {
   -webkit-transition-delay: 0.1s;
           transition-delay: 0.1s;
+=======
+
+.header .menu.active .bl-menu-detail ul li:nth-child(1) {
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+
+.header .menu.active .bl-menu-detail ul li:nth-child(2) {
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+
+.header .menu.active .bl-menu-detail ul li:nth-child(3) {
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+
+.header .menu.active .bl-menu-detail ul li:nth-child(4) {
+  -webkit-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+}
+
+.header .menu.active .bl-menu-detail ul li:nth-child(5) {
+  -webkit-transition-delay: 0.5s;
+  transition-delay: 0.5s;
+}
+
+.header .menu.active .bl-menu-detail ul li:nth-child(6) {
+  -webkit-transition-delay: 0.6s;
+  transition-delay: 0.6s;
+}
+
+.header .menu.active .bl-menu-detail ul li:nth-child(7) {
+  -webkit-transition-delay: 0.7s;
+  transition-delay: 0.7s;
+}
+
+.header .menu.active .bl-menu-detail ul li:nth-child(8) {
+  -webkit-transition-delay: 0.8s;
+  transition-delay: 0.8s;
+}
+
+.header .menu.active .bl-menu-detail ul li:nth-child(9) {
+  -webkit-transition-delay: 0.9s;
+  transition-delay: 0.9s;
+}
+
+.header .menu.active .bl-menu-detail ul li:nth-child(10) {
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+>>>>>>> 781a704 (New commit)
 }
 
 /* Responsive header css */
@@ -3512,46 +5133,86 @@ footer {
     font-size: 28px;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 @media only screen and (max-width: 767px) {
   .header .toggle-btn {
     width: 80px;
     height: 80px;
   }
+<<<<<<< HEAD
   .header .menu .menu-item a {
     font-size: 26px;
   }
+=======
+
+  .header .menu .menu-item a {
+    font-size: 26px;
+  }
+
+>>>>>>> 781a704 (New commit)
   .header .menu .bl-menu-detail {
     display: none;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 @media only screen and (max-width: 575px) {
   .header .toggle-btn {
     width: 60px;
     height: 60px;
     padding: 15px;
   }
+<<<<<<< HEAD
   .header .menu {
     padding-left: 30px;
   }
+=======
+
+  .header .menu {
+    padding-left: 30px;
+  }
+
+>>>>>>> 781a704 (New commit)
   .header .menu .menu-item a {
     font-size: 24px;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 @media only screen and (max-width: 420px) {
   .header .menu .menu-item a {
     font-size: 22px;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 @media only screen and (max-width: 360px) {
   .header .menu .menu-item a {
     font-size: 20px;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 @media only screen and (max-width: 340px) {
   .header .menu .menu-item a {
     font-size: 18px;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 /* Breadcrumb */
 /**=====================
 Pagination style
@@ -3559,6 +5220,7 @@ Pagination style
 .theme-pagination {
   margin-top: 30px;
 }
+<<<<<<< HEAD
 .theme-pagination .pagination {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -3571,6 +5233,25 @@ Pagination style
   background-color: rgba(var(--primary), 1);
   color: rgba(var(--white), 1);
 }
+=======
+
+.theme-pagination .pagination {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.theme-pagination .pagination .page-item {
+  margin: 5px;
+}
+
+.theme-pagination .pagination .page-item.active .page-link,
+.theme-pagination .pagination .page-item:hover .page-link {
+  background-color: rgba(var(--primary), 1);
+  color: rgba(var(--white), 1);
+}
+
+>>>>>>> 781a704 (New commit)
 .theme-pagination .pagination .page-link {
   border: none;
   color: rgba(var(--title-color), 1);
@@ -3582,18 +5263,33 @@ Pagination style
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
+<<<<<<< HEAD
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+=======
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+>>>>>>> 781a704 (New commit)
   font-size: 16px;
   z-index: 0;
   background-color: rgba(var(--white), 0.04);
 }
+<<<<<<< HEAD
 .theme-pagination .pagination .page-link:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
+=======
+
+.theme-pagination .pagination .page-link:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+>>>>>>> 781a704 (New commit)
 }
 
 /* Layouts ( Import Layouts ) */
@@ -3603,6 +5299,7 @@ Pagination style
   width: 100%;
   background-color: rgba(var(--primary), 1);
 }
+<<<<<<< HEAD
 .bl-hero .hero-image-cont {
   will-change: unset !important;
 }
@@ -3624,6 +5321,37 @@ Pagination style
 .bl-hero .hero-image-cont:nth-child(6) img {
   left: -600%;
 }
+=======
+
+.bl-hero .hero-image-cont {
+  will-change: unset !important;
+}
+
+.bl-hero .hero-image-cont:nth-child(1) img {
+  left: -100%;
+}
+
+.bl-hero .hero-image-cont:nth-child(2) img {
+  left: -200%;
+}
+
+.bl-hero .hero-image-cont:nth-child(3) img {
+  left: -300%;
+}
+
+.bl-hero .hero-image-cont:nth-child(4) img {
+  left: -400%;
+}
+
+.bl-hero .hero-image-cont:nth-child(5) img {
+  left: -500%;
+}
+
+.bl-hero .hero-image-cont:nth-child(6) img {
+  left: -600%;
+}
+
+>>>>>>> 781a704 (New commit)
 .bl-hero .hero-details {
   height: 100%;
   padding: 100px;
@@ -3632,6 +5360,7 @@ Pagination style
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+<<<<<<< HEAD
       -ms-flex-direction: column;
           flex-direction: column;
   -webkit-box-align: baseline;
@@ -3644,11 +5373,27 @@ Pagination style
 .bl-hero .hero-details .block {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+=======
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.bl-hero .hero-details .block {
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+>>>>>>> 781a704 (New commit)
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+<<<<<<< HEAD
       -ms-flex-direction: column;
           flex-direction: column;
   -webkit-box-pack: start;
@@ -3658,6 +5403,18 @@ Pagination style
       -ms-flex-align: start;
           align-items: flex-start;
 }
+=======
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+>>>>>>> 781a704 (New commit)
 .bl-hero .hero-details h2 {
   padding: 10px 15px;
   font-size: 20px;
@@ -3666,12 +5423,20 @@ Pagination style
   background-color: rgba(var(--primary), 1);
   border-radius: 30px;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .bl-hero .hero-details .name {
   font-size: 60px;
   font-weight: 700;
   color: #fff;
   opacity: 0;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .bl-hero .hero-details .bl-here-txt {
   margin-left: -300px;
   padding: 30px;
@@ -3682,14 +5447,24 @@ Pagination style
   display: -ms-flexbox;
   display: flex;
 }
+<<<<<<< HEAD
 .bl-hero .hero-details .bl-here-txt > p {
+=======
+
+.bl-hero .hero-details .bl-here-txt>p {
+>>>>>>> 781a704 (New commit)
   width: calc(100% + 300px);
   margin: 0;
   font-size: 22px;
   line-height: 35px;
   font-weight: 400;
 }
+<<<<<<< HEAD
 .bl-hero .hero-details .bl-here-txt > p > div {
+=======
+
+.bl-hero .hero-details .bl-here-txt>p>div {
+>>>>>>> 781a704 (New commit)
   margin-left: 0;
   background: -webkit-gradient(linear, left top, right top, color-stop(50%, rgb(255, 255, 255)), color-stop(50%, rgb(165, 165, 165)));
   background: linear-gradient(to right, rgb(255, 255, 255) 50%, rgb(165, 165, 165) 50%);
@@ -3699,6 +5474,10 @@ Pagination style
   background-clip: text;
   -webkit-background-clip: text;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .bl-hero .hero-details .designation {
   margin-bottom: 30px;
   font-size: 30px;
@@ -3709,10 +5488,18 @@ Pagination style
   display: flex;
   line-height: 25px;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .bl-hero .hero-details .designation h3 {
   margin: 0;
   font-weight: 600;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .bl-hero .hero-details .designation .split-text {
   height: 36px;
   margin-left: 15px;
@@ -3723,28 +5510,49 @@ Pagination style
   overflow: hidden;
   text-align: left;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .bl-hero .hero-details .designation .split-text ul.bl-slides {
   list-style-type: none;
   padding: 0;
   margin: 5px 0 0 0;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .bl-hero .hero-details .designation .split-text .bl-slide {
   font-size: 30px;
   font-weight: 500;
   line-height: 25px;
   color: rgba(var(--primary), 1);
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .bl-hero .hero-details .hero-buttons {
   margin: -5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
+<<<<<<< HEAD
       flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
+=======
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+>>>>>>> 781a704 (New commit)
 .bl-hero .hero-details .hero-buttons .bl-btn {
   margin: 5px;
   display: -webkit-box;
@@ -3760,6 +5568,7 @@ Pagination style
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
+<<<<<<< HEAD
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
@@ -3767,6 +5576,16 @@ Pagination style
           justify-content: center;
   padding: 40px;
 }
+=======
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+>>>>>>> 781a704 (New commit)
 .bl-hero-img:before {
   content: "";
   position: absolute;
@@ -3776,6 +5595,10 @@ Pagination style
   border: 1px solid rgba(255, 255, 255, 0.08);
   pointer-events: none;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .bl-hero-img .desktop {
   width: min(100%, 620px);
   aspect-ratio: 5/6;
@@ -3783,10 +5606,18 @@ Pagination style
   border-radius: 36px;
   background: rgba(10, 10, 10, 0.7);
   -webkit-box-shadow: 0 25px 60px rgba(0, 0, 0, 0.35);
+<<<<<<< HEAD
           box-shadow: 0 25px 60px rgba(0, 0, 0, 0.35);
   position: relative;
   z-index: 2;
 }
+=======
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.35);
+  position: relative;
+  z-index: 2;
+}
+
+>>>>>>> 781a704 (New commit)
 .bl-hero-img .desktop:before {
   content: "";
   position: absolute;
@@ -3795,34 +5626,63 @@ Pagination style
   padding: 1px;
   background: linear-gradient(145deg, rgba(255, 255, 255, 0.28), rgba(255, 255, 255, 0.03));
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+<<<<<<< HEAD
   -webkit-mask-composite: xor;
           mask-composite: exclude;
   pointer-events: none;
 }
+=======
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+>>>>>>> 781a704 (New commit)
 .bl-hero-img .hero-img-anim {
   height: 600px;
   position: relative;
   display: block;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .bl-hero-img .hero-img {
   height: 100%;
   max-width: 100%;
   display: -ms-grid;
   display: grid;
+<<<<<<< HEAD
   -ms-grid-columns: (1fr)[6];
+=======
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+>>>>>>> 781a704 (New commit)
   grid-template-columns: repeat(6, 1fr);
   position: relative;
   z-index: 5;
   border-radius: 24px;
   overflow: hidden;
 }
+<<<<<<< HEAD
 .bl-hero-img .mobile {
   display: none;
 }
+=======
+
+.bl-hero-img .mobile {
+  display: none;
+}
+
+>>>>>>> 781a704 (New commit)
 .bl-hero-img .hero-image-cont {
   position: relative;
   overflow: hidden;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .bl-hero-img .hero-image-cont img,
 .bl-hero-img .hero-image-cont .anim-swipe {
   position: absolute;
@@ -3831,9 +5691,15 @@ Pagination style
   top: 0 !important;
   left: 0;
   -o-object-fit: cover;
+<<<<<<< HEAD
      object-fit: cover;
   -o-object-position: center top;
      object-position: center top;
+=======
+  object-fit: cover;
+  -o-object-position: center top;
+  object-position: center top;
+>>>>>>> 781a704 (New commit)
 }
 
 .scroll {
@@ -3841,7 +5707,11 @@ Pagination style
   bottom: 1rem;
   left: 50%;
   -webkit-transform: translateX(-50%);
+<<<<<<< HEAD
           transform: translateX(-50%);
+=======
+  transform: translateX(-50%);
+>>>>>>> 781a704 (New commit)
   z-index: 999;
 }
 
@@ -3850,6 +5720,7 @@ Pagination style
   .bl-hero .hero-details {
     padding: 100px 80px;
   }
+<<<<<<< HEAD
   .bl-hero .hero-details h2 {
     font-size: 18px;
   }
@@ -3866,10 +5737,35 @@ Pagination style
     font-size: 20px;
   }
 }
+=======
+
+  .bl-hero .hero-details h2 {
+    font-size: 18px;
+  }
+
+  .bl-hero .hero-details .name {
+    font-size: 55px;
+  }
+
+  .bl-hero .hero-details .designation {
+    font-size: 28px;
+  }
+
+  .bl-hero .hero-details .designation .split-text .bl-slide {
+    font-size: 28px;
+  }
+
+  .bl-hero .hero-details .bl-here-txt>p {
+    font-size: 20px;
+  }
+}
+
+>>>>>>> 781a704 (New commit)
 @media only screen and (max-width: 1199px) {
   .bl-hero .hero-details {
     padding: 100px 50px;
   }
+<<<<<<< HEAD
   .bl-hero .hero-details h2 {
     font-size: 16px;
   }
@@ -3886,6 +5782,30 @@ Pagination style
     font-size: 18px;
   }
 }
+=======
+
+  .bl-hero .hero-details h2 {
+    font-size: 16px;
+  }
+
+  .bl-hero .hero-details .name {
+    font-size: 48px;
+  }
+
+  .bl-hero .hero-details .designation {
+    font-size: 26px;
+  }
+
+  .bl-hero .hero-details .designation .split-text .bl-slide {
+    font-size: 26px;
+  }
+
+  .bl-hero .hero-details .bl-here-txt>p {
+    font-size: 18px;
+  }
+}
+
+>>>>>>> 781a704 (New commit)
 @media only screen and (max-width: 991px) {
   .bl-hero-img .mobile {
     height: 800px;
@@ -3898,49 +5818,89 @@ Pagination style
     background-position: center top;
     overflow: hidden;
     -webkit-box-shadow: 0 25px 60px rgba(0, 0, 0, 0.28);
+<<<<<<< HEAD
             box-shadow: 0 25px 60px rgba(0, 0, 0, 0.28);
   }
   .bl-hero-img .desktop {
     display: none;
   }
+=======
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.28);
+  }
+
+  .bl-hero-img .desktop {
+    display: none;
+  }
+
+>>>>>>> 781a704 (New commit)
   .bl-hero .bl-hero-img {
     max-width: 720px;
     height: auto;
     margin: 100px auto auto auto;
     padding: 20px;
   }
+<<<<<<< HEAD
   .bl-hero .bl-hero-img:before {
     inset: 20px;
   }
+=======
+
+  .bl-hero .bl-hero-img:before {
+    inset: 20px;
+  }
+
+>>>>>>> 781a704 (New commit)
   .bl-hero .hero-details {
     max-width: 720px;
     padding: 100px 0;
     margin: auto;
   }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
   .bl-hero .hero-details .bl-here-txt {
     margin-left: 0;
     padding: 30px 0 0 0;
     background-color: transparent;
     backdrop-filter: blur(0);
   }
+<<<<<<< HEAD
   .bl-hero .hero-details .bl-here-txt > p > div {
+=======
+
+  .bl-hero .hero-details .bl-here-txt>p>div {
+>>>>>>> 781a704 (New commit)
     color: #fff;
     font-weight: 300;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 @media only screen and (max-width: 767px) {
   .bl-hero-img .mobile {
     height: 600px;
   }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
   .bl-hero .bl-hero-img {
     max-width: 540px;
     height: 600px;
     margin: 80px auto auto auto;
   }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
   .bl-hero .hero-details {
     max-width: 540px;
     padding: 80px 0;
   }
+<<<<<<< HEAD
   .bl-hero .hero-details h2 {
     font-size: 15px;
   }
@@ -3954,24 +5914,57 @@ Pagination style
     font-size: 24px;
   }
   .bl-hero .hero-details .bl-here-txt > p {
+=======
+
+  .bl-hero .hero-details h2 {
+    font-size: 15px;
+  }
+
+  .bl-hero .hero-details .name {
+    font-size: 44px;
+  }
+
+  .bl-hero .hero-details .designation {
+    font-size: 24px;
+  }
+
+  .bl-hero .hero-details .designation .split-text .bl-slide {
+    font-size: 24px;
+  }
+
+  .bl-hero .hero-details .bl-here-txt>p {
+>>>>>>> 781a704 (New commit)
     font-size: 16px;
     line-height: 33px;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 @media only screen and (max-width: 575px) {
   .bl-hero .bl-hero-img {
     max-width: 100%;
     margin: 60px auto auto auto;
     padding: 0 12px;
   }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
   .bl-hero .bl-hero-img:before {
     inset: 0 12px;
     border-radius: 0;
   }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
   .bl-hero .hero-details {
     max-width: 100%;
     padding: 60px 0;
   }
+<<<<<<< HEAD
   .bl-hero .hero-details h2 {
     font-size: 14px;
   }
@@ -3985,14 +5978,39 @@ Pagination style
     font-size: 22px;
   }
   .bl-hero .hero-details .bl-here-txt > p {
+=======
+
+  .bl-hero .hero-details h2 {
+    font-size: 14px;
+  }
+
+  .bl-hero .hero-details .name {
+    font-size: 40px;
+  }
+
+  .bl-hero .hero-details .designation {
+    font-size: 22px;
+  }
+
+  .bl-hero .hero-details .designation .split-text .bl-slide {
+    font-size: 22px;
+  }
+
+  .bl-hero .hero-details .bl-here-txt>p {
+>>>>>>> 781a704 (New commit)
     font-size: 14px;
     line-height: 30px;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 @media only screen and (max-width: 480px) {
   .bl-hero-img .mobile {
     height: 100%;
   }
+<<<<<<< HEAD
   .bl-hero .bl-hero-img {
     height: 500px;
   }
@@ -4002,45 +6020,100 @@ Pagination style
   .bl-hero .hero-details .designation {
     font-size: 20px;
   }
+=======
+
+  .bl-hero .bl-hero-img {
+    height: 500px;
+  }
+
+  .bl-hero .hero-details .name {
+    font-size: 35px;
+  }
+
+  .bl-hero .hero-details .designation {
+    font-size: 20px;
+  }
+
+>>>>>>> 781a704 (New commit)
   .bl-hero .hero-details .designation .split-text .bl-slide {
     font-size: 20px;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 @media only screen and (max-width: 420px) {
   .bl-hero .bl-hero-img {
     height: 450px;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 @media only screen and (max-width: 360px) {
   .bl-hero .bl-hero-img {
     height: 350px;
   }
+<<<<<<< HEAD
   .bl-hero .hero-details .name {
     font-size: 30px;
   }
   .bl-hero .hero-details .designation {
     font-size: 19px;
   }
+=======
+
+  .bl-hero .hero-details .name {
+    font-size: 30px;
+  }
+
+  .bl-hero .hero-details .designation {
+    font-size: 19px;
+  }
+
+>>>>>>> 781a704 (New commit)
   .bl-hero .hero-details .designation .split-text .bl-slide {
     font-size: 19px;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 @media only screen and (max-width: 320px) {
   .bl-hero .hero-details .name {
     font-size: 26px;
   }
+<<<<<<< HEAD
   .bl-hero .hero-details .designation {
     font-size: 18px;
   }
+=======
+
+  .bl-hero .hero-details .designation {
+    font-size: 18px;
+  }
+
+>>>>>>> 781a704 (New commit)
   .bl-hero .hero-details .designation .split-text .bl-slide {
     font-size: 18px;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 /* Breadcrumb */
 /**  About css  **/
 .bl-about {
   position: relative;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .bl-about .about-detail .about-title {
   margin-bottom: 24px;
   font-size: 60px;
@@ -4050,11 +6123,21 @@ Pagination style
   letter-spacing: 0.08rem;
   opacity: 0.5;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .bl-about .about-detail .info {
   margin-bottom: 40px;
   color: #ddd;
 }
+<<<<<<< HEAD
 .bl-about .about-detail h3, .bl-about .about-detail h6 {
+=======
+
+.bl-about .about-detail h3,
+.bl-about .about-detail h6 {
+>>>>>>> 781a704 (New commit)
   color: #fff;
   font-weight: 300;
   font-size: 13px;
@@ -4062,13 +6145,25 @@ Pagination style
   color: #ddd;
   margin-bottom: 5px;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .bl-about .about-detail .bl-name {
   font-weight: 600;
   color: #fff;
 }
+<<<<<<< HEAD
 .bl-about .about-info ul {
   margin-bottom: 30px;
 }
+=======
+
+.bl-about .about-info ul {
+  margin-bottom: 30px;
+}
+
+>>>>>>> 781a704 (New commit)
 .bl-about .about-info ul li {
   padding: 15px;
   color: #fff;
@@ -4077,6 +6172,7 @@ Pagination style
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
+<<<<<<< HEAD
       -ms-flex-pack: justify;
           justify-content: space-between;
   border-bottom: 1px solid #222;
@@ -4090,6 +6186,25 @@ Pagination style
 .bl-about .about-info ul li span {
   font-weight: 300;
 }
+=======
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  border-bottom: 1px solid #222;
+}
+
+.bl-about .about-info ul li:nth-child(odd) {
+  background-color: #080808;
+}
+
+.bl-about .about-info ul li b {
+  font-weight: 500;
+}
+
+.bl-about .about-info ul li span {
+  font-weight: 300;
+}
+
+>>>>>>> 781a704 (New commit)
 .bl-about .about-img {
   position: relative;
   display: -ms-grid;
@@ -4098,9 +6213,17 @@ Pagination style
   grid-template-columns: 1fr 1fr;
   gap: 30px;
 }
+<<<<<<< HEAD
 .bl-about .about-img img {
   width: 100%;
 }
+=======
+
+.bl-about .about-img img {
+  width: 100%;
+}
+
+>>>>>>> 781a704 (New commit)
 .bl-about .about-img .about-profile {
   margin-top: 30px;
 }
@@ -4110,60 +6233,117 @@ Pagination style
   .bl-about .about-detail .about-title {
     font-size: 50px;
   }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
   .bl-about .about-info ul li {
     font-size: 15px;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 @media only screen and (max-width: 1199px) {
   .bl-about .about-detail .about-title {
     font-size: 45px;
   }
+<<<<<<< HEAD
   .bl-about .about-detail .info {
     font-size: 14px;
   }
+=======
+
+  .bl-about .about-detail .info {
+    font-size: 14px;
+  }
+
+>>>>>>> 781a704 (New commit)
   .bl-about .about-info ul li {
     font-size: 14px;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 @media only screen and (max-width: 991px) {
   .bl-about .about-detail .about-title {
     font-size: 41px;
   }
+<<<<<<< HEAD
   .bl-about .about-img img {
     -webkit-transform: translate(0%, 0%) !important;
             transform: translate(0%, 0%) !important;
   }
+=======
+
+  .bl-about .about-img img {
+    -webkit-transform: translate(0%, 0%) !important;
+    transform: translate(0%, 0%) !important;
+  }
+
+>>>>>>> 781a704 (New commit)
   .bl-about .about-info {
     margin-top: 30px;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 @media only screen and (max-width: 767px) {
   .bl-about .about-detail .about-title {
     font-size: 36px;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 @media only screen and (max-width: 575px) {
   .bl-about .about-detail .about-title {
     font-size: 33px;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 @media only screen and (max-width: 480px) {
   .bl-about .about-detail .about-title {
     font-size: 30px;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 @media only screen and (max-width: 360px) {
   .bl-about .about-detail .about-title {
     font-size: 26px;
   }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
   .bl-about .about-img {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
   }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
   .bl-about .about-img .about-profile {
     margin-top: 0;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 /* Breadcrumb */
 /**  Label section css  **/
 .bl-label {
@@ -4173,19 +6353,32 @@ Pagination style
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
+<<<<<<< HEAD
       -ms-flex-align: center;
           align-items: center;
+=======
+  -ms-flex-align: center;
+  align-items: center;
+>>>>>>> 781a704 (New commit)
   position: relative;
   border-top: 6px double #000 !important;
   border-bottom: 6px double #000 !important;
   z-index: 0;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .bl-label .label-auto li {
   margin-right: 70px;
   font-size: 30px;
   font-weight: 600;
   position: relative;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .bl-label .label-auto li:after {
   content: "";
   width: 20px;
@@ -4198,7 +6391,11 @@ Pagination style
   background-size: 20px;
   background-repeat: no-repeat;
   -webkit-transform: translatey(-50%);
+<<<<<<< HEAD
           transform: translatey(-50%);
+=======
+  transform: translatey(-50%);
+>>>>>>> 781a704 (New commit)
 }
 
 /* Responsive label css */
@@ -4207,53 +6404,97 @@ Pagination style
     font-size: 29px;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 @media only screen and (max-width: 1199px) {
   .bl-label .label-auto li {
     font-size: 24px;
   }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
   .bl-label .label-auto li:after {
     width: 17px;
     height: 17px;
     background-size: 17px;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 @media only screen and (max-width: 991px) {
   .bl-label {
     height: 70px;
   }
+<<<<<<< HEAD
   .bl-label .label-auto li {
     font-size: 22px;
   }
+=======
+
+  .bl-label .label-auto li {
+    font-size: 22px;
+  }
+
+>>>>>>> 781a704 (New commit)
   .bl-label .label-auto li:after {
     width: 14px;
     height: 14px;
     background-size: 14px;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 @media only screen and (max-width: 767px) {
   .bl-label .label-auto li {
     font-size: 20px;
   }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
   .bl-label .label-auto li:after {
     width: 12px;
     height: 12px;
     background-size: 12px;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 @media only screen and (max-width: 767px) {
   .bl-label {
     height: 60px;
   }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
   .bl-label .label-auto li {
     font-size: 18px;
     font-weight: 600;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 /* Breadcrumb */
 /**  Skill section css  **/
 .bl-skills {
   position: relative;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .bl-skills .skill-box {
   margin-bottom: 24px;
   padding: 30px;
@@ -4263,6 +6504,7 @@ Pagination style
   background-color: #080808;
   position: relative;
 }
+<<<<<<< HEAD
 .bl-skills .skill-box:hover .skill-icon:after {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
@@ -4274,6 +6516,23 @@ Pagination style
 .bl-skills .skill-box:hover .skill-detail .percent {
   opacity: 0.09;
 }
+=======
+
+.bl-skills .skill-box:hover .skill-icon:after {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.bl-skills .skill-box:hover .skill-icon:before {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.bl-skills .skill-box:hover .skill-detail .percent {
+  opacity: 0.09;
+}
+
+>>>>>>> 781a704 (New commit)
 .bl-skills .skill-box .skill-icon {
   width: 70px;
   height: 70px;
@@ -4282,6 +6541,7 @@ Pagination style
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
+<<<<<<< HEAD
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
@@ -4290,6 +6550,17 @@ Pagination style
   border-radius: 50%;
   position: relative;
 }
+=======
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-radius: 50%;
+  position: relative;
+}
+
+>>>>>>> 781a704 (New commit)
 .bl-skills .skill-box .skill-icon:after {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -4302,6 +6573,10 @@ Pagination style
   border: 1px dashed #fff;
   border-radius: 50%;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .bl-skills .skill-box .skill-icon:before {
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
@@ -4315,20 +6590,33 @@ Pagination style
   border-radius: 50%;
   z-index: 0;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .bl-skills .skill-box .skill-icon img {
   width: 50px;
   height: 50px;
   -o-object-fit: contain;
+<<<<<<< HEAD
      object-fit: contain;
   display: block;
   z-index: 2;
 }
+=======
+  object-fit: contain;
+  display: block;
+  z-index: 2;
+}
+
+>>>>>>> 781a704 (New commit)
 .bl-skills .skill-box .skill-icon .skill-logo-js,
 .bl-skills .skill-box .skill-icon .skill-logo-bootstrap {
   width: 50px;
   height: 50px;
   padding: 9px;
   -webkit-box-sizing: border-box;
+<<<<<<< HEAD
           box-sizing: border-box;
 }
 .bl-skills .skill-box .skill-icon .skill-logo-js {
@@ -4339,12 +6627,28 @@ Pagination style
   -webkit-transform: scale(0.8);
           transform: scale(0.8);
 }
+=======
+  box-sizing: border-box;
+}
+
+.bl-skills .skill-box .skill-icon .skill-logo-js {
+  -webkit-transform: scale(0.84);
+  transform: scale(0.84);
+}
+
+.bl-skills .skill-box .skill-icon .skill-logo-bootstrap {
+  -webkit-transform: scale(0.8);
+  transform: scale(0.8);
+}
+
+>>>>>>> 781a704 (New commit)
 .bl-skills .skill-box .skill-detail {
   width: calc(100% - 85px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: start;
+<<<<<<< HEAD
       -ms-flex-align: start;
           align-items: flex-start;
   -webkit-box-pack: center;
@@ -4355,15 +6659,36 @@ Pagination style
       -ms-flex-direction: column;
           flex-direction: column;
 }
+=======
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+>>>>>>> 781a704 (New commit)
 .bl-skills .skill-box .skill-detail h3 {
   color: #fff;
   font-size: 22px;
   font-weight: 600;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .bl-skills .skill-box .skill-detail p {
   margin: 0;
   color: #ddd;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .bl-skills .skill-box .skill-detail .percent {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -4381,17 +6706,27 @@ Pagination style
 @-webkit-keyframes bl-rorate {
   0% {
     -webkit-transform: scale(1.1) rotate(0);
+<<<<<<< HEAD
             transform: scale(1.1) rotate(0);
   }
   100% {
     -webkit-transform: scale(1.1) rotate(360deg);
             transform: scale(1.1) rotate(360deg);
+=======
+    transform: scale(1.1) rotate(0);
+  }
+
+  100% {
+    -webkit-transform: scale(1.1) rotate(360deg);
+    transform: scale(1.1) rotate(360deg);
+>>>>>>> 781a704 (New commit)
   }
 }
 
 @keyframes bl-rorate {
   0% {
     -webkit-transform: scale(1.1) rotate(0);
+<<<<<<< HEAD
             transform: scale(1.1) rotate(0);
   }
   100% {
@@ -4399,12 +6734,24 @@ Pagination style
             transform: scale(1.1) rotate(360deg);
   }
 }
+=======
+    transform: scale(1.1) rotate(0);
+  }
+
+  100% {
+    -webkit-transform: scale(1.1) rotate(360deg);
+    transform: scale(1.1) rotate(360deg);
+  }
+}
+
+>>>>>>> 781a704 (New commit)
 /* Responsive skill css */
 @media only screen and (max-width: 1399px) {
   .bl-skills .skill-box .skill-icon {
     width: 45px;
     height: 45px;
   }
+<<<<<<< HEAD
   .bl-skills .skill-box .skill-icon:after, .bl-skills .skill-box .skill-icon:before {
     width: 45px;
     height: 45px;
@@ -4415,79 +6762,167 @@ Pagination style
   .bl-skills .skill-box .skill-detail {
     width: calc(100% - 60px);
   }
+=======
+
+  .bl-skills .skill-box .skill-icon:after,
+  .bl-skills .skill-box .skill-icon:before {
+    width: 45px;
+    height: 45px;
+  }
+
+  .bl-skills .skill-box .skill-icon img {
+    width: 30px;
+  }
+
+  .bl-skills .skill-box .skill-detail {
+    width: calc(100% - 60px);
+  }
+
+>>>>>>> 781a704 (New commit)
   .bl-skills .skill-box .skill-detail h3 {
     font-size: 18px;
     margin-bottom: 5px;
   }
+<<<<<<< HEAD
   .bl-skills .skill-box .skill-detail p {
     font-size: 14px;
   }
+=======
+
+  .bl-skills .skill-box .skill-detail p {
+    font-size: 14px;
+  }
+
+>>>>>>> 781a704 (New commit)
   .bl-skills .skill-box .skill-detail .percent {
     font-size: 45px;
     line-height: 45px;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 @media only screen and (max-width: 1199px) {
   .bl-skills .skill-box {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
+<<<<<<< HEAD
         -ms-flex-direction: column;
             flex-direction: column;
   }
+=======
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+>>>>>>> 781a704 (New commit)
   .bl-skills .skill-box .skill-icon {
     margin-right: 0;
     margin-bottom: 15px;
   }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
   .bl-skills .skill-box .skill-detail {
     width: 100%;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 @media only screen and (max-width: 767px) {
   .bl-skills .skill-box {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
+<<<<<<< HEAD
         -ms-flex-direction: row;
             flex-direction: row;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
+=======
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+>>>>>>> 781a704 (New commit)
   .bl-skills .skill-box .skill-icon {
     margin-right: 15px;
     margin-bottom: 0;
   }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
   .bl-skills .skill-box .skill-detail {
     width: calc(100% - 60px);
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 @media only screen and (max-width: 380px) {
   .bl-skills .skill-box {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
+<<<<<<< HEAD
         -ms-flex-direction: column;
             flex-direction: column;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
   }
+=======
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+
+>>>>>>> 781a704 (New commit)
   .bl-skills .skill-box .skill-icon {
     margin-right: 0;
     margin-bottom: 15px;
   }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
   .bl-skills .skill-box .skill-detail {
     width: 100%;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 /* Breadcrumb */
 /**  Education and experience section css  **/
 .bl-education,
 .bl-experience {
   position: relative;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .bl-education .align-right,
 .bl-experience .align-right {
   text-align: right;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .bl-education .edu-box,
 .bl-education .exp-box,
 .bl-experience .edu-box,
@@ -4499,20 +6934,35 @@ Pagination style
   border-bottom: 1px solid #222;
   background-color: #000;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .bl-education .edu-box:hover .box-title .icon,
 .bl-education .exp-box:hover .box-title .icon,
 .bl-experience .edu-box:hover .box-title .icon,
 .bl-experience .exp-box:hover .box-title .icon {
   background-color: rgba(var(--primary), 1);
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .bl-education .edu-box:hover .box-title .icon i,
 .bl-education .exp-box:hover .box-title .icon i,
 .bl-experience .edu-box:hover .box-title .icon i,
 .bl-experience .exp-box:hover .box-title .icon i {
   -webkit-transform: rotate(45deg);
+<<<<<<< HEAD
           transform: rotate(45deg);
   color: #000;
 }
+=======
+  transform: rotate(45deg);
+  color: #000;
+}
+
+>>>>>>> 781a704 (New commit)
 .bl-education .edu-box .box-title,
 .bl-education .exp-box .box-title,
 .bl-experience .edu-box .box-title,
@@ -4521,12 +6971,22 @@ Pagination style
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
+<<<<<<< HEAD
       -ms-flex-pack: justify;
           justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
+=======
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+>>>>>>> 781a704 (New commit)
 .bl-education .edu-box .box-title .heading,
 .bl-education .exp-box .box-title .heading,
 .bl-experience .edu-box .box-title .heading,
@@ -4534,10 +6994,18 @@ Pagination style
   width: calc(100% - 80px);
   padding: 30px 0;
 }
+<<<<<<< HEAD
 .bl-education .edu-box .box-title .heading > span,
 .bl-education .exp-box .box-title .heading > span,
 .bl-experience .edu-box .box-title .heading > span,
 .bl-experience .exp-box .box-title .heading > span {
+=======
+
+.bl-education .edu-box .box-title .heading>span,
+.bl-education .exp-box .box-title .heading>span,
+.bl-experience .edu-box .box-title .heading>span,
+.bl-experience .exp-box .box-title .heading>span {
+>>>>>>> 781a704 (New commit)
   margin-bottom: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4547,7 +7015,13 @@ Pagination style
   font-weight: 300;
   letter-spacing: 0.03rem;
 }
+<<<<<<< HEAD
 .bl-education .edu-box .box-title .heading h4, .bl-education .edu-box .box-title .heading h3,
+=======
+
+.bl-education .edu-box .box-title .heading h4,
+.bl-education .edu-box .box-title .heading h3,
+>>>>>>> 781a704 (New commit)
 .bl-education .exp-box .box-title .heading h4,
 .bl-education .exp-box .box-title .heading h3,
 .bl-experience .edu-box .box-title .heading h4,
@@ -4558,7 +7032,13 @@ Pagination style
   color: #fff;
   font-size: 24px;
 }
+<<<<<<< HEAD
 .bl-education .edu-box .box-title .heading h4 span, .bl-education .edu-box .box-title .heading h3 span,
+=======
+
+.bl-education .edu-box .box-title .heading h4 span,
+.bl-education .edu-box .box-title .heading h3 span,
+>>>>>>> 781a704 (New commit)
 .bl-education .exp-box .box-title .heading h4 span,
 .bl-education .exp-box .box-title .heading h3 span,
 .bl-experience .edu-box .box-title .heading h4 span,
@@ -4570,6 +7050,10 @@ Pagination style
   font-weight: 300;
   letter-spacing: 0.03rem;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .bl-education .edu-box .box-title .icon,
 .bl-education .exp-box .box-title .icon,
 .bl-experience .edu-box .box-title .icon,
@@ -4585,6 +7069,7 @@ Pagination style
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
+<<<<<<< HEAD
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
@@ -4592,6 +7077,16 @@ Pagination style
           justify-content: center;
   cursor: pointer;
 }
+=======
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+>>>>>>> 781a704 (New commit)
 .bl-education .edu-box .box-title .icon i,
 .bl-education .exp-box .box-title .icon i,
 .bl-experience .edu-box .box-title .icon i,
@@ -4601,6 +7096,10 @@ Pagination style
   font-size: 22px;
   color: #ddd;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .bl-education .edu-box .details,
 .bl-education .exp-box .details,
 .bl-experience .edu-box .details,
@@ -4612,7 +7111,13 @@ Pagination style
 
 /* Responsive edu and exp css */
 @media only screen and (max-width: 1199px) {
+<<<<<<< HEAD
   .bl-education .edu-box .box-title .heading h4, .bl-education .edu-box .box-title .heading h3,
+=======
+
+  .bl-education .edu-box .box-title .heading h4,
+  .bl-education .edu-box .box-title .heading h3,
+>>>>>>> 781a704 (New commit)
   .bl-education .exp-box .box-title .heading h4,
   .bl-education .exp-box .box-title .heading h3,
   .bl-experience .edu-box .box-title .heading h4,
@@ -4622,20 +7127,38 @@ Pagination style
     font-size: 22px;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 @media only screen and (max-width: 991px) {
   .bl-education {
     padding-top: 50px;
   }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
   .bl-education .title,
   .bl-experience .title {
     max-width: 400px;
     margin-bottom: 30px;
   }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
   .bl-education .align-right,
   .bl-experience .align-right {
     text-align: left;
   }
+<<<<<<< HEAD
   .bl-education .edu-box .box-title .heading h4, .bl-education .edu-box .box-title .heading h3,
+=======
+
+  .bl-education .edu-box .box-title .heading h4,
+  .bl-education .edu-box .box-title .heading h3,
+>>>>>>> 781a704 (New commit)
   .bl-education .exp-box .box-title .heading h4,
   .bl-education .exp-box .box-title .heading h3,
   .bl-experience .edu-box .box-title .heading h4,
@@ -4645,11 +7168,21 @@ Pagination style
     font-size: 21px;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 @media only screen and (max-width: 767px) {
   .bl-education {
     padding-top: 40px;
   }
+<<<<<<< HEAD
   .bl-education .edu-box .box-title .heading h4, .bl-education .edu-box .box-title .heading h3,
+=======
+
+  .bl-education .edu-box .box-title .heading h4,
+  .bl-education .edu-box .box-title .heading h3,
+>>>>>>> 781a704 (New commit)
   .bl-education .exp-box .box-title .heading h4,
   .bl-education .exp-box .box-title .heading h3,
   .bl-experience .edu-box .box-title .heading h4,
@@ -4659,11 +7192,21 @@ Pagination style
     font-size: 20px;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 @media only screen and (max-width: 575px) {
   .bl-education {
     padding-top: 30px;
   }
+<<<<<<< HEAD
   .bl-education .edu-box .box-title .heading h4, .bl-education .edu-box .box-title .heading h3,
+=======
+
+  .bl-education .edu-box .box-title .heading h4,
+  .bl-education .edu-box .box-title .heading h3,
+>>>>>>> 781a704 (New commit)
   .bl-education .exp-box .box-title .heading h4,
   .bl-education .exp-box .box-title .heading h3,
   .bl-experience .edu-box .box-title .heading h4,
@@ -4673,8 +7216,16 @@ Pagination style
     font-size: 19px;
   }
 }
+<<<<<<< HEAD
 @media only screen and (max-width: 420px) {
   .bl-education .edu-box .box-title .heading h4, .bl-education .edu-box .box-title .heading h3,
+=======
+
+@media only screen and (max-width: 420px) {
+
+  .bl-education .edu-box .box-title .heading h4,
+  .bl-education .edu-box .box-title .heading h3,
+>>>>>>> 781a704 (New commit)
   .bl-education .exp-box .box-title .heading h4,
   .bl-education .exp-box .box-title .heading h3,
   .bl-experience .edu-box .box-title .heading h4,
@@ -4684,8 +7235,16 @@ Pagination style
     font-size: 18px;
   }
 }
+<<<<<<< HEAD
 @media only screen and (max-width: 360px) {
   .bl-education .edu-box .box-title .heading h4, .bl-education .edu-box .box-title .heading h3,
+=======
+
+@media only screen and (max-width: 360px) {
+
+  .bl-education .edu-box .box-title .heading h4,
+  .bl-education .edu-box .box-title .heading h3,
+>>>>>>> 781a704 (New commit)
   .bl-education .exp-box .box-title .heading h4,
   .bl-education .exp-box .box-title .heading h3,
   .bl-experience .edu-box .box-title .heading h4,
@@ -4695,8 +7254,16 @@ Pagination style
     font-size: 18px;
   }
 }
+<<<<<<< HEAD
 @media only screen and (max-width: 340px) {
   .bl-education .edu-box .box-title .heading h4, .bl-education .edu-box .box-title .heading h3,
+=======
+
+@media only screen and (max-width: 340px) {
+
+  .bl-education .edu-box .box-title .heading h4,
+  .bl-education .edu-box .box-title .heading h3,
+>>>>>>> 781a704 (New commit)
   .bl-education .exp-box .box-title .heading h4,
   .bl-education .exp-box .box-title .heading h3,
   .bl-experience .edu-box .box-title .heading h4,
@@ -4706,6 +7273,10 @@ Pagination style
     font-size: 17px;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 /* Breadcrumb */
 /* Projects */
 .bl-project {
@@ -4718,28 +7289,53 @@ Pagination style
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+<<<<<<< HEAD
       -ms-flex-direction: column;
           flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
+=======
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+>>>>>>> 781a704 (New commit)
 .bl-projects-tabs ul {
   margin-bottom: 30px;
   padding: 5px;
   -webkit-box-pack: center;
+<<<<<<< HEAD
       -ms-flex-pack: center;
           justify-content: center;
+=======
+  -ms-flex-pack: center;
+  justify-content: center;
+>>>>>>> 781a704 (New commit)
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
+<<<<<<< HEAD
       flex-wrap: wrap;
   background-color: #000;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
+=======
+  flex-wrap: wrap;
+  background-color: #000;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+>>>>>>> 781a704 (New commit)
 .bl-projects-tabs ul li {
   -webkit-transition: 0.25s ease-out !important;
   transition: 0.25s ease-out !important;
@@ -4749,6 +7345,7 @@ Pagination style
   color: #ddd !important;
   cursor: pointer;
 }
+<<<<<<< HEAD
 .bl-projects-tabs ul:nth-child(1) {
   -webkit-transform: translateX(0);
           transform: translateX(0);
@@ -4757,6 +7354,19 @@ Pagination style
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
 }
+=======
+
+.bl-projects-tabs ul:nth-child(1) {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+
+.bl-projects-tabs ul:nth-child(2) {
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+}
+
+>>>>>>> 781a704 (New commit)
 .bl-projects-tabs ul li.active {
   background-color: rgba(var(--primary), 1) !important;
   color: #000 !important;
@@ -4768,6 +7378,7 @@ Pagination style
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
+<<<<<<< HEAD
 .bl-project .project-item-full .bl-project-card {
   margin: 0;
 }
@@ -4778,6 +7389,22 @@ Pagination style
 .bl-project-card:hover .overlay-project-card {
   opacity: 0;
 }
+=======
+
+.bl-project .project-item-full .bl-project-card {
+  margin: 0;
+}
+
+.bl-project-card:hover .project-image img {
+  -webkit-transform: scale(1.15) rotate(5deg);
+  transform: scale(1.15) rotate(5deg);
+}
+
+.bl-project-card:hover .overlay-project-card {
+  opacity: 0;
+}
+
+>>>>>>> 781a704 (New commit)
 .bl-project-card .project-image {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -4786,17 +7413,29 @@ Pagination style
   overflow: hidden;
   z-index: 1;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .bl-project-card .project-image a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   overflow: hidden;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .bl-project-card .project-image img {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   width: 100%;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .bl-project-card .project-image .overlay-project-card {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -4810,15 +7449,27 @@ Pagination style
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
+<<<<<<< HEAD
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+=======
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+>>>>>>> 781a704 (New commit)
   background-color: rgba(0, 0, 0, 0.6);
   z-index: 45;
   overflow: hidden;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .bl-project-card .project-image .overlay-project-card:after {
   font-family: "remixicon";
   content: "\f0cd";
@@ -4826,6 +7477,10 @@ Pagination style
   font-weight: 600;
   color: #fff;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .bl-project-card .project-info {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -4836,8 +7491,13 @@ Pagination style
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+<<<<<<< HEAD
       -ms-flex-direction: column;
           flex-direction: column;
+=======
+  -ms-flex-direction: column;
+  flex-direction: column;
+>>>>>>> 781a704 (New commit)
   background-color: rgba(0, 0, 0, 0.9);
   backdrop-filter: blur(10px);
   position: absolute;
@@ -4846,10 +7506,18 @@ Pagination style
   bottom: 5px;
   z-index: 5;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .bl-project-card .project-info h3 {
   margin-bottom: 0;
   font-size: 18px;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .bl-project-card .project-info h3 a {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -4857,9 +7525,17 @@ Pagination style
   font-weight: 600;
   color: #fff;
 }
+<<<<<<< HEAD
 .bl-project-card .project-info h3 a:hover {
   color: rgba(var(--primary), 1);
 }
+=======
+
+.bl-project-card .project-info h3 a:hover {
+  color: rgba(var(--primary), 1);
+}
+
+>>>>>>> 781a704 (New commit)
 .bl-project-card .project-info span {
   font-size: 14px;
   color: #ddd;
@@ -4881,25 +7557,46 @@ Pagination style
   .bl-project-card {
     margin: 0 20px;
   }
+<<<<<<< HEAD
   .bl-project-card .project-info h3 a {
     font-size: 17px;
   }
+=======
+
+  .bl-project-card .project-info h3 a {
+    font-size: 17px;
+  }
+
+>>>>>>> 781a704 (New commit)
   .bl-project-card .project-info span {
     font-size: 14px;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 @media screen and (max-width: 1199px) {
   .item-grid .row.mb--80 {
     margin-bottom: -64px;
   }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
   .item-grid .item.mb-80 {
     margin-bottom: 64px;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 @media screen and (max-width: 991px) {
   .bl-project .container-fluid {
     max-width: 720px;
   }
+<<<<<<< HEAD
   .bl-project-card {
     margin: 0;
   }
@@ -4909,29 +7606,68 @@ Pagination style
   .item-grid .row.mb--80 {
     margin-bottom: -24px;
   }
+=======
+
+  .bl-project-card {
+    margin: 0;
+  }
+
+  .bl-project-card .project-info h3 a {
+    font-size: 16px;
+  }
+
+  .item-grid .row.mb--80 {
+    margin-bottom: -24px;
+  }
+
+>>>>>>> 781a704 (New commit)
   .item-grid .item.mb-80 {
     margin-bottom: 24px;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 @media screen and (max-width: 767px) {
   .bl-project-card {
     margin: 0;
   }
+<<<<<<< HEAD
   .bl-project-card .project-info h3 a {
     font-size: 15px;
   }
   .bl-project-card .project-info span {
     font-size: 13px;
   }
+=======
+
+  .bl-project-card .project-info h3 a {
+    font-size: 15px;
+  }
+
+  .bl-project-card .project-info span {
+    font-size: 13px;
+  }
+
+>>>>>>> 781a704 (New commit)
   .bl-project .container-fluid {
     max-width: 540px;
     width: 100%;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 @media screen and (max-width: 575px) {
   .bl-projects-tabs ul li {
     padding: 2px 10px;
   }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
   .bl-project .container-fluid {
     max-width: 560px;
     width: 100%;
@@ -4939,6 +7675,10 @@ Pagination style
     margin-right: 0;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 /* Breadcrumb */
 /** Project 2 style **/
 .bl-resume-project .project-box {
@@ -4951,6 +7691,10 @@ Pagination style
   background-color: rgba(var(--light-grey), 1);
   border: 1px solid rgba(var(--border-color), 1);
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .bl-resume-project .project-box .project-img {
   width: 100%;
   height: auto;
@@ -4960,6 +7704,10 @@ Pagination style
   position: relative;
   overflow: hidden;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .bl-resume-project .project-box .project-img .overlay-text {
   position: absolute;
   top: 0;
@@ -4973,21 +7721,37 @@ Pagination style
   letter-spacing: 1px;
   opacity: 0;
   -webkit-transform: translate(-50%, -50%) scale(0);
+<<<<<<< HEAD
           transform: translate(-50%, -50%) scale(0);
+=======
+  transform: translate(-50%, -50%) scale(0);
+>>>>>>> 781a704 (New commit)
   -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
   font-weight: 500;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 @media (max-width: 991px) {
   .bl-resume-project .project-box .project-img .overlay-text {
     display: none;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .bl-resume-project .project-box .project-img img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
+<<<<<<< HEAD
      object-fit: cover;
+=======
+  object-fit: cover;
+>>>>>>> 781a704 (New commit)
   -webkit-transition: -webkit-transform 0.2s ease-out;
   transition: -webkit-transform 0.2s ease-out;
   transition: transform 0.2s ease-out;
@@ -4995,21 +7759,39 @@ Pagination style
   will-change: transform;
   border-radius: 15px;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .bl-resume-project .project-box h3 {
   margin-bottom: 2px;
   font-size: 19px;
   font-weight: 500;
   line-height: 26px;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .bl-resume-project .project-box p {
   margin: 0;
   font-size: 14px;
 }
+<<<<<<< HEAD
 .bl-resume-project .project-box:hover .project-img .overlay-text {
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
   opacity: 1;
 }
+=======
+
+.bl-resume-project .project-box:hover .project-img .overlay-text {
+  -webkit-transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+}
+
+>>>>>>> 781a704 (New commit)
 .bl-resume-project .project-box-color {
   background-color: rgba(var(--white), 0.04);
 }
@@ -5020,6 +7802,10 @@ Pagination style
   position: relative;
   overflow: hidden;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .bl-portfolio-3 .bl-project-wrapper {
   position: relative;
   color: rgba(var(--white), 1);
@@ -5027,6 +7813,7 @@ Pagination style
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
+<<<<<<< HEAD
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
@@ -5043,6 +7830,27 @@ Pagination style
 .bl-portfolio-3 .bl-project-wrapper .bl-project-content {
   margin-top: 15px;
 }
+=======
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.bl-portfolio-3 .bl-project-wrapper .bl-project-img img {
+  -webkit-transform-origin: center center;
+  transform-origin: center center;
+  border-radius: 15px;
+}
+
+.bl-portfolio-3 .bl-project-wrapper .bl-project-content {
+  margin-top: 15px;
+}
+
+>>>>>>> 781a704 (New commit)
 .bl-portfolio-3 .bl-project-wrapper .bl-project-content h3 {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -5052,35 +7860,66 @@ Pagination style
   font-weight: 500;
   color: rgba(var(--white), 1);
 }
+<<<<<<< HEAD
 .bl-portfolio-3 .bl-project-wrapper .bl-project-content h3:hover {
   color: rgba(var(--primary-3), 1);
 }
+=======
+
+.bl-portfolio-3 .bl-project-wrapper .bl-project-content h3:hover {
+  color: rgba(var(--primary-3), 1);
+}
+
+>>>>>>> 781a704 (New commit)
 .bl-portfolio-3 .bl-project-wrapper .bl-project-content ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
+<<<<<<< HEAD
       -ms-flex-align: center;
           align-items: center;
   font-size: 16px;
   margin-bottom: -3px;
 }
+=======
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 16px;
+  margin-bottom: -3px;
+}
+
+>>>>>>> 781a704 (New commit)
 .bl-portfolio-3 .bl-project-wrapper .bl-project-content ul li {
   font-weight: 400;
   color: rgba(var(--content-color), 1);
 }
+<<<<<<< HEAD
 .bl-portfolio-3 .bl-project-wrapper .bl-project-content ul li + li {
+=======
+
+.bl-portfolio-3 .bl-project-wrapper .bl-project-content ul li+li {
+>>>>>>> 781a704 (New commit)
   padding-left: 16px;
   margin-left: 10px;
   position: relative;
 }
+<<<<<<< HEAD
 .bl-portfolio-3 .bl-project-wrapper .bl-project-content ul li + li:after {
+=======
+
+.bl-portfolio-3 .bl-project-wrapper .bl-project-content ul li+li:after {
+>>>>>>> 781a704 (New commit)
   content: "";
   position: absolute;
   left: 0;
   top: 50%;
   -webkit-transform: translateY(-50%);
+<<<<<<< HEAD
           transform: translateY(-50%);
+=======
+  transform: translateY(-50%);
+>>>>>>> 781a704 (New commit)
   width: 6px;
   height: 6px;
   border-radius: 100%;
@@ -5093,48 +7932,92 @@ Pagination style
     font-size: 19px;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 @media only screen and (max-width: 1199px) {
   .bl-portfolio-3 .bl-project-wrapper .bl-project-content h3 {
     font-size: 18px;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 @media only screen and (max-width: 991px) {
   .bl-portfolio-3 .bl-project-wrapper .bl-project-content h3 {
     font-size: 17px;
   }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
   .bl-portfolio-3 .bl-project-wrapper .bl-project-content ul {
     font-size: 15px;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 @media only screen and (max-width: 767px) {
   .bl-portfolio-3 .bl-project-wrapper .bl-project-content h3 {
     font-size: 16px;
   }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
   .bl-portfolio-3 .bl-project-wrapper .bl-project-content ul {
     font-size: 14px;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 /* Breadcrumb */
 /** Project 4 style **/
 .bl-project-4 {
   position: relative;
 }
+<<<<<<< HEAD
 .bl-project-4 .row + .row {
   margin-top: 30px;
 }
 .bl-project-4 .box-b-space {
   margin-bottom: -50px;
 }
+=======
+
+.bl-project-4 .row+.row {
+  margin-top: 30px;
+}
+
+.bl-project-4 .box-b-space {
+  margin-bottom: -50px;
+}
+
+>>>>>>> 781a704 (New commit)
 .bl-project-4 .project-box-4 {
   margin-bottom: 30px;
   position: relative;
   display: block;
   overflow: hidden;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .bl-project-4 .project-box-4 .project-img {
   border-radius: 15px;
   overflow: hidden;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .bl-project-4 .project-box-4 .project-img img {
   width: 100%;
   height: auto;
@@ -5145,6 +8028,7 @@ Pagination style
   will-change: transform;
   will-change: transform;
 }
+<<<<<<< HEAD
 .bl-project-4 .project-box-4 .project-img img:hover {
   -webkit-transform: scale(1) !important;
           transform: scale(1) !important;
@@ -5152,12 +8036,28 @@ Pagination style
 .bl-project-4 .project-box-4 .project-content {
   margin-top: 15px;
 }
+=======
+
+.bl-project-4 .project-box-4 .project-img img:hover {
+  -webkit-transform: scale(1) !important;
+  transform: scale(1) !important;
+}
+
+.bl-project-4 .project-box-4 .project-content {
+  margin-top: 15px;
+}
+
+>>>>>>> 781a704 (New commit)
 .bl-project-4 .project-box-4 .project-content h3 {
   margin-bottom: 5px;
   font-size: 20px;
   font-weight: 500;
   color: rgba(var(--white), 1);
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .bl-project-4 .project-box-4 .project-content h4 {
   margin: 0;
   font-size: 14px;
@@ -5170,15 +8070,27 @@ Pagination style
   .bl-project-4 .project-box-4 {
     margin-bottom: 30px;
   }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
   .bl-project-4 .project-box-4 .project-content h3 {
     font-size: 19px;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 @media screen and (max-width: 767px) {
   .bl-project-4 .project-box-4 .project-content h3 {
     font-size: 18px;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 /* Breadcrumb */
 /**  Achieve section css  **/
 .bl-achieve .bl-number-card h2 {
@@ -5189,9 +8101,17 @@ Pagination style
   text-shadow: 1px 1px #fff, -1px 1px #fff, 1px -1px #fff, -1px -1px #fff;
   opacity: 0.4;
 }
+<<<<<<< HEAD
 .bl-achieve .bl-number-card h2 span {
   font-weight: 700;
 }
+=======
+
+.bl-achieve .bl-number-card h2 span {
+  font-weight: 700;
+}
+
+>>>>>>> 781a704 (New commit)
 .bl-achieve .bl-number-card p {
   margin: 0;
   text-align: center;
@@ -5205,41 +8125,73 @@ Pagination style
     font-size: 58px;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 @media only screen and (max-width: 1199px) {
   .bl-achieve .bl-number-card h2 {
     font-size: 56px;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 @media only screen and (max-width: 991px) {
   .bl-achieve .bl-number-card h2 {
     font-size: 50px;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 @media only screen and (max-width: 767px) {
   .bl-achieve .bl-number-card h2 {
     font-size: 48px;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 @media only screen and (max-width: 575px) {
   .bl-achieve .bl-number-card h2 {
     font-size: 42px;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 @media only screen and (max-width: 420px) {
   .bl-achieve .bl-number-card h2 {
     font-size: 38px;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 @media only screen and (max-width: 380px) {
   .bl-achieve .col-md-3.col-6 {
     width: 100%;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 /* Breadcrumb */
 /* Services */
 .section-services {
   position: relative;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .section-services:before {
   content: "";
   height: 130px;
@@ -5261,6 +8213,7 @@ Pagination style
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+<<<<<<< HEAD
       -ms-flex-direction: column;
           flex-direction: column;
   -webkit-box-pack: start;
@@ -5269,24 +8222,49 @@ Pagination style
   text-align: center;
   background-color: #080808;
 }
+=======
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  text-align: center;
+  background-color: #080808;
+}
+
+>>>>>>> 781a704 (New commit)
 .bl-service .services-image {
   margin-bottom: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: start;
+<<<<<<< HEAD
       -ms-flex-pack: start;
           justify-content: flex-start;
   position: relative;
 }
+=======
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  position: relative;
+}
+
+>>>>>>> 781a704 (New commit)
 .bl-service .services-image img {
   height: 50px;
   width: 50px;
   position: relative;
   z-index: 1;
   -webkit-filter: invert(1);
+<<<<<<< HEAD
           filter: invert(1);
 }
+=======
+  filter: invert(1);
+}
+
+>>>>>>> 781a704 (New commit)
 .bl-service .services-info h5 {
   margin-bottom: 14px;
   font-size: 18px;
@@ -5294,6 +8272,10 @@ Pagination style
   font-weight: 600;
   text-align: left;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .bl-service .services-info p {
   margin: 0;
   font-size: 14px;
@@ -5307,25 +8289,45 @@ Pagination style
   .bl-service .services-info h5 {
     font-size: 17px;
   }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
   .bl-service .services-image img {
     width: 40px;
     height: 40px;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 @media screen and (max-width: 991px) {
   .section-services:before {
     height: 100px;
     width: 100px;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 @media screen and (max-width: 575px) {
   .section-services:before {
     left: 20px;
   }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
   .bl-service .services-info h5 {
     font-size: 16px;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 /* Breadcrumb */
 /* Hire */
 .bl-hire {
@@ -5349,38 +8351,70 @@ Pagination style
   margin: auto;
   max-width: 700px;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .bl-hire-banner .bl-hire-info h2 {
   font-size: 36px;
   color: #fff;
   font-weight: 700;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .bl-hire-banner .bl-hire-info h2 span {
   color: rgba(var(--primary), 1);
   font-weight: 700;
 }
+<<<<<<< HEAD
 .bl-hire-banner .bl-hire-info h4, .bl-hire-banner .bl-hire-info h3 {
+=======
+
+.bl-hire-banner .bl-hire-info h4,
+.bl-hire-banner .bl-hire-info h3 {
+>>>>>>> 781a704 (New commit)
   margin-bottom: 16px;
   font-size: 20px;
   font-weight: 600;
   color: #fff;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .bl-hire-banner .bl-hire-info p {
   font-size: 15px;
   font-weight: 300;
   color: #fff;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .bl-hire-banner .bl-hire-info .inner-circle-items {
   margin-top: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: start;
+<<<<<<< HEAD
       -ms-flex-pack: start;
           justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
+=======
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+>>>>>>> 781a704 (New commit)
 .bl-hire-banner .bl-hire-info .inner-circle-items .bl-rounded-circle {
   position: relative;
   height: 150px;
@@ -5389,10 +8423,18 @@ Pagination style
   backdrop-filter: blur(5px);
   border-radius: 50%;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .bl-hire-banner .bl-hire-info .inner-circle-items .bl-rounded-circle svg text textPath {
   color: #000;
   font-weight: 600;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .bl-hire-banner .bl-hire-info .inner-circle-items .bl-rounded-circle .inner-info i {
   color: #fff;
 }
@@ -5401,6 +8443,7 @@ Pagination style
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
+<<<<<<< HEAD
 .bl-rounded-circle:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
@@ -5408,6 +8451,18 @@ Pagination style
 .bl-rounded-circle a {
   position: relative;
 }
+=======
+
+.bl-rounded-circle:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.bl-rounded-circle a {
+  position: relative;
+}
+
+>>>>>>> 781a704 (New commit)
 .bl-rounded-circle svg {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -5415,16 +8470,30 @@ Pagination style
   height: 150px;
   fill: #fff;
   -webkit-transform-origin: center;
+<<<<<<< HEAD
           transform-origin: center;
   border: 1px dashed #fff;
   border-radius: 50%;
   -webkit-animation: rotateText 15s linear infinite;
           animation: rotateText 15s linear infinite;
 }
+=======
+  transform-origin: center;
+  border: 1px dashed #fff;
+  border-radius: 50%;
+  -webkit-animation: rotateText 15s linear infinite;
+  animation: rotateText 15s linear infinite;
+}
+
+>>>>>>> 781a704 (New commit)
 .bl-rounded-circle svg text textPath {
   font-size: 10px;
   letter-spacing: 1.3px;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .bl-rounded-circle .inner-info {
   position: absolute;
   top: 0;
@@ -5434,12 +8503,22 @@ Pagination style
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
+<<<<<<< HEAD
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
+=======
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+>>>>>>> 781a704 (New commit)
 .bl-rounded-circle .inner-info i {
   font-size: 30px;
   line-height: 26px;
@@ -5451,10 +8530,18 @@ Pagination style
   backdrop-filter: blur(5px);
   border: 1px solid #222;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .bl-contact-form ul.nav-tabs {
   margin: -5px -5px 20px -5px;
   border: 0;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .bl-contact-form ul.nav-tabs .nav-link {
   margin: 5px;
   border-radius: 0;
@@ -5465,9 +8552,17 @@ Pagination style
   position: relative;
   background-color: #000;
 }
+<<<<<<< HEAD
 .bl-contact-form ul.nav-tabs .nav-link:hover {
   isolation: auto;
 }
+=======
+
+.bl-contact-form ul.nav-tabs .nav-link:hover {
+  isolation: auto;
+}
+
+>>>>>>> 781a704 (New commit)
 .bl-contact-form ul.nav-tabs .nav-link:after {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -5482,20 +8577,39 @@ Pagination style
   background-color: rgba(var(--primary), 1);
   border-radius: 5px;
   -webkit-transform: rotate(45deg);
+<<<<<<< HEAD
           transform: rotate(45deg);
   z-index: -1;
 }
+=======
+  transform: rotate(45deg);
+  z-index: -1;
+}
+
+>>>>>>> 781a704 (New commit)
 .bl-contact-form ul.nav-tabs .nav-link.active {
   background-color: rgba(var(--primary), 1);
   border: 1px solid transparent;
   color: #000;
 }
+<<<<<<< HEAD
 .bl-contact-form ul.nav-tabs .nav-link.active:after {
   bottom: -8px;
 }
 .bl-contact-form .form-group {
   margin-bottom: 12px;
 }
+=======
+
+.bl-contact-form ul.nav-tabs .nav-link.active:after {
+  bottom: -8px;
+}
+
+.bl-contact-form .form-group {
+  margin-bottom: 12px;
+}
+
+>>>>>>> 781a704 (New commit)
 .bl-contact-form .form-group input,
 .bl-contact-form .form-group select,
 .bl-contact-form .form-group textarea {
@@ -5509,26 +8623,58 @@ Pagination style
   color: #fff;
   font-size: 14px;
 }
+<<<<<<< HEAD
 .bl-contact-form .form-group input::-webkit-input-placeholder, .bl-contact-form .form-group select::-webkit-input-placeholder, .bl-contact-form .form-group textarea::-webkit-input-placeholder {
+=======
+
+.bl-contact-form .form-group input::-webkit-input-placeholder,
+.bl-contact-form .form-group select::-webkit-input-placeholder,
+.bl-contact-form .form-group textarea::-webkit-input-placeholder {
+>>>>>>> 781a704 (New commit)
   font-size: 14px;
   font-weight: 400;
   color: #ddd;
 }
+<<<<<<< HEAD
 .bl-contact-form .form-group input::-moz-placeholder, .bl-contact-form .form-group select::-moz-placeholder, .bl-contact-form .form-group textarea::-moz-placeholder {
+=======
+
+.bl-contact-form .form-group input::-moz-placeholder,
+.bl-contact-form .form-group select::-moz-placeholder,
+.bl-contact-form .form-group textarea::-moz-placeholder {
+>>>>>>> 781a704 (New commit)
   font-size: 14px;
   font-weight: 400;
   color: #ddd;
 }
+<<<<<<< HEAD
 .bl-contact-form .form-group input:-ms-input-placeholder, .bl-contact-form .form-group select:-ms-input-placeholder, .bl-contact-form .form-group textarea:-ms-input-placeholder {
+=======
+
+.bl-contact-form .form-group input:-ms-input-placeholder,
+.bl-contact-form .form-group select:-ms-input-placeholder,
+.bl-contact-form .form-group textarea:-ms-input-placeholder {
+>>>>>>> 781a704 (New commit)
   font-size: 14px;
   font-weight: 400;
   color: #ddd;
 }
+<<<<<<< HEAD
 .bl-contact-form .form-group input::-ms-input-placeholder, .bl-contact-form .form-group select::-ms-input-placeholder, .bl-contact-form .form-group textarea::-ms-input-placeholder {
+=======
+
+.bl-contact-form .form-group input::-ms-input-placeholder,
+.bl-contact-form .form-group select::-ms-input-placeholder,
+.bl-contact-form .form-group textarea::-ms-input-placeholder {
+>>>>>>> 781a704 (New commit)
   font-size: 14px;
   font-weight: 400;
   color: #ddd;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .bl-contact-form .form-group input::placeholder,
 .bl-contact-form .form-group select::placeholder,
 .bl-contact-form .form-group textarea::placeholder {
@@ -5536,6 +8682,7 @@ Pagination style
   font-weight: 400;
   color: #ddd;
 }
+<<<<<<< HEAD
 .bl-contact-form .form-group .form-select {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23ffffff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
 }
@@ -5544,6 +8691,19 @@ Pagination style
   -webkit-box-shadow: none;
           box-shadow: none;
 }
+=======
+
+.bl-contact-form .form-group .form-select {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23ffffff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+}
+
+.bl-contact-form .form-group select {
+  font-size: 14px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+>>>>>>> 781a704 (New commit)
 .bl-contact-form .form-group textarea {
   height: auto;
 }
@@ -5551,17 +8711,27 @@ Pagination style
 @-webkit-keyframes rotateText {
   0% {
     -webkit-transform: rotate(360deg);
+<<<<<<< HEAD
             transform: rotate(360deg);
   }
   100% {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
+=======
+    transform: rotate(360deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+>>>>>>> 781a704 (New commit)
   }
 }
 
 @keyframes rotateText {
   0% {
     -webkit-transform: rotate(360deg);
+<<<<<<< HEAD
             transform: rotate(360deg);
   }
   100% {
@@ -5569,46 +8739,96 @@ Pagination style
             transform: rotate(0deg);
   }
 }
+=======
+    transform: rotate(360deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+
+>>>>>>> 781a704 (New commit)
 /* Responsive hire css */
 @media screen and (max-width: 1399px) {
   .bl-hire-banner .bl-hire-info h2 {
     font-size: 35px;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 @media screen and (max-width: 1199px) {
   .bl-hire-banner .bl-hire-info h2 {
     font-size: 34px;
   }
+<<<<<<< HEAD
   .bl-hire-banner .bl-hire-info h4, .bl-hire-banner .bl-hire-info h3 {
     font-size: 19px;
   }
 }
+=======
+
+  .bl-hire-banner .bl-hire-info h4,
+  .bl-hire-banner .bl-hire-info h3 {
+    font-size: 19px;
+  }
+}
+
+>>>>>>> 781a704 (New commit)
 @media screen and (max-width: 991px) {
   .bl-hire {
     padding: 100px 0;
   }
+<<<<<<< HEAD
   .bl-hire-banner .bl-hire-info {
     margin-bottom: 30px;
   }
   .bl-hire-banner .bl-hire-info .inner-circle-items {
     margin-top: 30px;
   }
+=======
+
+  .bl-hire-banner .bl-hire-info {
+    margin-bottom: 30px;
+  }
+
+  .bl-hire-banner .bl-hire-info .inner-circle-items {
+    margin-top: 30px;
+  }
+
+>>>>>>> 781a704 (New commit)
   .bl-hire-banner .bl-hire-info p {
     font-size: 14px;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 @media screen and (max-width: 767px) {
   .bl-hire {
     padding: 80px 0;
   }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
   .bl-hire-banner .bl-hire-info h2 {
     font-size: 30px;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 @media screen and (max-width: 575px) {
   .bl-hire {
     padding: 60px 0;
   }
+<<<<<<< HEAD
   .bl-hire-banner .bl-hire-info h2 {
     font-size: 28px;
   }
@@ -5616,24 +8836,53 @@ Pagination style
     font-size: 18px;
   }
 }
+=======
+
+  .bl-hire-banner .bl-hire-info h2 {
+    font-size: 28px;
+  }
+
+  .bl-hire-banner .bl-hire-info h4,
+  .bl-hire-banner .bl-hire-info h3 {
+    font-size: 18px;
+  }
+}
+
+>>>>>>> 781a704 (New commit)
 @media screen and (max-width: 480px) {
   .bl-hire-banner .bl-hire-info h2 {
     font-size: 26px;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 @media screen and (max-width: 380px) {
   .bl-contact-form {
     padding: 15px;
   }
+<<<<<<< HEAD
   .bl-contact-form ul.nav-tabs {
     margin: -2px -2px 20px -2px;
   }
+=======
+
+  .bl-contact-form ul.nav-tabs {
+    margin: -2px -2px 20px -2px;
+  }
+
+>>>>>>> 781a704 (New commit)
   .bl-contact-form ul.nav-tabs .nav-link {
     margin: 2px;
     padding: 5px 10px;
     font-size: 15px;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 /* Breadcrumb */
 /* Blog */
 .bl-blog {
@@ -5647,6 +8896,7 @@ Pagination style
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+<<<<<<< HEAD
       -ms-flex-direction: column;
           flex-direction: column;
 }
@@ -5654,6 +8904,17 @@ Pagination style
   -webkit-transform: scale(1.1, 1.1) !important;
           transform: scale(1.1, 1.1) !important;
 }
+=======
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.bl-blog-box:hover .blog-img img {
+  -webkit-transform: scale(1.1, 1.1) !important;
+  transform: scale(1.1, 1.1) !important;
+}
+
+>>>>>>> 781a704 (New commit)
 .bl-blog-box .blog-img {
   margin-bottom: 15px;
   width: 100%;
@@ -5662,6 +8923,10 @@ Pagination style
   display: flex;
   overflow: hidden;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .bl-blog-box .blog-img img {
   display: block;
   width: 100%;
@@ -5670,28 +8935,50 @@ Pagination style
   transition: transform 0.3s ease-out;
   transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .bl-blog-box .blog-info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+<<<<<<< HEAD
       -ms-flex-direction: column;
           flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
+=======
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+>>>>>>> 781a704 (New commit)
 .bl-blog-box .blog-info h3 {
   margin-bottom: 8px;
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-line-clamp: 1;
+<<<<<<< HEAD
+=======
+  line-clamp: 1;
+>>>>>>> 781a704 (New commit)
   -webkit-box-orient: vertical;
   color: #fff;
   line-height: 1;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .bl-blog-box .blog-info h3 a {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -5699,9 +8986,17 @@ Pagination style
   font-weight: 600;
   color: #fff;
 }
+<<<<<<< HEAD
 .bl-blog-box .blog-info h3 a:hover {
   color: rgba(var(--primary), 1);
 }
+=======
+
+.bl-blog-box .blog-info h3 a:hover {
+  color: rgba(var(--primary), 1);
+}
+
+>>>>>>> 781a704 (New commit)
 .bl-blog-box .blog-info span {
   font-size: 13px;
   color: #999;
@@ -5713,9 +9008,16 @@ Pagination style
     margin-top: 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
+<<<<<<< HEAD
         -ms-flex-direction: column;
             flex-direction: column;
   }
+=======
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+>>>>>>> 781a704 (New commit)
   .bl-blog-box .blog-img {
     margin-right: 0;
     margin-bottom: 10px;
@@ -5725,13 +9027,22 @@ Pagination style
     left: 0;
     right: 0;
   }
+<<<<<<< HEAD
   .bl-blog-box .blog-img img {
     width: 100%;
   }
+=======
+
+  .bl-blog-box .blog-img img {
+    width: 100%;
+  }
+
+>>>>>>> 781a704 (New commit)
   .bl-blog-box .blog-info {
     margin-left: 0;
     padding-left: 0;
   }
+<<<<<<< HEAD
   .bl-blog-box .blog-info h4 a, .bl-blog-box .blog-info h3 a {
     font-size: 17px;
   }
@@ -5761,11 +9072,64 @@ Pagination style
     font-size: 16px;
   }
 }
+=======
+
+  .bl-blog-box .blog-info h4 a,
+  .bl-blog-box .blog-info h3 a {
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+
+  .bl-blog-box .blog-info h4 a,
+  .bl-blog-box .blog-info h3 a {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+
+  .bl-blog-box .blog-info h4 a,
+  .bl-blog-box .blog-info h3 a {
+    font-size: 19px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+
+  .bl-blog-box .blog-info h4 a,
+  .bl-blog-box .blog-info h3 a {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+
+  .bl-blog-box .blog-info h4 a,
+  .bl-blog-box .blog-info h3 a {
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+
+  .bl-blog-box .blog-info h4 a,
+  .bl-blog-box .blog-info h3 a {
+    font-size: 16px;
+  }
+}
+
+>>>>>>> 781a704 (New commit)
 /* Breadcrumb */
 /* Testimonials */
 .bl-testimonials {
   position: relative;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .bl-testimonials:after {
   content: "";
   height: 200px;
@@ -5787,10 +9151,18 @@ Pagination style
 .bl-testimonials {
   position: relative;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .bl-testimonials .bl-testimonials-inner {
   max-width: 900px;
   margin: auto;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .bl-testimonials .bl-testimonials-inner .testimonials-image {
   margin-bottom: 15px;
   position: relative;
@@ -5799,6 +9171,7 @@ Pagination style
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+<<<<<<< HEAD
       -ms-flex-direction: column;
           flex-direction: column;
   -webkit-box-align: center;
@@ -5808,16 +9181,33 @@ Pagination style
       -ms-flex-pack: center;
           justify-content: center;
 }
+=======
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+>>>>>>> 781a704 (New commit)
 .bl-testimonials .bl-testimonials-inner .testimonials-image img {
   max-width: 70px;
   margin-bottom: 15px;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .bl-testimonials .bl-testimonials-inner .info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+<<<<<<< HEAD
       -ms-flex-direction: column;
           flex-direction: column;
   -webkit-box-align: center;
@@ -5828,17 +9218,39 @@ Pagination style
           justify-content: center;
 }
 .bl-testimonials .bl-testimonials-inner .info h4, .bl-testimonials .bl-testimonials-inner .info h3 {
+=======
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.bl-testimonials .bl-testimonials-inner .info h4,
+.bl-testimonials .bl-testimonials-inner .info h3 {
+>>>>>>> 781a704 (New commit)
   margin-bottom: 8px;
   font-size: 20px;
   color: #fff;
   font-weight: 600;
   text-align: center;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .bl-testimonials .bl-testimonials-inner .info span {
   font-size: 16px;
   color: #999;
   text-align: center;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .bl-testimonials .bl-testimonials-inner .testimonials-detail {
   height: 100%;
   display: -webkit-box;
@@ -5846,23 +9258,41 @@ Pagination style
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+<<<<<<< HEAD
       -ms-flex-direction: column;
           flex-direction: column;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
+=======
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+>>>>>>> 781a704 (New commit)
 .bl-testimonials .bl-testimonials-inner .testimonials-detail .inner-info {
   margin-top: 10px;
   padding: 20px;
   background-color: #080808;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .bl-testimonials .bl-testimonials-inner .testimonials-detail .inner-info p {
   margin: 0;
   color: #ddd;
   text-align: center;
   display: -webkit-box;
   -webkit-line-clamp: 3;
+<<<<<<< HEAD
+=======
+  line-clamp: 3;
+>>>>>>> 781a704 (New commit)
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -5873,38 +9303,80 @@ Pagination style
   .bl-testimonials .bl-testimonials-inner {
     max-width: 800px;
   }
+<<<<<<< HEAD
   .bl-testimonials .bl-testimonials-inner .info h4, .bl-testimonials .bl-testimonials-inner .info h3 {
     font-size: 19px;
   }
 }
+=======
+
+  .bl-testimonials .bl-testimonials-inner .info h4,
+  .bl-testimonials .bl-testimonials-inner .info h3 {
+    font-size: 19px;
+  }
+}
+
+>>>>>>> 781a704 (New commit)
 @media screen and (max-width: 1199px) {
   .bl-testimonials:after {
     height: 150px;
     width: 150px;
   }
+<<<<<<< HEAD
   .bl-testimonials .bl-testimonials-inner .info h4, .bl-testimonials .bl-testimonials-inner .info h3 {
     font-size: 18px;
   }
 }
+=======
+
+  .bl-testimonials .bl-testimonials-inner .info h4,
+  .bl-testimonials .bl-testimonials-inner .info h3 {
+    font-size: 18px;
+  }
+}
+
+>>>>>>> 781a704 (New commit)
 @media screen and (max-width: 991px) {
   .bl-testimonials:after {
     height: 120px;
     width: 120px;
   }
+<<<<<<< HEAD
   .bl-testimonials .bl-testimonials-inner .info h4, .bl-testimonials .bl-testimonials-inner .info h3 {
     font-size: 17px;
   }
 }
 @media screen and (max-width: 767px) {
   .bl-testimonials .bl-testimonials-inner .info h4, .bl-testimonials .bl-testimonials-inner .info h3 {
+=======
+
+  .bl-testimonials .bl-testimonials-inner .info h4,
+  .bl-testimonials .bl-testimonials-inner .info h3 {
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+
+  .bl-testimonials .bl-testimonials-inner .info h4,
+  .bl-testimonials .bl-testimonials-inner .info h3 {
+>>>>>>> 781a704 (New commit)
     margin-bottom: 4px;
     font-size: 16px;
     text-align: center;
   }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
   .bl-testimonials .bl-testimonials-inner .info span {
     font-size: 14px;
     text-align: center;
   }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
   .bl-testimonials .bl-testimonials-inner .testimonials-image {
     width: 100%;
     margin-bottom: 20px;
@@ -5912,6 +9384,7 @@ Pagination style
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
+<<<<<<< HEAD
         -ms-flex-pack: center;
             justify-content: center;
   }
@@ -5921,17 +9394,39 @@ Pagination style
   .bl-testimonials .testimonials-img-3 {
     display: none;
   }
+=======
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .bl-testimonials .bl-testimonials-inner .testimonials-image img {
+    max-width: 80px;
+  }
+
+  .bl-testimonials .testimonials-img-3 {
+    display: none;
+  }
+
+>>>>>>> 781a704 (New commit)
   .bl-testimonials .testimonials-img-4 {
     right: auto;
     left: 0;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 @media screen and (max-width: 575px) {
   .bl-testimonials:after {
     height: 80px;
     width: 80px;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 /* Breadcrumb */
 /**  Brand section css  **/
 .bl-brand ul li {
@@ -5939,6 +9434,10 @@ Pagination style
   display: -ms-flexbox;
   display: flex;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .bl-brand ul li a {
   border: 1px solid #222;
 }
@@ -5949,15 +9448,29 @@ Pagination style
   width: 100%;
   height: 100%;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .bl-map .map iframe {
   width: 100%;
   height: 100%;
   -webkit-filter: grayscale(100%) invert(100%) contrast(96%);
+<<<<<<< HEAD
           filter: grayscale(100%) invert(100%) contrast(96%);
 }
 .bl-map .bl-contact ul {
   margin-bottom: 30px;
 }
+=======
+  filter: grayscale(100%) invert(100%) contrast(96%);
+}
+
+.bl-map .bl-contact ul {
+  margin-bottom: 30px;
+}
+
+>>>>>>> 781a704 (New commit)
 .bl-map .bl-contact ul li {
   padding: 15px;
   color: #fff;
@@ -5966,6 +9479,7 @@ Pagination style
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
+<<<<<<< HEAD
       -ms-flex-pack: justify;
           justify-content: space-between;
   border-bottom: 1px solid #222;
@@ -5979,6 +9493,25 @@ Pagination style
 .bl-map .bl-contact ul li span {
   font-weight: 300;
 }
+=======
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  border-bottom: 1px solid #222;
+}
+
+.bl-map .bl-contact ul li:nth-child(odd) {
+  background-color: #080808;
+}
+
+.bl-map .bl-contact ul li b {
+  font-weight: 500;
+}
+
+.bl-map .bl-contact ul li span {
+  font-weight: 300;
+}
+
+>>>>>>> 781a704 (New commit)
 .bl-map .contact-img {
   position: relative;
   display: -ms-grid;
@@ -5987,9 +9520,17 @@ Pagination style
   grid-template-columns: 1fr 1fr;
   gap: 30px;
 }
+<<<<<<< HEAD
 .bl-map .contact-img img {
   width: 100%;
 }
+=======
+
+.bl-map .contact-img img {
+  width: 100%;
+}
+
+>>>>>>> 781a704 (New commit)
 .bl-map .contact-img .about-profile {
   margin-top: 30px;
 }
@@ -6000,15 +9541,24 @@ Pagination style
     font-size: 15px;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 @media only screen and (max-width: 1199px) {
   .bl-map .bl-contact ul li {
     font-size: 14px;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 @media only screen and (max-width: 991px) {
   .bl-map .map {
     height: 400px;
   }
+<<<<<<< HEAD
   .bl-map .bl-contact {
     margin-top: 30px;
   }
@@ -6017,20 +9567,45 @@ Pagination style
             transform: translate(0%, 0%) !important;
   }
 }
+=======
+
+  .bl-map .bl-contact {
+    margin-top: 30px;
+  }
+
+  .contact-img img {
+    -webkit-transform: translate(0%, 0%) !important;
+    transform: translate(0%, 0%) !important;
+  }
+}
+
+>>>>>>> 781a704 (New commit)
 @media only screen and (max-width: 767px) {
   .bl-map .map {
     height: 300px;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 @media only screen and (max-width: 360px) {
   .bl-map .contact-img {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
   }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
   .bl-map .contact-img .about-profile {
     margin-top: 0;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 /* Breadcrumb */
 /**=====================
 FAQ 
@@ -6038,31 +9613,52 @@ FAQ
 .faq-section img {
   width: 100%;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .faq-section .faq-title h2 {
   font-size: 30px;
   margin-bottom: 15px;
   margin-top: -10px;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .faq-section .faq-title p {
   font-size: 15px;
   width: 90%;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .faq-section .accordion .accordion-item {
   border: none;
   background-color: rgba(var(--white), 0.04);
   border-radius: 6px;
   border: 1px solid rgba(var(--border-color), 1);
 }
+<<<<<<< HEAD
 .faq-section .accordion .accordion-item .accordion-button {
   background: transparent;
   -webkit-box-shadow: none;
           box-shadow: none;
+=======
+
+.faq-section .accordion .accordion-item .accordion-button {
+  background: transparent;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+>>>>>>> 781a704 (New commit)
   color: rgba(var(--title-color), 1);
   font-size: 15px;
   font-weight: 500;
   padding: 15px;
   line-height: 1.5;
 }
+<<<<<<< HEAD
 .faq-section .accordion .accordion-item .accordion-button::after {
   -webkit-filter: invert(1) brightness(100);
           filter: invert(1) brightness(100);
@@ -6070,10 +9666,26 @@ FAQ
 .faq-section .accordion .accordion-item + .accordion-item {
   margin-top: 15px;
 }
+=======
+
+.faq-section .accordion .accordion-item .accordion-button::after {
+  -webkit-filter: invert(1) brightness(100);
+  filter: invert(1) brightness(100);
+}
+
+.faq-section .accordion .accordion-item+.accordion-item {
+  margin-top: 15px;
+}
+
+>>>>>>> 781a704 (New commit)
 .faq-section .accordion .accordion-item .accordion-body {
   padding: 0 15px 16px;
   color: rgba(var(--white), 1);
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .faq-section .accordion .accordion-item .accordion-body p {
   margin: 0;
 }
@@ -6084,6 +9696,10 @@ FAQ
     width: 100%;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 @media only screen and (max-width: 575px) {
   .faq-section .accordion .accordion-item .accordion-button::after {
     width: 18px;
@@ -6091,6 +9707,10 @@ FAQ
     background-size: 18px;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 /* Breadcrumb */
 /**=====================
 Pricing style
@@ -6098,21 +9718,37 @@ Pricing style
 .bb-pricing .title {
   text-align: center;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .bb-pricing .title h3 {
   font-size: 52px;
   margin-bottom: 20px;
   margin-top: -11px;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .bb-pricing .title .pricing-tab {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-align: center;
+<<<<<<< HEAD
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+=======
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+>>>>>>> 781a704 (New commit)
   padding: 10px 4px;
   background-color: rgba(var(--white), 0.05);
   border-radius: 20px;
@@ -6120,16 +9756,28 @@ Pricing style
   position: relative;
   z-index: 1;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .bb-pricing .title .pricing-tab a {
   color: rgba(var(--title-color), 1);
   padding: 0 15px;
   font-weight: 400;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .bb-pricing .title .pricing-tab a span {
   font-size: 14px;
   color: rgba(var(--primary), 1);
   padding-left: 8px;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .bb-pricing .title .pricing-tab .overlay-active {
   position: absolute;
   width: 0;
@@ -6144,6 +9792,10 @@ Pricing style
 .pricing-content {
   margin-top: 50px;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .pricing-content .pricing-wrapper {
   padding: 30px;
   border-radius: 12px;
@@ -6155,11 +9807,19 @@ Pricing style
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 @media (max-width: 1199px) {
   .pricing-content .pricing-wrapper {
     padding: 15px;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .pricing-content .pricing-wrapper .badge {
   position: absolute;
   top: -12px;
@@ -6170,40 +9830,68 @@ Pricing style
   padding: 5px 10px;
   border-radius: 30px;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .pricing-content .pricing-wrapper h3 {
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 2px;
   margin-top: -4px;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .pricing-content .pricing-wrapper p {
   color: rgba(var(--content-color), 1);
   font-size: 14px;
   margin-bottom: 20px;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .pricing-content .pricing-wrapper h4 {
   margin-bottom: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .pricing-content .pricing-wrapper h4 span {
   font-size: 18px;
   color: rgba(var(--content-color), 1);
   font-weight: 700;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .pricing-content .pricing-wrapper .btn {
   width: 100%;
   font-size: 15px;
   padding: 15px;
   font-weight: 500;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .pricing-content .pricing-wrapper .plan-features {
   list-style: none;
   padding: 0;
   margin: 0 0 15px 0;
   text-align: left;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .pricing-content .pricing-wrapper .plan-features li {
   padding: 5px 0;
   color: rgba(var(--content-color), 1);
@@ -6212,6 +9900,7 @@ Pricing style
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
+<<<<<<< HEAD
       -ms-flex-align: center;
           align-items: center;
   gap: 8px;
@@ -6231,6 +9920,30 @@ Pricing style
   .pricing-content .pricing-wrapper:hover {
     -webkit-transform: none;
             transform: none;
+=======
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.pricing-content .pricing-wrapper .plan-features li.disabled {
+  opacity: 0.6;
+}
+
+.pricing-content .pricing-wrapper:hover {
+  -webkit-transform: translateY(-8px);
+  transform: translateY(-8px);
+  -webkit-box-shadow: 0 15px 30px rgba(var(--black), 0.1);
+  box-shadow: 0 15px 30px rgba(var(--black), 0.1);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+@media (max-width: 991px) {
+  .pricing-content .pricing-wrapper:hover {
+    -webkit-transform: none;
+    transform: none;
+>>>>>>> 781a704 (New commit)
   }
 }
 
@@ -6245,55 +9958,97 @@ Blog style
   font-weight: 500;
   margin-top: -4px;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .blog-sidebar .blog-category {
   margin-top: -5px 0;
   padding-left: 15px;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .rtl .blog-sidebar .blog-category {
   padding-left: 0;
   padding-right: 15px;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .blog-sidebar .blog-category li {
   padding: 5px 0;
   display: list-item;
   list-style-type: circle;
   color: #afb2bf;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .blog-sidebar .blog-category li a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
+<<<<<<< HEAD
       -ms-flex-align: center;
           align-items: center;
+=======
+  -ms-flex-align: center;
+  align-items: center;
+>>>>>>> 781a704 (New commit)
   width: 100%;
   color: #afb2bf;
   font-size: 15px;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .blog-sidebar .blog-category li a span {
   margin-left: auto;
   display: none;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .blog-sidebar .blog-category li a:hover {
   padding-left: 5px;
   color: rgba(var(--primary), 1);
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
+<<<<<<< HEAD
 .blog-sidebar .blog-category li + li {
   margin-top: 5px;
 }
 .blog-sidebar .sidebar-wrapper {
   margin-top: 30px;
 }
+=======
+
+.blog-sidebar .blog-category li+li {
+  margin-top: 5px;
+}
+
+.blog-sidebar .sidebar-wrapper {
+  margin-top: 30px;
+}
+
+>>>>>>> 781a704 (New commit)
 .blog-sidebar .tags-list {
   margin: -5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
+<<<<<<< HEAD
       -ms-flex-align: center;
           align-items: center;
   -ms-flex-wrap: wrap;
@@ -6302,6 +10057,18 @@ Blog style
 .blog-sidebar .tags-list li {
   margin: 5px;
 }
+=======
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.blog-sidebar .tags-list li {
+  margin: 5px;
+}
+
+>>>>>>> 781a704 (New commit)
 .blog-sidebar .tags-list li a {
   font-size: 14px;
   background-color: rgba(var(--white), 0.04);
@@ -6312,39 +10079,73 @@ Blog style
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .blog-sidebar .tags-list li a:hover {
   background-color: rgba(var(--primary), 1);
   color: rgba(var(--title-dark), 1);
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
+<<<<<<< HEAD
 .blog-sidebar .popular-blogs li {
   width: 100%;
 }
+=======
+
+.blog-sidebar .popular-blogs li {
+  width: 100%;
+}
+
+>>>>>>> 781a704 (New commit)
 .blog-sidebar .popular-blogs li .popular-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
+<<<<<<< HEAD
       -ms-flex-align: center;
           align-items: center;
   gap: 15px;
 }
+=======
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 15px;
+}
+
+>>>>>>> 781a704 (New commit)
 .blog-sidebar .popular-blogs li .popular-wrap img {
   width: 100px;
   aspect-ratio: 41/50;
   border-radius: 5px;
   -o-object-fit: cover;
+<<<<<<< HEAD
      object-fit: cover;
 }
 .blog-sidebar .popular-blogs li .popular-wrap .popular-content {
   width: calc(100% - 100px - 15px);
 }
+=======
+  object-fit: cover;
+}
+
+.blog-sidebar .popular-blogs li .popular-wrap .popular-content {
+  width: calc(100% - 100px - 15px);
+}
+
+>>>>>>> 781a704 (New commit)
 .blog-sidebar .popular-blogs li .popular-wrap .popular-content h5 {
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-line-clamp: 2;
+<<<<<<< HEAD
+=======
+  line-clamp: 2;
+>>>>>>> 781a704 (New commit)
   -webkit-box-orient: vertical;
   font-size: 15px;
   color: rgba(var(--title-color), 1);
@@ -6354,14 +10155,26 @@ Blog style
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .blog-sidebar .popular-blogs li .popular-wrap .popular-content h6 {
   color: #afb2bf;
   font-size: 15px;
   font-weight: 500;
 }
+<<<<<<< HEAD
 .blog-sidebar .popular-blogs li + li {
   margin-top: 18px;
 }
+=======
+
+.blog-sidebar .popular-blogs li+li {
+  margin-top: 18px;
+}
+
+>>>>>>> 781a704 (New commit)
 .blog-sidebar .popular-blogs li:hover .popular-content h5 {
   color: rgba(var(--primary), 1);
   -webkit-transition: all 0.5s ease;
@@ -6373,9 +10186,16 @@ Blog style
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
+<<<<<<< HEAD
       -ms-flex-align: center;
           align-items: center;
 }
+=======
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+>>>>>>> 781a704 (New commit)
 .blog-list-wrapper .blog-img {
   position: relative;
   overflow: hidden;
@@ -6384,10 +10204,15 @@ Blog style
   aspect-ratio: 31/20;
   border-radius: 10px;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .blog-list-wrapper .blog-img img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
+<<<<<<< HEAD
      object-fit: cover;
   border-radius: 10px;
   -webkit-transform: scale(1.1);
@@ -6395,6 +10220,16 @@ Blog style
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
+=======
+  object-fit: cover;
+  border-radius: 10px;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+>>>>>>> 781a704 (New commit)
 .blog-list-wrapper .blog-img .overlay-text {
   position: absolute;
   top: 0;
@@ -6408,11 +10243,19 @@ Blog style
   letter-spacing: 1px;
   opacity: 0;
   -webkit-transform: translate(-50%, -50%) scale(0);
+<<<<<<< HEAD
           transform: translate(-50%, -50%) scale(0);
+=======
+  transform: translate(-50%, -50%) scale(0);
+>>>>>>> 781a704 (New commit)
   -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
   font-weight: 500;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .blog-list-wrapper .blog-content {
   width: calc(50% - 25px);
   margin-left: 30px;
@@ -6421,12 +10264,22 @@ Blog style
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+<<<<<<< HEAD
       -ms-flex-direction: column;
           flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
+=======
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+>>>>>>> 781a704 (New commit)
 .blog-list-wrapper .blog-content h3 {
   color: #afb2bf;
   font-size: 15px;
@@ -6435,26 +10288,46 @@ Blog style
   margin-top: -2px;
   opacity: 0.6;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .blog-list-wrapper .blog-content h4 {
   font-size: 20px;
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-line-clamp: 2;
+<<<<<<< HEAD
+=======
+  line-clamp: 2;
+>>>>>>> 781a704 (New commit)
   -webkit-box-orient: vertical;
   margin-bottom: 14px;
   line-height: 1.4;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .blog-list-wrapper .blog-content p {
   font-size: 14px;
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-line-clamp: 3;
+<<<<<<< HEAD
+=======
+  line-clamp: 3;
+>>>>>>> 781a704 (New commit)
   -webkit-box-orient: vertical;
   color: #afb2bf;
   line-height: 1.6;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .blog-list-wrapper .blog-content a {
   color: rgba(var(--primary), 1);
   margin-top: 0;
@@ -6471,6 +10344,10 @@ Blog style
   border-radius: 15px;
   padding: 15px;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .blog-grid-wrapper .blog-img {
   aspect-ratio: 41/50;
   border-radius: 10px;
@@ -6479,17 +10356,31 @@ Blog style
   position: relative;
   overflow: hidden;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .blog-grid-wrapper .blog-img img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
+<<<<<<< HEAD
      object-fit: cover;
+=======
+  object-fit: cover;
+>>>>>>> 781a704 (New commit)
   border-radius: 10px;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   -webkit-transform: scale(1.1);
+<<<<<<< HEAD
           transform: scale(1.1);
 }
+=======
+  transform: scale(1.1);
+}
+
+>>>>>>> 781a704 (New commit)
 .blog-grid-wrapper .blog-img .overlay-text {
   position: absolute;
   top: 0;
@@ -6503,11 +10394,19 @@ Blog style
   letter-spacing: 1px;
   opacity: 0;
   -webkit-transform: translate(-50%, -50%) scale(0);
+<<<<<<< HEAD
           transform: translate(-50%, -50%) scale(0);
+=======
+  transform: translate(-50%, -50%) scale(0);
+>>>>>>> 781a704 (New commit)
   -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
   font-weight: 500;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .blog-grid-wrapper .blog-grid-content h3 {
   color: #afb2bf;
   text-transform: capitalize;
@@ -6515,15 +10414,27 @@ Blog style
   font-weight: 400;
   font-size: 16px;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .blog-grid-wrapper .blog-grid-content h3 span {
   padding-left: 20px;
   position: relative;
   display: inline-block;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .rtl .blog-grid-wrapper .blog-grid-content h3 span {
   padding-left: 0;
   padding-right: 20px;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .blog-grid-wrapper .blog-grid-content h3 span::after {
   content: "";
   position: absolute;
@@ -6533,23 +10444,40 @@ Blog style
   height: 12px;
   background-color: #656565;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .rtl .blog-grid-wrapper .blog-grid-content h3 span::after {
   left: unset;
   right: 10px;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .blog-grid-wrapper .blog-grid-content .read-more {
   color: rgba(var(--primary), 1);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
+<<<<<<< HEAD
       -ms-flex-align: center;
           align-items: center;
+=======
+  -ms-flex-align: center;
+  align-items: center;
+>>>>>>> 781a704 (New commit)
   gap: 5px;
   margin-top: 10px;
   font-size: 14px;
   margin-bottom: -6px;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .blog-grid-wrapper h4 {
   font-size: 18px;
   color: rgba(var(--title-color), 1);
@@ -6558,11 +10486,19 @@ Blog style
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-line-clamp: 2;
+<<<<<<< HEAD
+=======
+  line-clamp: 2;
+>>>>>>> 781a704 (New commit)
   -webkit-box-orient: vertical;
   line-height: 1.4;
 }
 
+<<<<<<< HEAD
 .blog-main-wrapper .blog-list-wrapper + .blog-list-wrapper {
+=======
+.blog-main-wrapper .blog-list-wrapper+.blog-list-wrapper {
+>>>>>>> 781a704 (New commit)
   margin-top: 30px;
 }
 
@@ -6570,23 +10506,41 @@ Blog style
   aspect-ratio: 1.9;
   width: 100%;
   -o-object-fit: cover;
+<<<<<<< HEAD
      object-fit: cover;
   border-radius: 15px;
   -o-object-position: top;
      object-position: top;
 }
+=======
+  object-fit: cover;
+  border-radius: 15px;
+  -o-object-position: top;
+  object-position: top;
+}
+
+>>>>>>> 781a704 (New commit)
 .blog-details-section .bl-img {
   margin-bottom: 30px;
   position: relative;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .blog-details-section .bl-img .social-share {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+<<<<<<< HEAD
       -ms-flex-direction: column;
           flex-direction: column;
+=======
+  -ms-flex-direction: column;
+  flex-direction: column;
+>>>>>>> 781a704 (New commit)
   gap: 10px;
   position: absolute;
   bottom: 15px;
@@ -6596,29 +10550,53 @@ Blog style
   height: -moz-max-content;
   height: max-content;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .blog-details-section .bl-img .social-share a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
+<<<<<<< HEAD
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+=======
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+>>>>>>> 781a704 (New commit)
   border-radius: 10px;
   width: 40px;
   height: 40px;
   background-color: rgba(var(--black), 0.8);
   backdrop-filter: blur(5px);
 }
+<<<<<<< HEAD
 .blog-details-section .bl-img .social-share a:hover {
   opacity: 0.8;
 }
+=======
+
+.blog-details-section .bl-img .social-share a:hover {
+  opacity: 0.8;
+}
+
+>>>>>>> 781a704 (New commit)
 .blog-details-section .bl-img .social-share a i {
   color: rgba(var(--title-color), 1);
   font-size: 15px;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .blog-details-section .blog-main-content {
   width: 100%;
   margin: 0 auto;
@@ -6626,25 +10604,45 @@ Blog style
   display: -ms-flexbox;
   display: flex;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .blog-details-section .blog-main-content h2 {
   margin-bottom: 15px;
   font-size: 25px;
   line-height: 32px;
   font-weight: 500;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .blog-details-section .blog-main-content p,
 .blog-details-section .blog-main-content li {
   margin: 0;
   font-size: 15px;
   line-height: 28px;
 }
+<<<<<<< HEAD
 .blog-details-section .blog-main-content p + p {
   margin-top: 20px;
 }
+=======
+
+.blog-details-section .blog-main-content p+p {
+  margin-top: 20px;
+}
+
+>>>>>>> 781a704 (New commit)
 .blog-details-section .blog-main-content li {
   margin-top: 30px;
   list-style: none;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .blog-details-section .blog-main-content li span {
   display: block;
   margin-bottom: 5px;
@@ -6652,34 +10650,66 @@ Blog style
   font-size: 16px;
   color: rgba(var(--white), 1);
 }
+<<<<<<< HEAD
 .blog-details-section .blog-main-content ol {
   padding-left: 0;
 }
 .rtl .blog-details-section .blog-main-content ol {
   padding-right: 0;
 }
+=======
+
+.blog-details-section .blog-main-content ol {
+  padding-left: 0;
+}
+
+.rtl .blog-details-section .blog-main-content ol {
+  padding-right: 0;
+}
+
+>>>>>>> 781a704 (New commit)
 .blog-details-section .blog-main-content figure {
   width: 82%;
   margin: 30px auto 0;
 }
+<<<<<<< HEAD
 .blog-details-section .blog-main-content figure .blockquote {
   margin-bottom: 15px;
 }
+=======
+
+.blog-details-section .blog-main-content figure .blockquote {
+  margin-bottom: 15px;
+}
+
+>>>>>>> 781a704 (New commit)
 .blog-details-section .blog-main-content figure .blockquote p {
   font-size: 20px;
   line-height: 32px;
   color: rgba(var(--title-color), 1);
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .blog-details-section .blog-main-content .blockquote-footer {
   margin-bottom: 0;
   margin-top: 0;
   font-size: 16px;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .blog-details-section .final-thoughts {
   padding-top: 30px;
   margin-top: 30px;
   border-top: 1px solid rgba(var(--border-color), 1);
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .blog-details-section .final-thoughts h4,
 .blog-details-section .final-thoughts h3 {
   font-weight: 500;
@@ -6691,6 +10721,10 @@ Blog style
   width: 100%;
   margin: 0 auto;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .blog-comments h4 {
   padding-top: 30px;
   margin-top: 30px;
@@ -6698,28 +10732,52 @@ Blog style
   margin-bottom: 20px;
   font-size: 24px;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .blog-comments .comment-write .auth-part {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
+<<<<<<< HEAD
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 14px;
   margin-top: 20px;
 }
+=======
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 14px;
+  margin-top: 20px;
+}
+
+>>>>>>> 781a704 (New commit)
 .blog-comments .comment-write .auth-part img {
   width: 50px;
   height: 50px;
   border-radius: 50%;
   -o-object-fit: cover;
+<<<<<<< HEAD
      object-fit: cover;
   margin-right: 10px;
 }
+=======
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+>>>>>>> 781a704 (New commit)
 .rtl .blog-comments .comment-write .auth-part img {
   margin-right: 0;
   margin-left: 10px;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .blog-comments .comment-write .form-control {
   background-color: rgba(var(--white), 0.04);
   border: 1px solid rgba(var(--border-color), 1);
@@ -6727,6 +10785,7 @@ Blog style
   border-radius: 10px;
   color: rgba(var(--title-color), 1);
 }
+<<<<<<< HEAD
 .blog-comments .comment-write .form-control::-webkit-input-placeholder {
   color: #afb2bf;
 }
@@ -6746,11 +10805,40 @@ Blog style
   -webkit-box-shadow: none;
           box-shadow: none;
 }
+=======
+
+.blog-comments .comment-write .form-control::-webkit-input-placeholder {
+  color: #afb2bf;
+}
+
+.blog-comments .comment-write .form-control::-moz-placeholder {
+  color: #afb2bf;
+}
+
+.blog-comments .comment-write .form-control:-ms-input-placeholder {
+  color: #afb2bf;
+}
+
+.blog-comments .comment-write .form-control::-ms-input-placeholder {
+  color: #afb2bf;
+}
+
+.blog-comments .comment-write .form-control::placeholder {
+  color: #afb2bf;
+}
+
+.blog-comments .comment-write .form-control:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+>>>>>>> 781a704 (New commit)
 .blog-comments .comment-write .form-bottom {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
+<<<<<<< HEAD
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: justify;
@@ -6760,6 +10848,18 @@ Blog style
       flex-wrap: wrap;
   gap: 15px;
 }
+=======
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+>>>>>>> 781a704 (New commit)
 .blog-comments .comment-write .form-bottom .form-check-input {
   width: 17px;
   height: 17px;
@@ -6767,72 +10867,135 @@ Blog style
   background-color: rgba(var(--white), 0.07);
   border: none;
 }
+<<<<<<< HEAD
 .blog-comments .comment-write .form-bottom .form-check-input:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
+=======
+
+.blog-comments .comment-write .form-bottom .form-check-input:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+>>>>>>> 781a704 (New commit)
 .blog-comments .comment-write .form-bottom label {
   margin-top: 5px;
   color: #afb2bf;
   font-size: 14px;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .blog-comments .comment-write .form-bottom .form-check {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
+<<<<<<< HEAD
       -ms-flex-align: center;
           align-items: center;
   gap: 7px;
 }
+=======
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 7px;
+}
+
+>>>>>>> 781a704 (New commit)
 .blog-comments .comment-write .form-bottom a {
   padding: 8px 22px;
   font-size: 15px;
   font-weight: 500;
 }
+<<<<<<< HEAD
 .blog-comments .comments-list {
   margin-top: 30px;
 }
+=======
+
+.blog-comments .comments-list {
+  margin-top: 30px;
+}
+
+>>>>>>> 781a704 (New commit)
 .blog-comments .comments-list .comment-box {
   background-color: rgba(var(--white), 0.04);
   padding: 20px;
   border-radius: 10px;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .blog-comments .comments-list .comment-box .comments-top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
+<<<<<<< HEAD
       -ms-flex-align: center;
           align-items: center;
 }
+=======
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+>>>>>>> 781a704 (New commit)
 .blog-comments .comments-list .comment-box .comments-top img {
   width: 45px;
   height: 45px;
   border-radius: 50%;
   -o-object-fit: cover;
+<<<<<<< HEAD
      object-fit: cover;
   margin-right: 10px;
 }
+=======
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+>>>>>>> 781a704 (New commit)
 .rtl .blog-comments .comments-list .comment-box .comments-top img {
   margin-right: 0;
   margin-left: 10px;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .blog-comments .comments-list .comment-box .comments-top .comment-content h5 {
   font-size: 17px;
   font-weight: 400;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .blog-comments .comments-list .comment-box .comments-top .comment-content span {
   color: #afb2bf;
   font-size: 14px;
   opacity: 0.6;
   font-weight: 300;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .blog-comments .comments-list .comment-box p {
   font-size: 14px;
   color: #afb2bf;
   margin-block: 10px;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .blog-comments .comments-list .comment-box .comment-actions {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6840,16 +11003,29 @@ Blog style
   gap: 10px;
   margin-bottom: -2px;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .blog-comments .comments-list .comment-box .comment-actions a {
   color: rgba(var(--primary), 1);
   font-size: 14px;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .blog-comments .comments-list .inside-comment {
   margin-top: 30px;
   margin-left: 30px;
   position: relative;
 }
+<<<<<<< HEAD
 .blog-comments .comments-list li + li {
+=======
+
+.blog-comments .comments-list li+li {
+>>>>>>> 781a704 (New commit)
   margin-top: 30px;
   padding-top: 30px;
 }
@@ -6857,18 +11033,34 @@ Blog style
 .three-grid .blog-grid-wrapper h4 {
   font-size: 16px;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .three-grid .blog-grid-wrapper h3 {
   margin-bottom: 10px;
   font-size: 15px;
   font-weight: 500;
 }
+<<<<<<< HEAD
 .three-grid .blog-grid-wrapper h3 span {
   font-weight: 500;
 }
+=======
+
+.three-grid .blog-grid-wrapper h3 span {
+  font-weight: 500;
+}
+
+>>>>>>> 781a704 (New commit)
 .three-grid .blog-grid-wrapper .read-more {
   margin-top: 10px;
   font-size: 15px;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 .three-grid .blog-grid-wrapper .blog-img {
   aspect-ratio: 27/25;
   margin-bottom: 15px;
@@ -6883,6 +11075,7 @@ Blog style
   .blog-sidebar .sidebar-title {
     font-size: 17px;
   }
+<<<<<<< HEAD
   .blog-grid-wrapper h4 {
     font-size: 17px;
   }
@@ -6895,18 +11088,46 @@ Blog style
   .blog-details-section .blog-main-content figure .blockquote p {
     font-size: 19px;
   }
+=======
+
+  .blog-grid-wrapper h4 {
+    font-size: 17px;
+  }
+
+  .blog-details-section .blog-main-content {
+    width: 95%;
+  }
+
+  .blog-details-section .blog-main-content h2 {
+    font-size: 24px;
+  }
+
+  .blog-details-section .blog-main-content figure .blockquote p {
+    font-size: 19px;
+  }
+
+>>>>>>> 781a704 (New commit)
   .blog-details-section .final-thoughts h4,
   .blog-details-section .final-thoughts h3 {
     font-size: 22px;
   }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
   .blog-comments h4 {
     font-size: 22px;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 @media only screen and (max-width: 1199px) {
   .blog-sidebar .sidebar-title {
     font-size: 16px;
   }
+<<<<<<< HEAD
   .blog-sidebar .popular-blogs li {
     gap: 10px;
   }
@@ -6931,18 +11152,62 @@ Blog style
   .blog-details-section .blog-main-content figure .blockquote p {
     font-size: 18px;
   }
+=======
+
+  .blog-sidebar .popular-blogs li {
+    gap: 10px;
+  }
+
+  .blog-sidebar .popular-blogs li .popular-wrap img {
+    width: 70px;
+  }
+
+  .blog-sidebar .popular-blogs li .popular-wrap .popular-content {
+    width: calc(100% - 70px - 10px);
+  }
+
+  .blog-list-wrapper .blog-content {
+    margin-left: 15px;
+  }
+
+  .blog-grid-wrapper h4 {
+    font-size: 16px;
+  }
+
+  .blog-details-section .blog-main-content {
+    width: 95%;
+  }
+
+  .blog-details-section .blog-main-content h2 {
+    font-size: 23px;
+  }
+
+  .blog-details-section .blog-main-content figure .blockquote p {
+    font-size: 18px;
+  }
+
+>>>>>>> 781a704 (New commit)
   .blog-details-section .final-thoughts h4,
   .blog-details-section .final-thoughts h3 {
     font-size: 20px;
   }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
   .blog-comments h4 {
     font-size: 20px;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 @media only screen and (max-width: 991px) {
   .blog-list-wrapper .blog-img .overlay-text {
     display: none;
   }
+<<<<<<< HEAD
   .blog-list-wrapper .blog-content P {
     -webkit-line-clamp: 4;
   }
@@ -6961,36 +11226,92 @@ Blog style
   .blog-details-section .blog-main-content figure .blockquote p {
     font-size: 17px;
   }
+=======
+
+  .blog-list-wrapper .blog-content P {
+    -webkit-line-clamp: 4;
+    line-clamp: 4;
+  }
+
+  .blog-grid-wrapper .blog-img .overlay-text {
+    display: none;
+  }
+
+  .blog-grid-wrapper .blog-grid-content h3 {
+    font-size: 15px;
+  }
+
+  .blog-details-section .blog-main-content {
+    width: 95%;
+  }
+
+  .blog-details-section .blog-main-content h2 {
+    font-size: 22px;
+  }
+
+  .blog-details-section .blog-main-content figure .blockquote p {
+    font-size: 17px;
+  }
+
+>>>>>>> 781a704 (New commit)
   .blog-details-section .final-thoughts h4,
   .blog-details-section .final-thoughts h3 {
     font-size: 18px;
   }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
   .blog-comments h4 {
     font-size: 18px;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 @media only screen and (max-width: 767px) {
   .blog-list-wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
+<<<<<<< HEAD
         -ms-flex-direction: column;
             flex-direction: column;
   }
   .blog-list-wrapper .blog-img {
     width: 100%;
   }
+=======
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .blog-list-wrapper .blog-img {
+    width: 100%;
+  }
+
+>>>>>>> 781a704 (New commit)
   .blog-list-wrapper .blog-content {
     width: 100%;
     margin-left: 0;
     margin-top: 15px;
   }
+<<<<<<< HEAD
   .blog-grid-wrapper .blog-grid-content h3 {
     font-size: 14px;
   }
+=======
+
+  .blog-grid-wrapper .blog-grid-content h3 {
+    font-size: 14px;
+  }
+
+>>>>>>> 781a704 (New commit)
   .blog-details-section .blog-main-content {
     width: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
+<<<<<<< HEAD
         -ms-flex-direction: column;
             flex-direction: column;
     gap: 12px;
@@ -7007,40 +11328,99 @@ Blog style
   .blog-details-section .blog-main-content figure .blockquote p {
     font-size: 16px;
   }
+=======
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .blog-details-section .blog-main-content h2 {
+    font-size: 21px;
+  }
+
+  .blog-details-section .blog-main-content li span {
+    font-size: 15px;
+  }
+
+  .blog-details-section .blog-main-content figure {
+    width: 95%;
+  }
+
+  .blog-details-section .blog-main-content figure .blockquote p {
+    font-size: 16px;
+  }
+
+>>>>>>> 781a704 (New commit)
   .blog-details-section .final-thoughts h4,
   .blog-details-section .final-thoughts h3 {
     font-size: 17px;
   }
+<<<<<<< HEAD
   .blog-comments {
     width: 100%;
   }
+=======
+
+  .blog-comments {
+    width: 100%;
+  }
+
+>>>>>>> 781a704 (New commit)
   .blog-comments h4 {
     font-size: 17px;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 @media only screen and (max-width: 575px) {
   .blog-details-section .blog-main-img {
     aspect-ratio: 1.5;
   }
+<<<<<<< HEAD
   .blog-details-section .blog-main-content h2 {
     font-size: 20px;
   }
+=======
+
+  .blog-details-section .blog-main-content h2 {
+    font-size: 20px;
+  }
+
+>>>>>>> 781a704 (New commit)
   .blog-details-section .final-thoughts h4,
   .blog-details-section .final-thoughts h3 {
     font-size: 16px;
   }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
   .blog-comments h4 {
     font-size: 16px;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 @media only screen and (max-width: 420px) {
   .blog-details-section .blog-main-img {
     aspect-ratio: 1.2;
   }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
   .blog-details-section .blog-main-content h2 {
     font-size: 18px;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
 /* Portfolio refresh overrides */
 :root {
   --primary: 18, 18, 20;
@@ -7365,7 +11745,11 @@ a {
   color: rgba(var(--content-color), 1);
 }
 
+<<<<<<< HEAD
 .bl-hero .bl-here-txt > p span {
+=======
+.bl-hero .bl-here-txt>p span {
+>>>>>>> 781a704 (New commit)
   color: rgba(var(--content-color), 1);
 }
 
@@ -7816,7 +12200,11 @@ body.theme-light .bl-hero .hero-details h2 {
   background-color: rgba(24, 24, 28, 1) !important;
 }
 
+<<<<<<< HEAD
 body.theme-light .bl-hero .hero-details .bl-here-txt > p > div {
+=======
+body.theme-light .bl-hero .hero-details .bl-here-txt>p>div {
+>>>>>>> 781a704 (New commit)
   background: linear-gradient(to right, rgb(12, 12, 15) 50%, rgb(96, 96, 106) 50%) !important;
   background-size: 200% 100% !important;
   background-position-x: 100% !important;
@@ -7904,6 +12292,10 @@ body.theme-light .bl-label .label-auto li:after {
 }
 
 @media only screen and (max-width: 991px) {
+<<<<<<< HEAD
+=======
+
+>>>>>>> 781a704 (New commit)
   .desktop-nav,
   .header-cta {
     display: none;
@@ -8090,5 +12482,111 @@ body.theme-light .bl-label .label-auto li:after {
   }
 }
 
+<<<<<<< HEAD
 /*# sourceMappingURL=style.css.map */
 
+=======
+/* Footer Social Bar & Buttons */
+.footer-social-bar .footer-social-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: #ffffff !important;
+  font-size: 18px;
+  background: rgba(255, 255, 255, 0.05);
+  transition: all 0.3s ease;
+  text-decoration: none !important;
+}
+
+.footer-social-bar .footer-social-btn:hover {
+  background: rgba(var(--primary), 1);
+  border-color: rgba(var(--primary), 1);
+  color: #080808 !important;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 14px rgba(var(--primary), 0.35);
+}
+
+/* Project Card Restructuring & Mobile Display */
+.bl-project-card {
+  border-radius: 16px;
+  overflow: hidden;
+  background: #141414;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.bl-project-card .project-info {
+  padding: 20px;
+  background: rgba(18, 18, 18, 0.95);
+  backdrop-filter: blur(12px);
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 5;
+  transition: all 0.3s ease;
+}
+
+.bl-project-card .project-name {
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffffff !important;
+  margin-bottom: 6px;
+  line-height: 1.3;
+}
+
+.bl-project-card .project-stack {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.65) !important;
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+
+.bl-project-card .project-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(var(--primary), 1) !important;
+  text-decoration: none !important;
+  transition: all 0.2s ease;
+}
+
+.bl-project-card .project-btn:hover {
+  color: #ffffff !important;
+  transform: translateX(4px);
+}
+
+.bl-project-card .disabled-btn {
+  color: rgba(255, 255, 255, 0.45) !important;
+  font-size: 13px;
+  cursor: default;
+}
+
+@media screen and (max-width: 767px) {
+  .bl-project-card .project-info {
+    position: relative;
+    left: auto;
+    right: auto;
+    bottom: auto;
+    background: #181818;
+    padding: 16px 18px;
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+  }
+
+  .bl-project-card .project-name {
+    font-size: 18px;
+  }
+
+  .bl-project-card .project-stack {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
+>>>>>>> 781a704 (New commit)

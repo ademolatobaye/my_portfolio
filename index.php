@@ -1,13 +1,91 @@
 <?php
-include("db_conn.php");
-ini_set('display_errors', '1');
-	require 'includes/PHPMailer.php';
-	require 'includes/SMTP.php';
-	require 'includes/Exception.php';
-//Define name spaces
-	use PHPMailer\PHPMailer\PHPMailer;
-	use PHPMailer\PHPMailer\SMTP;
-	use PHPMailer\PHPMailer\Exception;
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
+ini_set('display_errors', '0');
+error_reporting(0);
+
+require 'includes/PHPMailer.php';
+require 'includes/SMTP.php';
+require 'includes/Exception.php';
+
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
+use PHPMailer\PHPMailer\Exception;
+
+$mailConfig = file_exists(__DIR__ . '/config/mail.php') ? require __DIR__ . '/config/mail.php' : [];
+
+if (isset($_POST['submit'])) {
+    // 1. Honeypot check for spam bots
+    if (!empty($_POST['website'])) {
+        $_SESSION['sent_status'] = 'success';
+        header("Location: index.php#contact");
+        exit;
+    }
+
+    $fullname = isset($_POST['fullname']) ? trim(strip_tags($_POST['fullname'])) : '';
+    $email    = isset($_POST['email']) ? trim(filter_var($_POST['email'], FILTER_SANITIZE_EMAIL)) : '';
+    $phone    = isset($_POST['phone']) ? trim(strip_tags($_POST['phone'])) : '';
+    $message  = isset($_POST['message']) ? trim(strip_tags($_POST['message'])) : '';
+
+    // 2. Input Validation
+    if (empty($fullname) || empty($email) || empty($message) || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        $_SESSION['sent_status'] = 'invalid';
+        header("Location: index.php#contact");
+        exit;
+    }
+
+    // 3. Setup PHPMailer
+    $mail = new PHPMailer();
+    try {
+        $mail->isSMTP();
+        $mail->Host       = $mailConfig['host'] ?? 'mail.pocketvest.com.ng';
+        $mail->SMTPAuth   = $mailConfig['auth'] ?? true;
+        $mail->SMTPSecure = $mailConfig['secure'] ?? 'ssl';
+        $mail->Port       = $mailConfig['port'] ?? 465;
+        $mail->Username   = $mailConfig['username'] ?? '';
+        $mail->Password   = $mailConfig['password'] ?? '';
+        $mail->Subject    = "New Message Notification from Portfolio";
+        $mail->setFrom($mailConfig['from_email'] ?? 'pocketve@pocketvest.com.ng', $fullname);
+        $mail->addReplyTo($email, $fullname);
+        $mail->addAddress($mailConfig['recipient'] ?? 'ademolaomomeji@gmail.com');
+        $mail->isHTML(true);
+
+        $year = date("Y");
+        // Safe HTML body including Full Name, Email, Phone, and Message
+        $mail->Body = "
+        <div style='font-family: Arial, sans-serif; background-color: #f5f6fa; padding: 30px;'>
+            <div style='max-width: 600px; margin: 0 auto; background: #ffffff; padding: 25px; border-radius: 8px;'>
+                <h2 style='color: #111; border-bottom: 2px solid #eee; padding-bottom: 10px;'>New Contact Form Submission</h2>
+                <p><strong>Name:</strong> " . htmlspecialchars($fullname) . "</p>
+                <p><strong>Email:</strong> " . htmlspecialchars($email) . "</p>
+                <p><strong>Phone:</strong> " . htmlspecialchars($phone) . "</p>
+                <p><strong>Message:</strong></p>
+                <div style='background: #f8f9fa; padding: 15px; border-radius: 6px; color: #333;'>
+                    " . nl2br(htmlspecialchars($message)) . "
+                </div>
+                <hr style='border: none; border-top: 1px solid #eee; margin-top: 20px;'>
+                <p style='font-size: 12px; color: #888;'>Sent via Ademola Omomeji Portfolio Contact Form &copy; {$year}</p>
+            </div>
+        </div>";
+
+        if ($mail->send()) {
+            $_SESSION['sent_status'] = 'success';
+            header("Location: index.php#contact");
+            exit;
+        } else {
+            error_log("Mail sending failed: " . $mail->ErrorInfo);
+            $_SESSION['sent_status'] = 'error';
+            header("Location: index.php#contact");
+            exit;
+        }
+    } catch (Exception $e) {
+        error_log("Mail exception: " . $e->getMessage());
+        $_SESSION['sent_status'] = 'error';
+        header("Location: index.php#contact");
+        exit;
+    }
+}
 ?>
 
 
@@ -18,13 +96,13 @@ ini_set('display_errors', '1');
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="THEADEMOLADEV is the personal portfolio of Ademola Omomeji, a software engineer who builds modern, responsive, and business-ready web applications using HTML, CSS, JavaScript, PHP, MySQL, and Bootstrap.">
-    <meta name="keywords" content="THEADEMOLADEV, Ademola Omomeji, Ademola portfolio, personal portfolio, software engineer nigeria, software developer nigeria, web developer nigeria, full-stack developer, full-stack engineer, frontend developer, backend developer, PHP developer, JavaScript developer, MySQL developer, Bootstrap developer, responsive web design, web application development, database driven applications, portfolio website, tech, developer, website development, software development, portfolio development, portfolio, personal portfolio development, admin dashboards, admin dashboard applications, website redesign.">
+    <meta name="description" content="THEADEMOLADEV is the personal portfolio of Ademola Omomeji, a software developer who builds modern, responsive, and business-ready web applications using HTML, CSS, JavaScript, PHP, Laravel, MySQL, and Bootstrap.">
+    <meta name="keywords" content="THEADEMOLADEV, Ademola Omomeji, Ademola portfolio, personal portfolio, software developer nigeria, web developer nigeria, fullstack developer, frontend developer, backend developer, PHP developer, JavaScript developer, MySQL developer, Bootstrap developer, responsive web design, web application development, database driven applications, portfolio website, tech, developer, website development, software development, admin dashboards, admin dashboard applications, website redesign.">
     <meta name="author" content="Ademola Omomeji, THEADEMOLADEV, THEADEMOLA">
     <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#111111">
     <meta name="application-name" content="THEADEMOLADEV">
-    <title>THEADEMOLADEV | Personal Portfolio</title>
+    <title>Ademola Omomeji | Software Developer</title>
 
     <link rel="icon" type="image/png" href="assets/img/blacknobg.png">
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/blacknobg.png">
@@ -33,16 +111,16 @@ ini_set('display_errors', '1');
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="THEADEMOLADEV">
     <meta property="og:url" content="https://ademolathedev.name.ng/">
-    <meta property="og:title" content="THEADEMOLADEV | Personal Portfolio">
-    <meta property="og:description" content="THEADEMOLADEV is the personal portfolio of Ademola Omomeji, a software engineer who builds modern, responsive, and business-ready web applications using HTML, CSS, JavaScript, PHP, MySQL, and Bootstrap.">
+    <meta property="og:title" content="Ademola Omomeji | Software Developer">
+    <meta property="og:description" content="THEADEMOLADEV is the personal portfolio of Ademola Omomeji, a software developer who builds modern, responsive, and business-ready web applications using HTML, CSS, JavaScript, PHP, MySQL, and Bootstrap.">
     <meta property="og:image" content="https://ademolathedev.name.ng/assets/img/white2bg.png">
     <meta property="og:image:alt" content="Ademola Omomeji portfolio preview">
     <meta property="og:locale" content="en_US">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://ademolathedev.name.ng/">
-    <meta name="twitter:title" content="THEADEMOLADEV | Personal Portfolio">
-    <meta name="twitter:description" content="THEADEMOLADEV is the personal portfolio of Ademola Omomeji, a software engineer who builds modern, responsive, and business-ready web applications using HTML, CSS, JavaScript, PHP, MySQL, and Bootstrap.">
+    <meta name="twitter:title" content="Ademola Omomeji | Software Developer">
+    <meta name="twitter:description" content="THEADEMOLADEV is the personal portfolio of Ademola Omomeji, a software developer who builds modern, responsive, and business-ready web applications using HTML, CSS, JavaScript, PHP, MySQL, and Bootstrap.">
     <meta name="twitter:image" content="https://ademolathedev.name.ng/assets/img/white2bg.png">
     <meta name="twitter:image:alt" content="Ademola Omomeji portfolio preview">
 
@@ -54,9 +132,9 @@ ini_set('display_errors', '1');
 <body id="Top">
 
     <!-- Loader -->
-    <div class="bl-loader">
-        <span>ADEMOLA OMOMEJI</span>
-    </div>
+    <!--<div class="bl-loader">-->
+    <!--    <span>ADEMOLA OMOMEJI</span>-->
+    <!--</div>-->
 
     <!-- Header -->
     <div class="header sticky-nav">
@@ -66,7 +144,7 @@ ini_set('display_errors', '1');
                      <img src="assets/img/white2.png" alt="">
                     <span class="brand-copy">
                         <strong>ADEMOLA OMOMEJI</strong>
-                        <small>Software Engineer</small>
+                        <small>Software Developer</small>
                     </span>
                 </a>
 
@@ -113,11 +191,11 @@ ini_set('display_errors', '1');
                         <ul>
                             <li><b>Email</b> :&nbsp;&nbsp;<span>ademolaomomeji@gmail.com</span></li>
                             <li><b>Phone</b> :&nbsp;&nbsp;<span>+234 816 016 1379</span></li>
-                            <li><b>Stack</b> :&nbsp;&nbsp;<span>HTML, CSS, PHP, JavaScript, Bootstrap, MySQL</span></li>
+                            <li><b>Stack</b> :&nbsp;&nbsp;<span>HTML, CSS, PHP, Laravel, JavaScript, Bootstrap, MySQL</span></li>
                             <li class="social">
-                                <a href="javascript:void(0)"><i class="ri-linkedin-box-line"></i></a>
-                                <a href="javascript:void(0)"><i class="ri-github-line"></i></a>
-                                <a href="javascript:void(0)"><i class="ri-mail-line"></i></a>
+                                <a href="https://linkedin.com/in/ademola-omomeji-38a7aa230" target="_blank"><i class="ri-linkedin-box-line"></i></a>
+                                <a href="https://github.com/ademolatobaye" target="_blank"><i class="ri-github-line"></i></a>
+                                <a href="mailto:ademolaomomeji@gmail.com"><i class="ri-mail-line"></i></a>
                             </li>
                         </ul>
                     </div>
@@ -177,11 +255,11 @@ ini_set('display_errors', '1');
                                     <h1 class="name" data-cursor="big">My name is  <br> Ademola <br>Omomeji</h1>
                                     <div class="designation">
                                         <h2 class="d-none">Designation</h2>
-                                        <h3>Software Engineer</h3>
+                                        <h3>Software Developer</h3>
                                         <div class="split-text">
                                             <ul class="bl-slides">
-                                                <li class="bl-slide">Full-Stack Engineer</li>
-                                                <li class="bl-slide">Product-Focused Developer</li>
+                                                <li class="bl-slide">FullStack Developer</li>
+                                                <li class="bl-slide">Software Developer</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -206,8 +284,8 @@ ini_set('display_errors', '1');
 
                                     <div class="block">
                                         <div class="bl-here-txt">
-                                            <p class="svg_bg"><span>I design and build modern, business-ready web applications that balance performance, clarity, and user experience. </span> <br>
-                                                <span> With hands-on experience in PHP, JavaScript, MySQL, and Bootstrap, I create reliable systems and responsive interfaces that help teams ship confidently.</span>
+                                            <p class="svg_bg"><span>I design and build modern, business ready web applications that balance performance, clarity, and user experience. </span> <br>
+                                                <span> With experience in PHP, Laravel, JavaScript, MySQL, and Bootstrap, I create reliable systems and responsive interfaces that help teams ship confidently.</span>
                                             </p>
                                             
                                         </div>
@@ -244,8 +322,9 @@ ini_set('display_errors', '1');
                                 <div class="title" data-cursor="big">
                                     <h2>About <span>Me</span></h2>
                                 </div>
-                                <div class="about-title" data-cursor="big">Software Engineer building practical digital products.</div>
-                                <p class="info">I focus on building production-ready websites and applications that look sharp, load fast, and solve real business problems. My work spans frontend interfaces, backend workflows, and data management, with a strong emphasis on maintainable code and smooth user experiences.</p>                              
+                                <div class="about-title" data-cursor="big">Software Developer building practical digital products.</div>
+                                <p class="info">I'm a Software Developer experienced in building full business systems, including a CRM with three role based dashboards (Admin, Manager, Cashier), a multi vendor ecommerce platform, and a hotel booking system.
+                                     I work across the stack with PHP, Laravel, JavaScript, and MySQL, with a focus on clean, maintainable code. I also teach web development at Wetin Dey Code Academy.</p>                              
                             </div>
                         </div>
                       
@@ -260,29 +339,7 @@ ini_set('display_errors', '1');
                 </span>
                 <div class="container">
                     <div class="row mb--24">
-                        <div class="col-lg-4 col-md-6">
-                            <div class="skill-box">
-                                <div class="skill-icon">
-                                    <img src="assets/img/skill/html.svg" alt="HTML">
-                                </div>
-                                <div class="skill-detail">
-                                    <h3>HTML5</h3>
-                                    <span class="percent">90%</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6">
-                            <div class="skill-box">
-                                <div class="skill-icon">
-                                    <img src="assets/img/skill/css-3.svg" alt="CSS">
-                                </div>
-                                <div class="skill-detail">
-                                    <h3>CSS3</h3>
-                                    <span class="percent">90%</span>
-                                </div>
-                            </div>
-                        </div>
+                        
 
                         <div class="col-lg-4 col-md-6">
                             <div class="skill-box">
@@ -291,7 +348,19 @@ ini_set('display_errors', '1');
                                 </div>
                                 <div class="skill-detail">
                                     <h3>PHP</h3>
-                                    <span class="percent">90%</span>
+                                    <!--<span class="percent">90%</span>-->
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="skill-box">
+                                <div class="skill-icon">
+                                    <img src="assets/img/skill/Laravel.png" alt="Laravel">
+                                </div>
+                                <div class="skill-detail">
+                                    <h3>Laravel</h3>
+                                    <!--<span class="percent">90%</span>-->
                                 </div>
                             </div>
                         </div>
@@ -303,7 +372,7 @@ ini_set('display_errors', '1');
                                 </div>
                                 <div class="skill-detail">
                                     <h3>JavaScript</h3>
-                                    <span class="percent">80%</span>
+                                    <!--<span class="percent">80%</span>-->
                                 </div>
                             </div>
                         </div>
@@ -315,7 +384,43 @@ ini_set('display_errors', '1');
                                 </div>
                                 <div class="skill-detail">
                                     <h3>Bootstrap</h3>
-                                    <span class="percent">87%</span>
+                                    <!--<span class="percent">87%</span>-->
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="skill-box">
+                                <div class="skill-icon">
+                                    <img src="assets/img/skill/MySQL.svg" alt="MySQL" class="skill-logo skill-logo-bootstrap">
+                                </div>
+                                <div class="skill-detail">
+                                    <h3>MySQL</h3>
+                                    <!--<span class="percent">87%</span>-->
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="skill-box">
+                                <div class="skill-icon">
+                                    <img src="assets/img/skill/html.svg" alt="HTML">
+                                </div>
+                                <div class="skill-detail">
+                                    <h3>HTML5</h3>
+                                    <!--<span class="percent">90%</span>-->
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="skill-box">
+                                <div class="skill-icon">
+                                    <img src="assets/img/skill/css-3.svg" alt="CSS">
+                                </div>
+                                <div class="skill-detail">
+                                    <h3>CSS3</h3>
+                                    <!--<span class="percent">90%</span>-->
                                 </div>
                             </div>
                         </div>
@@ -352,68 +457,98 @@ ini_set('display_errors', '1');
                             </div>
                             <div class="item-grid" id="MixItUp0ED680">
                                 <div class="row mb--80 justify-content-center align-items-center">
-                                    <div class="col-8 mb-80 item project-item-full web graphics applications"
+
+                                    <div class="col-12 col-md-10 col-lg-8 mb-80 item project-item-full web graphics applications"
                                         data-bound="" style="display: inline-block;">
                                         <div class="bl-project-card">
                                             <div class="project-image">
-                                                <a href="assets/img/project/deemart.png" >
+                                                <a href="assets/img/project/samtopdash.PNG" target="_blank">
                                                     <div class="overlay-project-card"></div>
-                                                    <img src="assets/img/project/deemart.png" alt="project-1">
+                                                    <img src="assets/img/project/samtopdash.PNG" alt="Business CRM System">
                                                 </a>
                                             </div>
                                             <div class="project-info">
-                                                <span>Multipurpose e-Commerce Web Application</span>
-                                                <h3><a href="https://pocketvest.com.ng/e-commerce/" data-cursor-text="View Live" target="_blank">Live Site</a></h3>
+                                                <h3 class="project-name">Business CRM System</h3>
+                                                <p class="project-stack">PHP · Laravel · MySQL · JavaScript · Bootstrap · HTML5 · CSS3</p>
+                                                <div class="project-action">
+                                                    <span class="project-btn disabled-btn"><i class="ri-information-line me-1"></i> Demo available on request</span>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
 
-                                    
-                                    
-                                    <div class="col-8 mb-80 item project-item-full applications templates"
-                                        data-bound="">
+                                    <div class="col-12 col-md-10 col-lg-8 mb-80 item project-item-full web graphics applications"
+                                        data-bound="" style="display: inline-block;">
                                         <div class="bl-project-card">
                                             <div class="project-image">
-                                                <a href="assets/img/project/celia.jpg">
+                                                <a href="https://ademolathedev.name.ng/e-commerce/" target="_blank">
                                                     <div class="overlay-project-card"></div>
-                                                    <img src="assets/img/project/celia.jpg" alt="project-5">
+                                                    <img src="assets/img/project/ademoladev.PNG" alt="Multipurpose eCommerce Web Application">
                                                 </a>
                                             </div>
                                             <div class="project-info">
-                                                <span>Hotel Management Platform</span>
-                                                <h3><a href="https://celiassuites.com" data-cursor-text="View Live" target="_blank">Live Site</a></h3>
+                                                <h3 class="project-name">Multipurpose eCommerce Web Application</h3>
+                                                <p class="project-stack">PHP · MySQL · JavaScript · Bootstrap · HTML5 · CSS3</p>
+                                                <div class="project-action">
+                                                    <a href="https://ademolathedev.name.ng/e-commerce/" class="project-btn" data-cursor-text="View Live" target="_blank">Live Site <i class="ri-arrow-right-up-line"></i></a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
 
-                                    <div class="col-8 mb-80 item project-item-full applications templates"
+                                    <div class="col-12 col-md-10 col-lg-8 mb-80 item project-item-full applications templates"
                                         data-bound="">
                                         <div class="bl-project-card">
                                             <div class="project-image">
-                                                <a href="assets/img/project/dalex.PNG">
+                                                <a href="https://celiassuites.com" target="_blank">
                                                     <div class="overlay-project-card"></div>
-                                                    <img src="assets/img/project/dalex.PNG" alt="project-5">
+                                                    <img src="assets/img/project/celia.jpg" alt="Hotel Management Platform">
                                                 </a>
                                             </div>
                                             <div class="project-info">
-                                                <span>Corporate Website for Dalex Company Ltd</span>
-                                                <h3><a href="https://dalexcompany.com" data-cursor-text="View Live" target="_blank">Live Site</a></h3>
+                                                <h3 class="project-name">Hotel Management Platform</h3>
+                                                <p class="project-stack">PHP · HTML5 · CSS3 · MySQL · JavaScript · Bootstrap</p>
+                                                <div class="project-action">
+                                                    <a href="https://celiassuites.com" class="project-btn" data-cursor-text="View Live" target="_blank">Live Site <i class="ri-arrow-right-up-line"></i></a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
 
-                                    <div class="col-8 mb-80 item project-item-full applications templates"
+                                    <div class="col-12 col-md-10 col-lg-8 mb-80 item project-item-full applications templates"
                                         data-bound="">
                                         <div class="bl-project-card">
                                             <div class="project-image">
-                                                <a href="assets/img/project/shoptianah.PNG">
+                                                <a href="https://dalexcompany.com" target="_blank">
                                                     <div class="overlay-project-card"></div>
-                                                    <img src="assets/img/project/shoptianah.PNG" alt="project-5">
+                                                    <img src="assets/img/project/dalex.PNG" alt="Corporate Website for Dalex Company Ltd">
                                                 </a>
                                             </div>
                                             <div class="project-info">
-                                                <span>Business Website for ShopTianah</span>
-                                                <h3><a href="https://wetindey.com.ng/ademola/shoptianah" data-cursor-text="View Live" target="_blank">Live Site</a></h3>
+                                                <h3 class="project-name">Corporate Website for Dalex Company Ltd</h3>
+                                                <p class="project-stack">PHP · HTML5 · CSS3 · JavaScript · Bootstrap</p>
+                                                <div class="project-action">
+                                                    <a href="https://dalexcompany.com" class="project-btn" data-cursor-text="View Live" target="_blank">Live Site <i class="ri-arrow-right-up-line"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-md-10 col-lg-8 mb-80 item project-item-full applications templates"
+                                        data-bound="">
+                                        <div class="bl-project-card">
+                                            <div class="project-image">
+                                                <a href="https://wetindey.com.ng/ademola/shoptianah" target="_blank">
+                                                    <div class="overlay-project-card"></div>
+                                                    <img src="assets/img/project/shoptianah.PNG" alt="Business Website for ShopTianah">
+                                                </a>
+                                            </div>
+                                            <div class="project-info">
+                                                <h3 class="project-name">Business Website for ShopTianah</h3>
+                                                <p class="project-stack">HTML5 · CSS3 · JavaScript · Bootstrap</p>
+                                                <div class="project-action">
+                                                    <a href="https://wetindey.com.ng/ademola/shoptianah" class="project-btn" data-cursor-text="View Live" target="_blank">Live Site <i class="ri-arrow-right-up-line"></i></a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -439,7 +574,7 @@ ini_set('display_errors', '1');
                                 </div>
                                 <div class="services-info">
                                     <h5>Website Development</h5>
-                                    <p>I design responsive, user-focused websites with a clear visual hierarchy, clean interaction patterns, and dependable performance.</p>
+                                    <p>I design responsive, user focused websites with a clear visual hierarchy, clean interaction patterns, and dependable performance.</p>
                                 </div>
                             </div>
                         </div>
@@ -484,7 +619,7 @@ ini_set('display_errors', '1');
                             <div class="bl-hire-banner sticky-box-3">
                                 <div class="bl-hire-info">
                                     <h2 class="hire-title" data-cursor="big">Hire Me <span>Today</span></h2>
-                                    <p>Whether it is a custom e-commerce platform, a financial web application, or a client-facing business site, I am open to collaborations that need thoughtful engineering and a polished finish.</p>
+                                    <p>Whether it is a custom eCommerce platform, a web application, or a business site, I am open to collaborations that need thoughtful development and a polished finish.</p>
                                     <div class="inner-circle-items">
                                         <div class="bl-rounded-circle">
                                             <a href="#contact">
@@ -517,175 +652,72 @@ ini_set('display_errors', '1');
                                 
                                    
                                     <li class="nav-item" role="presentation" data-cursor="hide">
-                                        <button type="button" class="nav-link" id="contact-tab" data-bs-toggle="tab"
+                                        <button type="button" class="nav-link active" id="contact-tab" data-bs-toggle="tab"
                                             data-bs-target="#contact_tab" role="tab" aria-controls="contact_tab"
-                                            aria-selected="false">Contact</button>
+                                            aria-selected="true">Contact</button>
                                     </li>
                                 </ul>
 
                                 <div class="tab-content">
-                                    <div class="tab-pane fade show active" id="freelancer" role="tabpanel"
-                                        aria-labelledby="freelancer-tab">
+                                    <div class="tab-pane fade show active" id="contact_tab" role="tabpanel"
+                                        aria-labelledby="contact-tab">
                                         <div class="col-12">
-                                            <form class="row" method="post">
+                                            <form class="row" method="post" action="#contact">
+                                                <!-- Honeypot field for bot spam prevention -->
+                                                <input type="text" name="website" style="display:none !important;" tabindex="-1" autocomplete="off">
 
-                                            <?php
-                        $year = date("Y");
-                        error_reporting(E_ALL);
-                        if(isset($_REQUEST["submit"])){
-                            $fullname =trim(addslashes($_REQUEST["fullname"]));
-                            $email = trim(addslashes($_REQUEST["email"]));
-                            $phone = trim(addslashes($_REQUEST["phone"]));
-                            $message = trim(addslashes($_REQUEST["message"]));
-
-// Create instance of PHPMailer
-	$mail = new PHPMailer();
-//Set mailer to use smtp
-	$mail->isSMTP();
-//Define smtp host
-	$mail->Host = "mail.ademolathedev.name.ng";
-//Enable smtp authentication
-	$mail->SMTPAuth = true;
-//Set smtp encryption type (ssl/tls)
-	$mail->SMTPSecure = "ssl";
-//Port to connect smtp
-	$mail->Port = "465";
-//Set gmail username
-	$mail->Username = "info@ademolathedev.name.ng";
-//Set gmail password
-	$mail->Password = "";
-//Email subject
-	$mail->Subject = "New Message Notification";
-//Set sender email
-	$mail->setFrom('info@ademolathedev.name.ng', $fullname);
-//Enable HTML
-	$mail->isHTML(true);
-//Attachment
-
-
-//Email body
-	$mail->Body = "<style>
-        html,
-        body {
-            margin: 0 auto !important;
-            padding: 0 !important;
-            height: 100% !important;
-            width: 100% !important;
-            font-family: 'Roboto', sans-serif !important;
-            font-size: 14px;
-            margin-bottom: 10px;
-            line-height: 24px;
-            color: #8094ae;
-            font-weight: 400;
-        }
-        * {
-            -ms-text-size-adjust: 100%;
-            -webkit-text-size-adjust: 100%;
-            margin: 0;
-            padding: 0;
-        }
-        table,
-        td {
-            mso-table-lspace: 0pt !important;
-            mso-table-rspace: 0pt !important;
-        }
-        table {
-            border-spacing: 0 !important;
-            border-collapse: collapse !important;
-            table-layout: fixed !important;
-            margin: 0 auto !important;
-        }
-        table table table {
-            table-layout: auto;
-        }
-        a {
-            text-decoration: none;
-        }
-        img {
-            -ms-interpolation-mode:bicubic;
-        }
-    </style>
-
-    <center style='width: 100%; background-color: #f5f6fa;'>
-        <table width='100%' border='0' cellpadding='0' cellspacing='0' bgcolor='#f5f6fa'>
-            <tr>
-                <td style='padding: 40px 0;'>
-                    <table style='width:100%;max-width:620px;margin:0 auto;'>
-                        <tbody>
-                            <tr>
-                                <td style='text-align: center; padding-bottom:25px'>
-                                    <a href='https://ademolathedev.name.ng'><img style='height: 60px' src='https://ademolathedev.name.ng/assets/img/white2bg.png' alt='logo'></a>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <table style='width:100%;max-width:620px;margin:0 auto;background-color:#ffffff;'>
-                        <tbody>
-                            <tr>
-                                <td style='padding: 30px 30px 15px 30px; text-align: center;'>
-                                    <h2 style='font-size: 18px; color: #000; font-weight: 600; margin: 0;'>New Message Notification</h2>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style='padding: 0 30px 20px; text-align: center;'>
-                                    <p style='margin-bottom: 10px;'>$message</p>
-                                    <h1 style='font-size: 35px; color: #000; font-weight: 600; margin: 0;'></h1>
-                                
-                                </td>
-                            </tr>
-                           
-                           
-                        </tbody>
-                    </table>
-                    <table style='width:100%;max-width:620px;margin:0 auto;'>
-                        <tbody>
-                            <tr>
-                                <td style='text-align: center; padding:25px 20px 0;'>
-                                    <p style='font-size: 13px;'>Copyright © $year THEADEMOLADEV. All rights reserved. <br> </p>
-                                    
-                                    
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-        </table>
-    </center>";
-//Add recipient
-	$mail->addAddress("ademolaomomeji@gmail.com");
-//Finally send email
-	if ( $mail->send() ) {
-
-
-                            echo"<script>alert('Dear $fullname, Thank you for contacting us. We will check your message and revert to you as soon as possible.')</script>";
-
-                            }
-                         else {
-    echo "<script>alert('Mail error: " . $mail->ErrorInfo . "')</script>";
-}
-                        }
-
-                        
-
-                        ?>
-
+                                                <?php 
+                                                $sentStatus = $_SESSION['sent_status'] ?? $_GET['sent'] ?? null;
+                                                if (isset($_SESSION['sent_status'])) {
+                                                    unset($_SESSION['sent_status']);
+                                                }
+                                                ?>
+                                                <?php if ($sentStatus): ?>
+                                                    <?php if ($sentStatus === 'success'): ?>
+                                                        <div class="col-12 mb-4">
+                                                            <div class="alert alert-success alert-dismissible fade show" role="alert" style="background-color: rgba(16, 185, 129, 0.15); border: 1px solid #10b981; color: #10b981; border-radius: 12px; padding: 16px 20px; font-size: 15px;">
+                                                                <i class="ri-checkbox-circle-fill me-2"></i> <strong>Success!</strong> Your message has been received, thank you for reaching out.
+                                                                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                                            </div>
+                                                        </div>
+                                                    <?php elseif ($sentStatus === 'invalid'): ?>
+                                                        <div class="col-12 mb-4">
+                                                            <div class="alert alert-warning alert-dismissible fade show" role="alert" style="background-color: rgba(245, 158, 11, 0.15); border: 1px solid #f59e0b; color: #f59e0b; border-radius: 12px; padding: 16px 20px; font-size: 15px;">
+                                                                <i class="ri-alert-fill me-2"></i> <strong>Validation Error:</strong> Please fill in all required fields with a valid email address.
+                                                                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                                            </div>
+                                                        </div>
+                                                    <?php elseif ($sentStatus === 'error'): ?>
+                                                        <div class="col-12 mb-4">
+                                                            <div class="alert alert-danger alert-dismissible fade show" role="alert" style="background-color: rgba(239, 68, 68, 0.15); border: 1px solid #ef4444; color: #ef4444; border-radius: 12px; padding: 16px 20px; font-size: 15px;">
+                                                                <i class="ri-error-warning-fill me-2"></i> <strong>Error:</strong> Unable to send message right now. Please try again later or reach out directly via phone/email.
+                                                                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                                            </div>
+                                                        </div>
+                                                    <?php endif; ?>
+                                                    <script>
+                                                        if (window.history.replaceState && window.location.search.includes('sent=')) {
+                                                            const cleanUrl = window.location.protocol + "//" + window.location.host + window.location.pathname + window.location.hash;
+                                                            window.history.replaceState({ path: cleanUrl }, '', cleanUrl);
+                                                        }
+                                                    </script>
+                                                <?php endif; ?>
 
                                                 <div class="form-group col-lg-6">
-                                                    <input type="text" name="fullname" placeholder="Input your fullname.">
+                                                    <input type="text" name="fullname" placeholder="Input your fullname." required>
                                                 </div>
                                                 <div class="form-group col-lg-6">
-                                                    <input type="email" name="email" placeholder="Input your email address.">
+                                                    <input type="email" name="email" placeholder="Input your email address." required>
                                                 </div>
                                                 <div class="form-group">
                                                     <input type="text" name="phone" placeholder="Input your phone number.">
                                                 </div>
 
                                                 <div class="form-group">
-                                                    <textarea name="message" placeholder="Input your message here."></textarea>
+                                                    <textarea name="message" placeholder="Input your message here." required></textarea>
                                                 </div>
                                                 <div class="bl-review-buttons">
-                                                    <button type="submit" class="bl-btn-3" data-cursor="hide" name="submit" onclick="return confirm('Are you sure to send message?')">Send message</button>
+                                                    <button type="submit" class="bl-btn-3" data-cursor="hide" name="submit">Send message</button>
                                                 </div>
                                             </form>
                                         </div>
@@ -707,12 +739,25 @@ ini_set('display_errors', '1');
                     <div class="row g-4 mt--24">
                         <div class="col-md-4">
                             <a href="index.php" class="logo-sec footer-brand-text">
-                                 <!-- <img src="assets/img/favicon.png" alt=""> -->
                                 <span class="brand-copy">
                                     <strong>ADEMOLA OMOMEJI</strong>
                                 </span>
                             </a>
-                           
+                            <p class="mt-3 text-muted" style="font-size: 14px; max-width: 320px; line-height: 1.6; color: #a0a0a0 !important;">Building practical, reliable web applications, business CRMs, and e-commerce systems.</p>
+                            <div class="footer-social-bar d-flex align-items-center gap-2 mt-3 mb-3">
+                                <a href="https://github.com/ademolatobaye" target="_blank" class="footer-social-btn" title="GitHub" aria-label="GitHub">
+                                    <i class="ri-github-line"></i>
+                                </a>
+                                <a href="https://linkedin.com/in/ademola-omomeji-38a7aa230" target="_blank" class="footer-social-btn" title="LinkedIn" aria-label="LinkedIn">
+                                    <i class="ri-linkedin-box-line"></i>
+                                </a>
+                                <a href="https://x.com/theademoladev" target="_blank" class="footer-social-btn" title="Twitter/X" aria-label="Twitter/X">
+                                    <i class="ri-twitter-line"></i>
+                                </a>
+                                <a href="mailto:ademolaomomeji@gmail.com" class="footer-social-btn" title="Email" aria-label="Email">
+                                    <i class="ri-mail-line"></i>
+                                </a>
+                            </div>
                         </div>
                       
                         <div class="col-md-2">
@@ -754,17 +799,17 @@ ini_set('display_errors', '1');
                                         Rights
                                         Reserved.</p>
                                     <div class="logo-links">
-                                        <a href="https://github.com/ademolatobaye" target="_blank">
+                                        <a href="https://github.com/ademolatobaye" target="_blank" title="GitHub" aria-label="GitHub">
                                             <i class="ri-github-line"></i>
                                         </a>
-                                        <a href="javascript:void(0)">
-                                            <i class="ri-instagram-line"></i>
+                                        <a href="https://linkedin.com/in/ademola-omomeji-38a7aa230" target="_blank" title="LinkedIn" aria-label="LinkedIn">
+                                            <i class="ri-linkedin-line"></i>
                                         </a>
-                                        <a href="https://x.com/ademolaignat" target="_blank">
+                                        <a href="https://x.com/ademolaignat" target="_blank" title="Twitter/X" aria-label="Twitter/X">
                                             <i class="ri-twitter-line"></i>
                                         </a>
-                                        <a href="https://linkedin.com/in/ademola-omomeji-38a7aa230" target="_blank">
-                                            <i class="ri-linkedin-line"></i>
+                                        <a href="mailto:ademolaomomeji@gmail.com" title="Email" aria-label="Email">
+                                            <i class="ri-mail-line"></i>
                                         </a>
                                     </div>
                                 </div>
