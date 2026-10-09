@@ -1,7 +1,6 @@
 <?php
-if (session_status() === PHP_SESSION_NONE) {
-    session_start();
-}
+session_start();
+
 ini_set('display_errors', '0');
 error_reporting(0);
 
@@ -514,6 +513,25 @@ if (isset($_POST['submit'])) {
                                             </div>
                                         </div>
                                     </div>
+                                    
+                                    <div class="col-12 col-md-10 col-lg-8 mb-80 item project-item-full applications templates"
+                                        data-bound="">
+                                        <div class="bl-project-card">
+                                            <div class="project-image">
+                                                <a href="https://tianah.onrender.com" target="_blank">
+                                                    <div class="overlay-project-card"></div>
+                                                    <img src="assets/img/project/tianah.PNG" alt="Business Website for Tianah">
+                                                </a>
+                                            </div>
+                                            <div class="project-info">
+                                                <h3 class="project-name">Personal Portfolio & Business Website for Olaide Tianah</h3>
+                                                <p class="project-stack">HTML5 · CSS3 · JavaScript · Bootstrap</p>
+                                                <div class="project-action">
+                                                    <a href="https://tianah.onrender.com" class="project-btn" data-cursor-text="View Live" target="_blank">Live Site <i class="ri-arrow-right-up-line"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
 
                                     <div class="col-12 col-md-10 col-lg-8 mb-80 item project-item-full applications templates"
                                         data-bound="">
@@ -529,25 +547,6 @@ if (isset($_POST['submit'])) {
                                                 <p class="project-stack">PHP · HTML5 · CSS3 · JavaScript · Bootstrap</p>
                                                 <div class="project-action">
                                                     <a href="https://dalexcompany.com" class="project-btn" data-cursor-text="View Live" target="_blank">Live Site <i class="ri-arrow-right-up-line"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-12 col-md-10 col-lg-8 mb-80 item project-item-full applications templates"
-                                        data-bound="">
-                                        <div class="bl-project-card">
-                                            <div class="project-image">
-                                                <a href="https://wetindey.com.ng/ademola/shoptianah" target="_blank">
-                                                    <div class="overlay-project-card"></div>
-                                                    <img src="assets/img/project/shoptianah.PNG" alt="Business Website for ShopTianah">
-                                                </a>
-                                            </div>
-                                            <div class="project-info">
-                                                <h3 class="project-name">Business Website for ShopTianah</h3>
-                                                <p class="project-stack">HTML5 · CSS3 · JavaScript · Bootstrap</p>
-                                                <div class="project-action">
-                                                    <a href="https://wetindey.com.ng/ademola/shoptianah" class="project-btn" data-cursor-text="View Live" target="_blank">Live Site <i class="ri-arrow-right-up-line"></i></a>
                                                 </div>
                                             </div>
                                         </div>
