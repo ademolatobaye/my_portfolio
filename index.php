@@ -482,7 +482,7 @@ if (isset($_POST['submit'])) {
                                             <div class="project-image">
                                                 <a href="https://ademolathedev.name.ng/e-commerce/" target="_blank">
                                                     <div class="overlay-project-card"></div>
-                                                    <img src="assets/img/project/ademoladev.PNG" alt="Multipurpose eCommerce Web Application">
+                                                    <img src="assets/img/project/deemart.PNG" alt="Multipurpose eCommerce Web Application">
                                                 </a>
                                             </div>
                                             <div class="project-info">
@@ -496,7 +496,7 @@ if (isset($_POST['submit'])) {
                                     </div>
 
                                     <div class="col-12 col-md-10 col-lg-8 mb-80 item project-item-full applications templates"
-                                        data-bound="">
+                                        data-bound="" style="display: inline-block;">
                                         <div class="bl-project-card">
                                             <div class="project-image">
                                                 <a href="https://celiassuites.com" target="_blank">
@@ -515,7 +515,7 @@ if (isset($_POST['submit'])) {
                                     </div>
                                     
                                     <div class="col-12 col-md-10 col-lg-8 mb-80 item project-item-full applications templates"
-                                        data-bound="">
+                                        data-bound="" style="display: inline-block;">
                                         <div class="bl-project-card">
                                             <div class="project-image">
                                                 <a href="https://tianah.onrender.com" target="_blank">
@@ -534,7 +534,7 @@ if (isset($_POST['submit'])) {
                                     </div>
 
                                     <div class="col-12 col-md-10 col-lg-8 mb-80 item project-item-full applications templates"
-                                        data-bound="">
+                                        data-bound="" style="display: inline-block;">
                                         <div class="bl-project-card">
                                             <div class="project-image">
                                                 <a href="https://dalexcompany.com" target="_blank">
